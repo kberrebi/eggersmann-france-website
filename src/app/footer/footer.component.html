@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container-fluid dark-footer">
+  <div style="text-align: center; padding-top:30px; padding-bottom: 30px">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-youtube"></a>
+  </div>
+  <div class="text-center" style="color:gray; padding-bottom:10px; font-size: 12px;">© 2018 Copyright: Eggersmann-france.com
+  </div>
+  <div id="langages">
+      <span [class]="this.languagesService.language === 'en'?'item':'item2'"><a (click)="setFrLanguage()">Fr</a></span>
+      <span [class]="this.languagesService.language === 'fr'?'item':'item2'"><a (click)="setEnLanguage()">En</a></span>
+  </div>
+</div>
+
+
+
+
+

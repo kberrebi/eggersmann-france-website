@@ -1,0 +1,133 @@
+#myVideo{
+  width:100%;
+}
+
+.container-fluid{
+  margin:0px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
+}
+
+.carousel {
+  width:76%;
+  margin:auto;
+}
+
+.img-carousel{
+  width:100%;
+}
+
+.img-right, .img-left{
+  width:100%;
+  min-width: 300px;
+  padding-top:150px;
+  padding-bottom:110px;
+}
+
+.txt-left, .txt-right{
+  font-family: 'Brandon_light';
+  text-align: justify;
+  padding-top:110px;
+  padding-bottom:110px;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.img-txt{
+  max-width: 1300px;
+}
+
+.gray-text{
+  font-family: 'Brandon_light';
+  color:gray;
+  font-size: 19px;
+}
+
+.carousel-inner{
+  margin:auto;
+  margin-bottom: 110px;
+}
+
+#white-text-container{
+  font-family: 'Brandon_light';
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+@media only screen and (max-width: 1150px){
+  .carousel {
+    width:100%;
+  }
+}
+
+@media only screen and (max-width: 1150px) and (min-width:1000px){
+  .img-right, .img-left{
+    padding-top:130px;
+    padding-bottom: 130px;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width:950px){
+  .img-right, .img-left{
+    padding-top:130px;
+    padding-bottom: 130px;
+  }
+}
+
+@media only screen and (max-width: 950px) and (min-width:650px) {
+  .txt-left{
+    padding-top:5%;
+    padding-bottom: 0%;
+    min-width: 600px;
+    max-width: initial;
+    padding-right:3%;
+    padding-left:3%;
+  }
+
+  .txt-right{
+    font-family: 'Brandon_light';
+    padding-top:0%;
+    padding-bottom: 5%;
+    min-width: 600px;
+    max-width: initial;
+    padding-right:3%;
+    padding-left:3%;
+  }
+
+  .img-right, .img-left{
+    padding-top:5%;
+    padding-bottom:5%;
+    padding-right:3%;
+    padding-left:3%;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .txt-left{
+    padding-top:5%;
+    padding-bottom: 0%;
+    padding-right:3%;
+    padding-left:3%;
+    min-width: 300px;
+  }
+  .txt-right{
+    padding-top:0%;
+    padding-bottom: 5%;
+    padding-right:3%;
+    padding-left:3%;
+    min-width: 300px;
+  }
+  .img-right, .img-left{
+    padding-top:5%;
+    padding-bottom:5%;
+    padding-right:3%;
+    padding-left:3%;
+  }
+  #white-text{
+    font-family: 'Brandon_light';
+    font-size: 22px;
+  }
+  #white-text-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
