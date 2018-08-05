@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationService } from '../../navigation.service';
 import { Router } from '@angular/router';
+import { LanguagesService } from '../../languages.service';
 
 @Component({
   selector: 'app-seaside-resort',
@@ -14,10 +15,12 @@ export class SeasideResortComponent implements OnInit {
   nextLookbookPage = '';
   nextLookbookUrl = '';
 
-  constructor(public navigationService: NavigationService, private router: Router) { }
+  // tslint:disable-next-line:no-shadowed-variable
+  constructor(public navigationService: NavigationService, private router: Router, public LanguagesService: LanguagesService) {
+    this.navigationService.currentLookbookPage = this.LanguagesService.lookbookTitle1;
+  }
 
   ngOnInit() {
-    this.navigationService.currentLookbookPage = 'Seaside Resort';
     this.previousLookbookPage = this.navigationService.previousLookbookPage().text;
     this.previousLookbookUrl = this.navigationService.previousLookbookPage().url;
     this.nextLookbookPage = this.navigationService.nextLookbookPage().text;
