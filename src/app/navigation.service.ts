@@ -9,6 +9,9 @@ export class NavigationService {
   currentLookbookPage = '';
   lookBookPages = [];
 
+  currentUniquePage = '';
+  uniquePages = [];
+
   constructor(public languagesService: LanguagesService) {
     this.lookBookPages = [{text: this.languagesService.lookbookTitle1, url: 'seaside'},
                           {text: this.languagesService.lookbookTitle2, url: 'london'},
@@ -37,6 +40,22 @@ export class NavigationService {
                           {text: this.languagesService.lookbookTitle25, url: 'villa-kopenhagen'},
                           {text: this.languagesService.lookbookTitle26, url: 'maison-copenhague'},
                          ];
+    this.uniquePages = [{text: this.languagesService.uniqueTitle1, url: 'beola-nera'},
+                        {text: this.languagesService.uniqueTitle2, url: 'carbono'},
+                        {text: this.languagesService.uniqueTitle3, url: 'arabescato'},
+                        {text: this.languagesService.uniqueTitle4, url: 'pietra-viva'},
+                        {text: this.languagesService.uniqueTitle5, url: 'grigio-carnico'},
+                        {text: this.languagesService.uniqueTitle6, url: 'valcamonica'},
+                        {text: this.languagesService.uniqueTitle7, url: 'nero-assoluto'},
+                        {text: this.languagesService.uniqueTitle8, url: 'graphite-brown'},
+                        {text: this.languagesService.uniqueTitle9, url: 'luna-grey'},
+                        {text: this.languagesService.uniqueTitle10, url: 'elegant-brown'},
+                        {text: this.languagesService.uniqueTitle11, url: 'taj-mahal'},
+                        {text: this.languagesService.uniqueTitle12, url: 'silver-touch'},
+                        {text: this.languagesService.uniqueTitle13, url: 'lacque-mate'},
+                        {text: this.languagesService.uniqueTitle14, url: 'volcano'},
+                        {text: this.languagesService.uniqueTitle15, url: 'slate'},
+                      ];
   }
 
   previousLookbookPage() {
@@ -47,6 +66,16 @@ export class NavigationService {
   nextLookbookPage() {
     const indexCurrentPage = this.lookBookPages.findIndex(element => element.text === this.currentLookbookPage);
     return (indexCurrentPage !== this.lookBookPages.length - 1) ? this.lookBookPages[indexCurrentPage + 1] : {text: '', url: ''};
+  }
+
+  previousUniquePage() {
+    const indexCurrentPage = this.uniquePages.findIndex(element => element.text === this.currentUniquePage);
+    return (indexCurrentPage !== 0) ? this.uniquePages[indexCurrentPage - 1] : {text: '', url: ''};
+  }
+
+  nextUniquePage() {
+    const indexCurrentPage = this.uniquePages.findIndex(element => element.text === this.currentUniquePage);
+    return (indexCurrentPage !== this.uniquePages.length - 1) ? this.uniquePages[indexCurrentPage + 1] : {text: '', url: ''};
   }
 
 }

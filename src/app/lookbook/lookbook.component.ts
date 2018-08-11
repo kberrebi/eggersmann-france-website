@@ -9,10 +9,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./lookbook.component.css']
 })
 
-@NgModule({
-  imports: [MatStepperModule],
-})
-
 export class LookbookComponent implements OnInit {
 
   constructor(private router: Router, public languagesService: LanguagesService) { }

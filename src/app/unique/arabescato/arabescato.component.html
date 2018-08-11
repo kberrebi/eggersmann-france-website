@@ -1,0 +1,23 @@
+<div class="container-fluid title-container" style="margin:170px auto 60px auto;">
+  <h1 style="margin-bottom:10px;">{{this.LanguagesService.uniqueTitle1}}</h1>
+  <div>
+    <a *ngIf="this.previousUniquePage!==''"  (click)="navigate(this.previousUniqueUrl)" style="float:left;cursor:pointer"><i class="material-icons" style="font-size:30px;">navigate_before</i><span style="position:relative;top:-9px;">{{this.previousUniquePage}}</span></a>
+    <a *ngIf="this.nextUniquePage!==''" (click)="navigate(this.nextUniqueUrl)" style="float:right;cursor:pointer"><span style="position:relative;top:-9px;">{{this.nextUniquePage}}</span><i class="material-icons" style="font-size:30px;">navigate_next</i></a>
+  </div>
+</div>
+<div id="gallery" class="container-fluid" style="margin-bottom:10px">
+  <div class="col-xs-12 col-bottom-border col-image gallery-image" style="background-image:url('../../../assets/images/unique/appartement-hambourg/Wohnung_Hamburg01_1400x800.jpg')"></div>
+  <div class="row gallery-row">
+    <div class="col-xs-12 col-md-4 col-bottom-border col-right-border col-image gallery-image" style="background-image:url('../../../assets/images/unique/appartement-hambourg/csm_Wohnung_Hamburg02_960x1260_fb446d7345.jpg')"></div>
+    <div class="col-xs-12 col-md-8 col-bottom-border col-image gallery-image" style="background-image:url('../../../assets/images/unique/appartement-hambourg/Wohnung_Hamburg05_1400x800.jpg')"></div>
+  </div>
+  <div class="col-xs-12 col-bottom-border col-image gallery-image" style="background-image:url('../../../assets/images/unique/appartement-hambourg/Wohnung_Hamburg07_1400x800.jpg')"></div>
+  <div class="row gallery-row">
+    <div class="col-xs-12 col-md-4 col-bottom-border col-right-border col-image gallery-image" style="background-image:url('../../../assets/images/unique/appartement-hambourg/csm_Wohnung_Hamburg08_1400x800_b2828e9fb7.jpg')"></div>
+    <div class="col-xs-12 col-md-8 col-bottom-border col-image gallery-image" style="background-image:url('../../../assets/images/unique/appartement-hambourg/Wohnung_Hamburg09_1400x800.jpg')"></div>
+  </div>
+</div>
+<div style="height:140px;">
+    <a *ngIf="this.previousUniquePage!==''"  (click)="navigate(this.previousUniqueUrl)" style="float:left;cursor:pointer"><i class="material-icons" style="font-size:30px;">navigate_before</i><span style="position:relative;top:-9px;">{{this.previousUniquePage}}</span></a>
+    <a *ngIf="this.nextUniquePage!==''" (click)="navigate(this.nextUniqueUrl)" style="float:right;cursor:pointer"><span style="position:relative;top:-9px;">{{this.nextUniquePage}}</span><i class="material-icons" style="font-size:30px;">navigate_next</i></a>
+</div>

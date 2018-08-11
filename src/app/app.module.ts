@@ -50,6 +50,22 @@ import { AppartementHambourgComponent } from './lookbook/appartement-hambourg/ap
 import { MaisonetteBonnComponent } from './lookbook/maisonette-bonn/maisonette-bonn.component';
 import { VillaKopenhagenComponent } from './lookbook/villa-kopenhagen/villa-kopenhagen.component';
 import { MaisonCopenhagueComponent } from './lookbook/maison-copenhague/maison-copenhague.component';
+import { BeolaNeraComponent } from './unique/beola-nera/beola-nera.component';
+import { CarbonoComponent } from './unique/carbono/carbono.component';
+import { ArabescatoComponent } from './unique/arabescato/arabescato.component';
+import { PietraVivaComponent } from './unique/pietra-viva/pietra-viva.component';
+import { GrigioComponent } from './unique/grigio/grigio.component';
+import { ValcamonicaComponent } from './unique/valcamonica/valcamonica.component';
+import { NeroComponent } from './unique/nero/nero.component';
+import { GraphiteComponent } from './unique/graphite/graphite.component';
+import { LunaGreyComponent } from './unique/luna-grey/luna-grey.component';
+import { ElegantbrownComponent } from './unique/elegantbrown/elegantbrown.component';
+import { TajMahalComponent } from './unique/taj-mahal/taj-mahal.component';
+import { SilverTouchComponent } from './unique/silver-touch/silver-touch.component';
+import { LacquemateComponent } from './unique/lacquemate/lacquemate.component';
+import { VolcanoComponent } from './unique/volcano/volcano.component';
+import { SlateComponent } from './unique/slate/slate.component';
+import { loadQueryList } from '../../node_modules/@angular/core/src/render3/instructions';
 
 
 const appRoutes: Routes = [
@@ -83,6 +99,21 @@ const appRoutes: Routes = [
   { path: 'lookbook/maisonette-bonn', component: MaisonetteBonnComponent },
   { path: 'lookbook/villa-kopenhagen', component: VillaKopenhagenComponent },
   { path: 'lookbook/maison-copenhague', component: MaisonCopenhagueComponent },
+  { path: 'unique/arabescato', component: ArabescatoComponent },
+  { path: 'unique/beola-nera', component: BeolaNeraComponent },
+  { path: 'unique/carbono', component: CarbonoComponent },
+  { path: 'unique/elegantbrown', component: ElegantbrownComponent },
+  { path: 'unique/graphite', component: GraphiteComponent },
+  { path: 'unique/grigio', component: GrigioComponent },
+  { path: 'unique/lacquemate', component: LacquemateComponent },
+  { path: 'unique/luna-grey', component: LunaGreyComponent },
+  { path: 'unique/nero', component: NeroComponent },
+  { path: 'unique/pietra-viva', component: PietraVivaComponent },
+  { path: 'unique/silver-touch', component: SilverTouchComponent },
+  { path: 'unique/slate', component: SlateComponent },
+  { path: 'unique/taj-mahal', component: TajMahalComponent },
+  { path: 'unique/valcamonica', component: ValcamonicaComponent },
+  { path: 'unique/volcano', component: VolcanoComponent },
   { path: 'programme', component: E30Component },
   { path: 'unique', component: UniqueComponent },
   { path: 'works', component: WorksComponent },
@@ -126,7 +157,22 @@ const appRoutes: Routes = [
     AppartementHambourgComponent,
     MaisonetteBonnComponent,
     VillaKopenhagenComponent,
-    MaisonCopenhagueComponent
+    MaisonCopenhagueComponent,
+    BeolaNeraComponent,
+    CarbonoComponent,
+    ArabescatoComponent,
+    PietraVivaComponent,
+    GrigioComponent,
+    ValcamonicaComponent,
+    NeroComponent,
+    GraphiteComponent,
+    LunaGreyComponent,
+    ElegantbrownComponent,
+    TajMahalComponent,
+    SilverTouchComponent,
+    LacquemateComponent,
+    VolcanoComponent,
+    SlateComponent
   ],
   imports: [
     BrowserModule,

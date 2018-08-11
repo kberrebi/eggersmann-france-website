@@ -1,14 +1,8 @@
 <div class="container-fluid gallery-container">
-  <div class="container-fluid" style="margin:170px auto 130px auto;">
+  <div class="container-fluid" style="margin:0px auto 130px auto;">
     <h1 style="margin-bottom:50px;">Lookbook</h1>
 
-    <p class="page-description text-center">Rien ne vaut des photos de projets achevés pour présenter de manière aussi réaliste et authentique que possible
-       l’espace de vie qu’est la cuisine. Photographiées aux domiciles de nos clients, ces cuisines illustrent de manière exemplaire l’abondance de matériaux,
-       de couleurs et de possibilités d’agencement qui permettent de créer des solutions sur mesure et personnalisées pour chacun. Et ces images éliminent la
-       possibilité, comme en studio photographique, de manipuler les choses pour les embellir ou bien de travailler dans des situations spatiales peu réalistes.
-       Les installations présentées ici sont photographiées « live on stage » au sens strict du terme et elles offrent une grande authenticité. Nous adressons
-       nos remerciements à tous les maîtres d’ouvrage qui nous ont permis ces reportages photos. Ainsi, évidemment, qu’aux partenaires eggersmann qui ont conçu
-       ces cuisines avec enthousiasme, savoir-faire et beaucoup de finesse.</p>
+    <p class="page-description text-center">{{this.languagesService.lookbookIntro}}</p>
 
   </div>
 
@@ -18,7 +12,7 @@
             <div class="col-sm-6 col-md-4">
               <div class="thumbnail" (click)="navigate('seaside')">
                   <a class="lightbox">
-                      <img class="image" src="../../assets/images/seaside.jpg">
+                      <img class="image" src="../../assets/images/lookbook/seaside.jpg">
                   </a>
                   <div class="caption">
                       <h3>{{this.languagesService.lookbookTitle1}}</h3>
@@ -29,7 +23,7 @@
           <div class="col-sm-6 col-md-4">
               <div class="thumbnail" (click)="navigate('london')">
                   <a class="lightbox">
-                      <img class="image" src="../../assets/images/Villa_London.jpg">
+                      <img class="image" src="../../assets/images/lookbook/Villa_London.jpg">
                   </a>
                   <div class="caption">
                       <h3>{{this.languagesService.lookbookTitle2}}</h3>
@@ -40,7 +34,7 @@
           <div class="col-sm-6 col-md-4">
               <div class="thumbnail" (click)="navigate('villa-salzburg')">
                   <a class="lightbox">
-                      <img class="image" src="../../assets/images/Villa_Salzburg.jpg">
+                      <img class="image" src="../../assets/images/lookbook/Villa_Salzburg.jpg">
                   </a>
                   <div class="caption">
                       <h3>{{this.languagesService.lookbookTitle3}}</h3>
@@ -51,7 +45,7 @@
           <div class="col-sm-6 col-md-4">
               <div class="thumbnail" (click)="navigate('villa-innsbruck')">
                   <a class="lightbox">
-                      <img class="image" src="../../assets/images/Villa_Insbruck.jpg">
+                      <img class="image" src="../../assets/images/lookbook/Villa_Insbruck.jpg">
                   </a>
                   <div class="caption">
                       <h3>{{this.languagesService.lookbookTitle4}}</h3>
@@ -62,7 +56,7 @@
           <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('maison-heidenheim')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/Brenner.jpg">
+                        <img class="image" src="../../assets/images/lookbook/Brenner.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle5}}</h3>
@@ -73,7 +67,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('maison-schweinfurt')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/Haus_Schweinfurt.jpg">
+                        <img class="image" src="../../assets/images/lookbook/Haus_Schweinfurt.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle6}}</h3>
@@ -84,7 +78,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('maison-hambourg2')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook7.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook7.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle7}}</h3>
@@ -95,7 +89,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('auvent-berlin')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook8.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook8.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle8}}</h3>
@@ -106,7 +100,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('villa-hambourg')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook9.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook9.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle9}}</h3>
@@ -117,7 +111,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('villa-vienne')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook10.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook10.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle10}}</h3>
@@ -128,7 +122,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('auvent-hambourg')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook11.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook11.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle11}}</h3>
@@ -139,7 +133,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('maison-hambourg')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook12.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook12.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle12}}</h3>
@@ -150,7 +144,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('maison-miami')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook13.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook13.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle13}}</h3>
@@ -161,7 +155,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('maison-duesseldorf')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook14.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook14.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle14}}</h3>
@@ -172,7 +166,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('villa-wiesbaden')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook15.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook15.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle15}}</h3>
@@ -183,7 +177,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('maison-helsinki')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook16.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook16.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle16}}</h3>
@@ -194,7 +188,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('villa-hambourg2')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook17.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook17.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle17}}</h3>
@@ -205,7 +199,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('villa-regensburg')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook18.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook18.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle18}}</h3>
@@ -216,7 +210,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('maison-bielefeld')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook19.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook19.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle19}}</h3>
@@ -227,7 +221,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('villa-cologne')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook20.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook20.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle20}}</h3>
@@ -238,7 +232,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('loft-hambourg')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook21.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook21.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle21}}</h3>
@@ -249,7 +243,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('villa liechtenstein')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook22.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook22.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle22}}</h3>
@@ -260,7 +254,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('appartement-hambourg')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook23.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook23.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle23}}</h3>
@@ -271,7 +265,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('maisonette-bonn')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook24.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook24.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle24}}</h3>
@@ -282,7 +276,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('villa-kopenhagen')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook25.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook25.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle25}}</h3>
@@ -293,7 +287,7 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" (click)="navigate('maison-copenhague')">
                     <a class="lightbox">
-                        <img class="image" src="../../assets/images/lookbook26.jpg">
+                        <img class="image" src="../../assets/images/lookbook/lookbook26.jpg">
                     </a>
                     <div class="caption">
                         <h3>{{this.languagesService.lookbookTitle26}}</h3>

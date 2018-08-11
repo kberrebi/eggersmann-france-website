@@ -25,6 +25,8 @@ export class LanguagesService {
   homeContent4: string;
   homeContent5: string;
 
+  lookbookIntro: string;
+
   lookbookTitle1: string;
   lookbookTitle2: string;
   lookbookTitle3: string;
@@ -79,6 +81,38 @@ export class LanguagesService {
   lookbookDes25: string;
   lookbookDes26: string;
 
+  uniqueIntro: string;
+  uniqueTitle1: string;
+  uniqueTitle2: string;
+  uniqueTitle3: string;
+  uniqueTitle4: string;
+  uniqueTitle5: string;
+  uniqueTitle6: string;
+  uniqueTitle7: string;
+  uniqueTitle8: string;
+  uniqueTitle9: string;
+  uniqueTitle10: string;
+  uniqueTitle11: string;
+  uniqueTitle12: string;
+  uniqueTitle13: string;
+  uniqueTitle14: string;
+  uniqueTitle15: string;
+  uniqueDes1: string;
+  uniqueDes2: string;
+  uniqueDes3: string;
+  uniqueDes4: string;
+  uniqueDes5: string;
+  uniqueDes6: string;
+  uniqueDes7: string;
+  uniqueDes8: string;
+  uniqueDes9: string;
+  uniqueDes10: string;
+  uniqueDes11: string;
+  uniqueDes12: string;
+  uniqueDes13: string;
+  uniqueDes14: string;
+  uniqueDes15: string;
+
 
   // French version of contents
   navItemFr1 = 'Accueil';
@@ -107,6 +141,18 @@ export class LanguagesService {
   homeContentFr5 =  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, amet.' +
   'Nostrum rem cum laudantium voluptatem. Dignissimos, eveniet quasi hic totam corporis' +
   'dolore nesciunt, asperiores perspiciatis similique a fugit, aspernatur ducimus.';
+  lookbookIntro_Fr = 'Rien ne vaut des photos de projets achevés pour présenter de manière aussi réaliste et authentique que possible' +
+  'l’espace de vie qu’est la cuisine. Photographiées aux domiciles de nos clients, ces cuisines illustrent de manière exemplaire ' +
+  'l’abondance de matériaux,' +
+  'de couleurs et de possibilités d’agencement qui permettent de créer des solutions sur mesure et personnalisées pour chacun.' +
+  'Et ces images éliminent la' +
+  'possibilité, comme en studio photographique, de manipuler les choses pour les embellir ou bien de travailler dans des situations' +
+  'spatiales peu réalistes.' +
+  'Les installations présentées ici sont photographiées « live on stage » au sens strict du terme et elles offrent une grande' +
+  'authenticité. Nous adressons' +
+  'nos remerciements à tous les maîtres d’ouvrage qui nous ont permis ces reportages photos. Ainsi, évidemment, qu’aux partenaires' +
+  'eggersmann qui ont conçu' +
+  'ces cuisines avec enthousiasme, savoir-faire et beaucoup de finesse.';
   lookbookTitle1_Fr = 'Seaside Resort';
   lookbookTitle2_Fr = 'Villa London';
   lookbookTitle3_Fr = 'Villa Salzburg';
@@ -160,6 +206,45 @@ export class LanguagesService {
   lookbookDes25_Fr = 'corian, placage';
   lookbookDes26_Fr = 'matériau minéral, acrylux camé';
 
+  uniqueIntro_Fr = 'Depuis 2006, eggersmann a fait de l’idée une réalité : fabriquer et toujours renouveler' +
+  'une collection de cuisines et d’équipements dont l’intemporalité et le minimalisme soient difficilement' +
+  'égalables. Et le nom UNIQUE parle de lui-même. L’accent est mis sur l’individualité ainsi que sur des' +
+  'matériaux exceptionnels et prestigieux. L’homogénéité de toutes les surfaces concernées est un principe' +
+  'fondamental de ce système. Ainsi, les surfaces frontales et latérales, de même que les éléments de préhension' +
+  'et les surfaces de travail sont tous en un seul et même matériau. En plus du CORIAN®, diverses variétés de' +
+  'pierre et de granit peuvent être utilisées, de même que des pierres composites. En outre, des détails complexes' +
+  'tels que des joints d’onglet sont utilisés sur les façades et les parties latérales.';
+  uniqueTitle1_Fr = 'Beola Nera';
+  uniqueTitle2_Fr = 'Carbono';
+  uniqueTitle3_Fr = 'Arabescato';
+  uniqueTitle4_Fr = 'Pietra Viva';
+  uniqueTitle5_Fr = 'Grigio Carnico';
+  uniqueTitle6_Fr = 'Valcamonica';
+  uniqueTitle7_Fr = 'Nero Assoluto';
+  uniqueTitle8_Fr = 'Graphite Brown';
+  uniqueTitle9_Fr = 'Luna Grey';
+  uniqueTitle10_Fr = 'Elegant brown';
+  uniqueTitle11_Fr = 'Taj Mahal';
+  uniqueTitle12_Fr = 'Silver Touch';
+  uniqueTitle13_Fr = 'Lacque mate';
+  uniqueTitle14_Fr = 'Volcano';
+  uniqueTitle15_Fr = 'Slate';
+  uniqueDes1_Fr = 'Quartzite';
+  uniqueDes2_Fr = 'Quartzite';
+  uniqueDes3_Fr = 'Marble';
+  uniqueDes4_Fr = 'Marble';
+  uniqueDes5_Fr = 'Limestone';
+  uniqueDes6_Fr = 'Porphyry';
+  uniqueDes7_Fr = 'Granite';
+  uniqueDes8_Fr = 'Limestone';
+  uniqueDes9_Fr = 'Granite';
+  uniqueDes10_Fr = 'Granite';
+  uniqueDes11_Fr = 'Quartzite';
+  uniqueDes12_Fr = 'Stainless Steel';
+  uniqueDes13_Fr = 'Quartzite, Lacquer';
+  uniqueDes14_Fr = 'Granite';
+  uniqueDes15_Fr = 'Montank Black Slate';
+
   // English version of contents
   navItemEn1 = 'Home';
   navItemEn2 = 'Distributors';
@@ -185,6 +270,17 @@ export class LanguagesService {
   homeContentEn5 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas' +
   'tempore error accusamus dolorem aperiam suscipit ipsam. Praesentium distinctio dolore eos eius quos' +
   'perspiciatis ipsam repellat? Nulla impedit sit necessitatibus!';
+  lookbookIntro_En = 'Kitchen space is best presented most realistically and authentically with pictures of finished jobs.' +
+  'These kitchens,' +
+  'which were photographed in our customers’ homes, represent examples of the abundance of materials, colours and planning' +
+  'possibilities for' +
+  'creating custom solutions for individual people. And they prohibit us from manipulating things to make them look better or' +
+  'working with unrealistic' +
+  'space situations, as in a photo studio. The equipment shown is literally portrayed “live on stage” and offers the highest' +
+  'authenticity. We thank all those' +
+  'clients who made these pictorial reports possible. And, of course, also all eggersmann partners who planned these kitchens' +
+  'with enthusiasm, expertise and a' +
+  'great deal of sensitivity.';
   lookbookTitle1_En = 'Seaside Resort';
   lookbookTitle2_En = 'Villa London';
   lookbookTitle3_En = 'Villa Salzburg';
@@ -238,6 +334,43 @@ export class LanguagesService {
   lookbookDes25_En = 'corian, block veneer';
   lookbookDes26_En = 'mineral, acrylux camé';
 
+  uniqueIntro_En = 'Since 2006, eggersmann has been busy realising the idea of manufacturing and further developing a collection' +
+  'of kitchens and equipment which can hardly be matched for its timelessness and minimalism. The name UNIQUE really says it all.' +
+  'The focus is on individuality and also exceptional and exquisite materials. A decisive and fundamental idea for this system is the' +
+  'homogeneity of all relevant surfaces. Front and side surfaces and also handles and working surfaces are made of just one identical' +
+  'material. In addition to CORIAN®, various types of stone and granite as well as mineral materials can be used. Intricate details' +
+  'such as mitre joints are applied on fronts and side panels.';
+  uniqueTitle1_En = 'Beola Nera';
+  uniqueTitle2_En = 'Carbono';
+  uniqueTitle3_En = 'Arabescato';
+  uniqueTitle4_En = 'Pietra Viva';
+  uniqueTitle5_En = 'Grigio Carnico';
+  uniqueTitle6_En = 'Valcamonica';
+  uniqueTitle7_En = 'Nero Assoluto';
+  uniqueTitle8_En = 'Grafite Brown';
+  uniqueTitle9_En = 'Luna Grey';
+  uniqueTitle10_En = 'Elegant brown';
+  uniqueTitle11_En = 'Taj Mahal';
+  uniqueTitle12_En = 'Silver Touch';
+  uniqueTitle13_En = 'Matt Lacquer';
+  uniqueTitle14_En = 'Volcano';
+  uniqueTitle15_En = 'Slate';
+  uniqueDes1_En = 'Quartzite';
+  uniqueDes2_En = 'Quartzite';
+  uniqueDes3_En = 'Marbre';
+  uniqueDes4_En = 'Marbre';
+  uniqueDes5_En = 'Pierre Calcaire';
+  uniqueDes6_En = 'Porphyre';
+  uniqueDes7_En = 'Granite';
+  uniqueDes8_En = 'Limestone';
+  uniqueDes9_En = 'Granite';
+  uniqueDes10_En = 'Granite';
+  uniqueDes11_En = 'Quartzite';
+  uniqueDes12_En = 'Inox';
+  uniqueDes13_En = 'Quartzite, Laque Mate';
+  uniqueDes14_En = 'Granite';
+  uniqueDes15_En = 'Ardoise Montank Black';
+
   constructor() {
     this.setLanguage('fr');
   }
@@ -261,6 +394,7 @@ export class LanguagesService {
         this.homeContent3 =  this.homeContentFr3;
         this.homeContent4 =  this.homeContentFr4;
         this.homeContent5 =  this.homeContentFr5;
+        this.lookbookIntro = this.lookbookIntro_Fr;
         this.lookbookTitle1 = this.lookbookTitle1_Fr;
         this.lookbookTitle2 = this.lookbookTitle2_Fr;
         this.lookbookTitle3 = this.lookbookTitle3_Fr;
@@ -314,6 +448,38 @@ export class LanguagesService {
         this.lookbookDes24 = this.lookbookDes24_Fr;
         this.lookbookDes25 = this.lookbookDes25_Fr;
         this.lookbookDes26 = this.lookbookDes26_Fr;
+
+        this.uniqueIntro = this.uniqueIntro_Fr;
+        this.uniqueTitle1 = this.uniqueTitle1_Fr;
+        this.uniqueTitle2 = this.uniqueTitle2_Fr;
+        this.uniqueTitle3 = this.uniqueTitle3_Fr;
+        this.uniqueTitle4 = this.uniqueTitle4_Fr;
+        this.uniqueTitle5 = this.uniqueTitle5_Fr;
+        this.uniqueTitle6 = this.uniqueTitle6_Fr;
+        this.uniqueTitle7 = this.uniqueTitle7_Fr;
+        this.uniqueTitle8 = this.uniqueTitle8_Fr;
+        this.uniqueTitle9 = this.uniqueTitle9_Fr;
+        this.uniqueTitle10 = this.uniqueTitle10_Fr;
+        this.uniqueTitle11 = this.uniqueTitle11_Fr;
+        this.uniqueTitle12 = this.uniqueTitle12_Fr;
+        this.uniqueTitle13 = this.uniqueTitle13_Fr;
+        this.uniqueTitle14 = this.uniqueTitle14_Fr;
+        this.uniqueTitle15 = this.uniqueTitle15_Fr;
+        this.uniqueDes1 = this.uniqueDes1_Fr;
+        this.uniqueDes2 = this.uniqueDes2_Fr;
+        this.uniqueDes3 = this.uniqueDes3_Fr;
+        this.uniqueDes4 = this.uniqueDes4_Fr;
+        this.uniqueDes5 = this.uniqueDes5_Fr;
+        this.uniqueDes6 = this.uniqueDes6_Fr;
+        this.uniqueDes7 = this.uniqueDes7_Fr;
+        this.uniqueDes8 = this.uniqueDes8_Fr;
+        this.uniqueDes9 = this.uniqueDes9_Fr;
+        this.uniqueDes10 = this.uniqueDes10_Fr;
+        this.uniqueDes11 = this.uniqueDes11_Fr;
+        this.uniqueDes12 = this.uniqueDes12_Fr;
+        this.uniqueDes13 = this.uniqueDes13_Fr;
+        this.uniqueDes14 = this.uniqueDes14_Fr;
+        this.uniqueDes15 = this.uniqueDes15_Fr;
       } else if (this.language === 'en') {
         this.navItem1 = this.navItemEn1;
         this.navItem2 = this.navItemEn2;
@@ -329,6 +495,7 @@ export class LanguagesService {
         this.homeContent3 = this.homeContentEn3;
         this.homeContent4 = this.homeContentEn4;
         this.homeContent5 = this.homeContentEn5;
+        this.lookbookIntro = this.lookbookIntro_En;
         this.lookbookTitle1 = this.lookbookTitle1_En;
         this.lookbookTitle2 = this.lookbookTitle2_En;
         this.lookbookTitle3 = this.lookbookTitle3_En;
@@ -382,6 +549,38 @@ export class LanguagesService {
         this.lookbookDes24 = this.lookbookDes24_En;
         this.lookbookDes25 = this.lookbookDes25_En;
         this.lookbookDes26 = this.lookbookDes26_En;
+        this.uniqueIntro = this.uniqueIntro_En;
+        this.uniqueIntro = this.uniqueIntro_En;
+        this.uniqueTitle1 = this.uniqueTitle1_En;
+        this.uniqueTitle2 = this.uniqueTitle2_En;
+        this.uniqueTitle3 = this.uniqueTitle3_En;
+        this.uniqueTitle4 = this.uniqueTitle4_En;
+        this.uniqueTitle5 = this.uniqueTitle5_En;
+        this.uniqueTitle6 = this.uniqueTitle6_En;
+        this.uniqueTitle7 = this.uniqueTitle7_En;
+        this.uniqueTitle8 = this.uniqueTitle8_En;
+        this.uniqueTitle9 = this.uniqueTitle9_En;
+        this.uniqueTitle10 = this.uniqueTitle10_En;
+        this.uniqueTitle11 = this.uniqueTitle11_En;
+        this.uniqueTitle12 = this.uniqueTitle12_En;
+        this.uniqueTitle13 = this.uniqueTitle13_En;
+        this.uniqueTitle14 = this.uniqueTitle14_En;
+        this.uniqueTitle15 = this.uniqueTitle15_En;
+        this.uniqueDes1 = this.uniqueDes1_En;
+        this.uniqueDes2 = this.uniqueDes2_En;
+        this.uniqueDes3 = this.uniqueDes3_En;
+        this.uniqueDes4 = this.uniqueDes4_En;
+        this.uniqueDes5 = this.uniqueDes5_En;
+        this.uniqueDes6 = this.uniqueDes6_En;
+        this.uniqueDes7 = this.uniqueDes7_En;
+        this.uniqueDes8 = this.uniqueDes8_En;
+        this.uniqueDes9 = this.uniqueDes9_En;
+        this.uniqueDes10 = this.uniqueDes10_En;
+        this.uniqueDes11 = this.uniqueDes11_En;
+        this.uniqueDes12 = this.uniqueDes12_En;
+        this.uniqueDes13 = this.uniqueDes13_En;
+        this.uniqueDes14 = this.uniqueDes14_En;
+        this.uniqueDes15 = this.uniqueDes15_En;
       }
     }
   }
