@@ -1,3 +1,22 @@
-<p>
-  graphite works!
-</p>
+<div style="background-color:black;">
+  <div class="container-fluid title-container" style="margin:0px auto 60px auto;">
+    <h1 style="margin-bottom:10px;">{{this.LanguagesService.uniqueTitle8}}</h1>
+    <div>
+      <a *ngIf="this.previousUniquePage!==''"  (click)="navigate(this.previousUniqueUrl)" style="float:left;cursor:pointer;color:white"><i class="material-icons" style="font-size:30px;">navigate_before</i><span style="position:relative;top:-9px;">{{this.previousUniquePage}}</span></a>
+      <a *ngIf="this.nextUniquePage!==''" (click)="navigate(this.nextUniqueUrl)" style="float:right;cursor:pointer;color:white"><span style="position:relative;top:-9px;">{{this.nextUniquePage}}</span><i class="material-icons" style="font-size:30px;">navigate_next</i></a>
+    </div>
+  </div>
+  <div id="gallery" class="container-fluid" style="margin-bottom:10px">
+    <div class="col-xs-12 col-bottom-border col-image gallery-image" style="background-image:url('../../../assets/images/unique/Graphite-Brown/grafite_brown_corian01_1400x800.jpg')"></div>
+    <div class="row gallery-row">
+      <div class="col-xs-12 col-md-4 col-bottom-border col-right-border col-image gallery-image" style="background-image:url('../../../assets/images/unique/Graphite-Brown/csm_grafite_brown_corian02_960x1260_39367c0b6b.jpg')"></div>
+      <div class="col-xs-12 col-md-8 col-bottom-border col-image gallery-image" style="background-image:url('../../../assets/images/unique/Graphite-Brown/grafite_brown_corian03_1400x800.jpg')"></div>
+    </div>
+    <div class="col-xs-12 col-bottom-border col-image gallery-image" style="background-image:url('../../../assets/images/unique/Graphite-Brown/grafite_brown_corian04_1400x800.jpg')"></div>
+    <div class="col-xs-12 col-bottom-border col-image gallery-image" style="background-image:url('../../../assets/images/unique/Graphite-Brown/csm_grafite_brown_corian05_960x1260_4e3c7dc01d.jpg')"></div>
+  </div>
+  <div style="height:140px;">
+      <a *ngIf="this.previousUniquePage!==''"  (click)="navigate(this.previousUniqueUrl)" style="float:left;cursor:pointer;color:white"><i class="material-icons" style="font-size:30px;">navigate_before</i><span style="position:relative;top:-9px;">{{this.previousUniquePage}}</span></a>
+      <a *ngIf="this.nextUniquePage!==''" (click)="navigate(this.nextUniqueUrl)" style="float:right;cursor:pointer;color:white"><span style="position:relative;top:-9px;">{{this.nextUniquePage}}</span><i class="material-icons" style="font-size:30px;">navigate_next</i></a>
+  </div>
+</div>
