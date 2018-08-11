@@ -16,7 +16,7 @@ export class SlateComponent implements OnInit {
 
   // tslint:disable-next-line:no-shadowed-variable
   constructor(public navigationService: NavigationService, private router: Router, public LanguagesService: LanguagesService) {
-    this.navigationService.currentUniquePage = this.LanguagesService.uniqueTitle12;
+    this.navigationService.currentUniquePage = this.LanguagesService.uniqueTitle15;
   }
 
   ngOnInit() {

@@ -1,5 +1,5 @@
 <div class="container-fluid title-container" style="margin:170px auto 60px auto;">
-  <h1 style="margin-bottom:10px;">{{this.LanguagesService.uniqueTitle1}}</h1>
+  <h1 style="margin-bottom:10px;">{{this.LanguagesService.uniqueTitle3}}</h1>
   <div>
     <a *ngIf="this.previousUniquePage!==''"  (click)="navigate(this.previousUniqueUrl)" style="float:left;cursor:pointer"><i class="material-icons" style="font-size:30px;">navigate_before</i><span style="position:relative;top:-9px;">{{this.previousUniquePage}}</span></a>
     <a *ngIf="this.nextUniquePage!==''" (click)="navigate(this.nextUniqueUrl)" style="float:right;cursor:pointer"><span style="position:relative;top:-9px;">{{this.nextUniquePage}}</span><i class="material-icons" style="font-size:30px;">navigate_next</i></a>

@@ -17,7 +17,7 @@ export class NeroComponent implements OnInit {
 
   // tslint:disable-next-line:no-shadowed-variable
   constructor(public navigationService: NavigationService, private router: Router, public LanguagesService: LanguagesService) {
-    this.navigationService.currentUniquePage = this.LanguagesService.uniqueTitle9;
+    this.navigationService.currentUniquePage = this.LanguagesService.uniqueTitle7;
   }
 
   ngOnInit() {

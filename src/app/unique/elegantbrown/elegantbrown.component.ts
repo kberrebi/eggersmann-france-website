@@ -17,7 +17,7 @@ export class ElegantbrownComponent implements OnInit {
 
   // tslint:disable-next-line:no-shadowed-variable
   constructor(public navigationService: NavigationService, private router: Router, public LanguagesService: LanguagesService) {
-    this.navigationService.currentUniquePage = this.LanguagesService.uniqueTitle4;
+    this.navigationService.currentUniquePage = this.LanguagesService.uniqueTitle10;
   }
 
   ngOnInit() {
