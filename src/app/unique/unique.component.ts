@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatStepperModule } from '@angular/material/stepper';
+import { NavigationService } from '../navigation.service';
 import { LanguagesService } from '../languages.service';
 import { Router } from '@angular/router';
 
@@ -12,9 +12,10 @@ import { Router } from '@angular/router';
 
 export class UniqueComponent implements OnInit {
 
-  constructor(private router: Router, public languagesService: LanguagesService) { }
+  constructor(private router: Router, public languagesService: LanguagesService, public navigationService: NavigationService) { }
 
   ngOnInit() {
+    this.navigationService.currentPage = 'unique';
   }
 
   navigate(uniquePage) {

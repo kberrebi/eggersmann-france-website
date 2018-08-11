@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { NavigationService } from '../navigation.service';
 
 @Component({
   selector: 'app-contact',
@@ -12,9 +13,10 @@ export class ContactComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
 
-  constructor(private _formBuilder: FormBuilder) { }
+  constructor(private _formBuilder: FormBuilder, public navigationService: NavigationService) { }
 
   ngOnInit() {
+    this.navigationService.currentPage = 'contact';
     this.firstFormGroup = this._formBuilder.group({
       firstNameCtrl: ['', ]
     });

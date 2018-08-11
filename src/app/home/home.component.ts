@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LanguagesService } from '../languages.service';
+import { NavigationService } from '../navigation.service';
 
 @Component({
   selector: 'app-home',
@@ -16,9 +17,10 @@ export class HomeComponent implements OnInit {
   content4: string;
   content5: string;
 
-  constructor(public languagesService: LanguagesService) { }
+  constructor(public languagesService: LanguagesService, public navigationService: NavigationService) { }
 
   ngOnInit() {
+    this.navigationService.currentPage = 'home';
     this.title1 = this.languagesService.homeTitle1;
     this.title2 = this.languagesService.homeTitle2;
     this.content1 = this.languagesService.homeContent1;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService } from '../navigation.service';
 
 @Component({
   selector: 'app-e30',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class E30Component implements OnInit {
 
-  constructor() { }
+  constructor(public navigationService: NavigationService) { }
 
   ngOnInit() {
+    this.navigationService.currentPage = 'e30';
   }
 
 }

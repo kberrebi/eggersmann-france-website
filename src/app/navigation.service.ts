@@ -6,6 +6,8 @@ import { LanguagesService } from './languages.service';
 })
 export class NavigationService {
 
+  currentPage: string;
+
   currentLookbookPage = '';
   lookBookPages = [];
 

@@ -12,7 +12,8 @@ export class NavbarComponent implements OnInit {
   item2: string;
   item3: string;
 
-  constructor(public languagesService: LanguagesService) { }
+  constructor(public languagesService: LanguagesService) {
+  }
 
   ngOnInit() {
     this.item1 = this.languagesService.navItem1;

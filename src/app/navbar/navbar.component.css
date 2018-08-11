@@ -1,3 +1,17 @@
+.white-navbar{
+  background-color: rgb(255, 255, 255);
+  opacity: 0.96;
+}
+
+.black-navbar{
+  background-color: rgb(0, 0, 0);
+  opacity: 0.9;
+}
+
+.bg-light{
+  background-color: rgb(255, 255, 255) !important;
+}
+
 .top-right-link{
   font-family: 'Brandon_light';
   font-size:17px;
