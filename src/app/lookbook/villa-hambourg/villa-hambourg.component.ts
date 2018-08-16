@@ -21,6 +21,7 @@ export class VillaHambourgComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.navigationService.currentPage = 'lookbook';
     this.previousLookbookPage = this.navigationService.previousLookbookPage().text;
     this.previousLookbookUrl = this.navigationService.previousLookbookPage().url;
     this.nextLookbookPage = this.navigationService.nextLookbookPage().text;

@@ -14,6 +14,12 @@ export class NavigationService {
   currentUniquePage = '';
   uniquePages = [];
 
+  currentWorksPage = '';
+  worksPages = [];
+
+  currentE30Page = '';
+  e30Pages = [];
+
   constructor(public languagesService: LanguagesService) {
     this.lookBookPages = [{text: this.languagesService.lookbookTitle1, url: 'seaside'},
                           {text: this.languagesService.lookbookTitle2, url: 'london'},
@@ -57,7 +63,23 @@ export class NavigationService {
                         {text: this.languagesService.uniqueTitle13, url: 'lacquemate'},
                         {text: this.languagesService.uniqueTitle14, url: 'volcano'},
                         {text: this.languagesService.uniqueTitle15, url: 'slate'},
+                       ];
+    this.worksPages = [{text: this.languagesService.worksTitle1, url: 'works-black-stripes'},
+                       {text: this.languagesService.worksTitle2, url: 'works-mirror-type'},
+                       {text: this.languagesService.worksTitle3, url: 'works-turn'},
+                       {text: this.languagesService.worksTitle4, url: 'works-island'},
+                       {text: this.languagesService.worksTitle5, url: 'works-bridge'},
                       ];
+    this.e30Pages = [{text: this.languagesService.e30Title1, url: 'aluminum-quartzite'},
+                     {text: this.languagesService.e30Title2, url: 'concrete-vintage-oak'},
+                     {text: this.languagesService.e30Title3, url: 'laminate-pure-white'},
+                     {text: this.languagesService.e30Title4, url: 'stainless-excentric'},
+                     {text: this.languagesService.e30Title5, url: 'quartz-walnut'},
+                     {text: this.languagesService.e30Title6, url: 'oak-laminate'},
+                     {text: this.languagesService.e30AccessoriesTitle1, url: 'aluminum-niche-system'},
+                     {text: this.languagesService.e30AccessoriesTitle2, url: 'boxtec'},
+                     {text: this.languagesService.e30AccessoriesTitle3, url: 'aluminum-drawer-system'},
+                    ];
   }
 
   previousLookbookPage() {
@@ -78,6 +100,34 @@ export class NavigationService {
   nextUniquePage() {
     const indexCurrentPage = this.uniquePages.findIndex(element => element.text === this.currentUniquePage);
     return (indexCurrentPage !== this.uniquePages.length - 1) ? this.uniquePages[indexCurrentPage + 1] : {text: '', url: ''};
+  }
+
+  previousWorksPage() {
+    const indexCurrentPage = this.worksPages.findIndex(element => element.text === this.currentWorksPage);
+    return (indexCurrentPage !== 0) ? this.worksPages[indexCurrentPage - 1] : {text: '', url: ''};
+  }
+
+  nextWorksPage() {
+    const indexCurrentPage = this.worksPages.findIndex(element => element.text === this.currentWorksPage);
+    return (indexCurrentPage !== this.worksPages.length - 1) ? this.worksPages[indexCurrentPage + 1] : {text: '', url: ''};
+  }
+
+  previousE30Page() {
+    const indexCurrentPage = this.e30Pages.findIndex(element => element.text === this.currentE30Page);
+    return (indexCurrentPage !== 0) ? this.e30Pages[indexCurrentPage - 1] : {text: '', url: ''};
+  }
+
+  nextE30Page() {
+    const indexCurrentPage = this.e30Pages.findIndex(element => element.text === this.currentE30Page);
+    return (indexCurrentPage !== this.e30Pages.length - 1) ? this.e30Pages[indexCurrentPage + 1] : {text: '', url: ''};
+  }
+
+  isIn(pagesTab: any) {
+    let res = false;
+    pagesTab.forEach(element => {
+      res = res || element === this.currentPage;
+    });
+    return res;
   }
 
 }

@@ -113,6 +113,40 @@ export class LanguagesService {
   uniqueDes14: string;
   uniqueDes15: string;
 
+  worksIntro: string;
+  worksTitle1: string;
+  worksTitle2: string;
+  worksTitle3: string;
+  worksTitle4: string;
+  worksTitle5: string;
+  worksDes1: string;
+  worksDes2: string;
+  worksDes3: string;
+  worksDes4: string;
+  worksDes5: string;
+
+  e30Intro: string;
+  e30Title1: string;
+  e30Title2: string;
+  e30Title3: string;
+  e30Title4: string;
+  e30Title5: string;
+  e30Title6: string;
+  e30Des1: string;
+  e30Des2: string;
+  e30Des3: string;
+  e30Des4: string;
+  e30Des5: string;
+  e30Des6: string;
+  e30Accessories: string;
+  e30AccessoriesTitle1: string;
+  e30AccessoriesTitle2: string;
+  e30AccessoriesTitle3: string;
+  e30AccessoriesDes1: string;
+  e30AccessoriesDes2: string;
+  e30AccessoriesDes3: string;
+
+
 
   // French version of contents
   navItemFr1 = 'Accueil';
@@ -245,7 +279,40 @@ export class LanguagesService {
   uniqueDes14_Fr = 'Granite';
   uniqueDes15_Fr = 'Montank Black Slate';
 
-  // English version of contents
+  worksIntro_Fr = 'Le concept de work’s repose sur la vision d’une cuisine "atelier" qui met l’accent' +
+  'sur la fonctionnalité, en plus de l’esthétique et du design. Petites distances, organisation parfaite,' +
+  'accès, structure, vision d’ensemble - semblable à une cuisine professionelle "artisanale", cuisiner' +
+  'devient sophistiqué avec work’s.';
+  worksTitle1_Fr = 'work’s black stripes';
+  worksTitle2_Fr = 'work’s miroir';
+  worksTitle3_Fr = 'work’s turn';
+  worksTitle4_Fr = 'work’s islands';
+  worksTitle5_Fr = 'work’s bridge';
+  e30Intro_Fr = 'Grâce à la fabrication uniquement sur commande, nous pouvons également réaliser des commandes' +
+  'personnalisées en parallèle à notre gamme très large de séries. Le point fort de notre développement produit' +
+  'réside sur le design contemporain et moderne. En termes de qualité, nous utilisons exclusivement des composants' +
+  'de première qualité, en cherchant la meilleure solution technique pour tout profil d’exigences.';
+  e30Title1_Fr = 'Aluminium Quartzite';
+  e30Title2_Fr = 'Béton Chêne Bois Ancien';
+  e30Title3_Fr = 'Stratifié blanc pur';
+  e30Title4_Fr = 'Inox tourbilloné';
+  e30Title5_Fr = 'Quartz Noyer';
+  e30Title6_Fr = 'Chêne Stratifié';
+  e30Des1_Fr = 'Aluminium Quartzite';
+  e30Des2_Fr = 'Inox, Bois authentique';
+  e30Des3_Fr = 'Inox, Stratifié';
+  e30Des4_Fr = 'Inox, Laque Mate';
+  e30Des5_Fr = 'Quartz, Noyer';
+  e30Des6_Fr = 'Stratifié, Inox';
+  e30Accessories_Fr = 'Accessoires';
+  e30AccessoriesTitle1_Fr = 'Aluminium système pour niche';
+  e30AccessoriesTitle2_Fr = 'Boxtec';
+  e30AccessoriesTitle3_Fr = 'Tiroirs Aluminium';
+  e30AccessoriesDes1_Fr = 'Aluminium';
+  e30AccessoriesDes2_Fr = 'Aluminium, Bois';
+  e30AccessoriesDes3_Fr = 'Aluminium';
+
+  // ENGLISH ----------------------------------------------------------------------------------------------------
   navItemEn1 = 'Home';
   navItemEn2 = 'Distributors';
   navItemEn3 = 'Contact';
@@ -323,7 +390,7 @@ export class LanguagesService {
   lookbookDes14_En = 'quartz-glass, matt lacquer';
   lookbookDes15_En = 'porphyry lava, matt lacquer';
   lookbookDes16_En = 'Mineral, high-gloss finish';
-  lookbookDes17_En = 'basalt stone, aluminium';
+  lookbookDes17_En = 'basalt stone, aluminum';
   lookbookDes18_En = 'granite, glass';
   lookbookDes19_En = 'high-gloss lacquer, stainless steel silvertouch';
   lookbookDes20_En = 'quartzite, high-gloss finish';
@@ -370,6 +437,40 @@ export class LanguagesService {
   uniqueDes13_En = 'Quartzite, Laque Mate';
   uniqueDes14_En = 'Granite';
   uniqueDes15_En = 'Ardoise Montank Black';
+
+  worksIntro_En = 'The concept of the work’s is based on the vision of a kitchen "workshop" that places emphasis on the functionality' +
+  'in addition' +
+  'to aesthetics and design. Short distances, perfect arrangement, access, structure, overview - similar to a professional kitchen' +
+  '"skilled" cooking' +
+  'becomes sophisticated with the work’s.';
+  worksTitle1_En = 'work’s black stripes';
+  worksTitle2_En = 'work’s mirror type';
+  worksTitle3_En = 'work’s turn';
+  worksTitle4_En = 'work’s islands';
+  worksTitle5_En = 'work’s bridge';
+  e30Intro_En = 'By the exclusively order-based production, we can cater for any special requirements in addition to the extensive' +
+  'standard range. The focus of our product development is on contemporary and modern design. Only top quality components are used,' +
+  'whereby we look for the best possible technical solution for each requirement profile. ';
+  e30Title1_En = 'Aluminum Quartzite';
+  e30Title2_En = 'Concrete Vintage Oak';
+  e30Title3_En = 'Laminate pure white';
+  e30Title4_En = 'Stainless eccentric';
+  e30Title5_En = 'Quartz, Walnut';
+  e30Title6_En = 'Oak, Laminate';
+  e30Des1_En = 'Aluminum Quartzite';
+  e30Des2_En = 'Stainless Steel, Ebony';
+  e30Des3_En = 'Stainless steel, Elm';
+  e30Des4_En = 'Stainless, Matt Lacquer';
+  e30Des5_En = 'Quartz, Walnut';
+  e30Des6_En = 'Oak, Laminate';
+  e30Accessories_En = 'Accessories';
+  e30AccessoriesTitle1_En = 'Aluminum Niche System';
+  e30AccessoriesTitle2_En = 'Boxtec';
+  e30AccessoriesTitle3_En = 'Aluminum Drawer System';
+  e30AccessoriesDes1_En = 'Aluminum';
+  e30AccessoriesDes2_En = 'Aluminum, Wood';
+  e30AccessoriesDes3_En = 'Aluminum';
+
 
   constructor() {
     this.setLanguage('fr');
@@ -480,6 +581,33 @@ export class LanguagesService {
         this.uniqueDes13 = this.uniqueDes13_Fr;
         this.uniqueDes14 = this.uniqueDes14_Fr;
         this.uniqueDes15 = this.uniqueDes15_Fr;
+        this.worksIntro = this.worksIntro_Fr;
+        this.worksTitle1 = this.worksTitle1_Fr;
+        this.worksTitle2 = this.worksTitle2_Fr;
+        this.worksTitle3 = this.worksTitle3_Fr;
+        this.worksTitle4 = this.worksTitle4_Fr;
+        this.worksTitle5 = this.worksTitle5_Fr;
+
+        this.e30Intro = this.e30Intro_Fr;
+        this.e30Title1 = this.e30Title1_Fr;
+        this.e30Title2 = this.e30Title2_Fr;
+        this.e30Title3 = this.e30Title3_Fr;
+        this.e30Title4 = this.e30Title4_Fr;
+        this.e30Title5 = this.e30Title5_Fr;
+        this.e30Title6 = this.e30Title6_Fr;
+        this.e30Des1 = this.e30Des1_Fr;
+        this.e30Des2 = this.e30Des2_Fr;
+        this.e30Des3 = this.e30Des3_Fr;
+        this.e30Des4 = this.e30Des4_Fr;
+        this.e30Des5 = this.e30Des5_Fr;
+        this.e30Des6 = this.e30Des6_Fr;
+        this.e30Accessories = this.e30Accessories_Fr;
+        this.e30AccessoriesTitle1 = this.e30AccessoriesTitle1_Fr;
+        this.e30AccessoriesTitle2 = this.e30AccessoriesTitle2_Fr;
+        this.e30AccessoriesTitle3 = this.e30AccessoriesTitle3_Fr;
+        this.e30AccessoriesDes1 = this.e30AccessoriesDes1_Fr;
+        this.e30AccessoriesDes2 = this.e30AccessoriesDes2_Fr;
+        this.e30AccessoriesDes3 = this.e30AccessoriesDes3_Fr;
       } else if (this.language === 'en') {
         this.navItem1 = this.navItemEn1;
         this.navItem2 = this.navItemEn2;
@@ -581,6 +709,33 @@ export class LanguagesService {
         this.uniqueDes13 = this.uniqueDes13_En;
         this.uniqueDes14 = this.uniqueDes14_En;
         this.uniqueDes15 = this.uniqueDes15_En;
+        this.worksIntro = this.worksIntro_En;
+        this.worksTitle1 = this.worksTitle1_En;
+        this.worksTitle2 = this.worksTitle2_En;
+        this.worksTitle3 = this.worksTitle3_En;
+        this.worksTitle4 = this.worksTitle4_En;
+        this.worksTitle5 = this.worksTitle5_En;
+
+        this.e30Intro = this.e30Intro_En;
+        this.e30Title1 = this.e30Title1_En;
+        this.e30Title2 = this.e30Title2_En;
+        this.e30Title3 = this.e30Title3_En;
+        this.e30Title4 = this.e30Title4_En;
+        this.e30Title5 = this.e30Title5_En;
+        this.e30Title6 = this.e30Title6_En;
+        this.e30Des1 = this.e30Des1_En;
+        this.e30Des2 = this.e30Des2_En;
+        this.e30Des3 = this.e30Des3_En;
+        this.e30Des4 = this.e30Des4_En;
+        this.e30Des5 = this.e30Des5_En;
+        this.e30Des6 = this.e30Des6_En;
+        this.e30Accessories = this.e30Accessories_En;
+        this.e30AccessoriesTitle1 = this.e30AccessoriesTitle1_En;
+        this.e30AccessoriesTitle2 = this.e30AccessoriesTitle2_En;
+        this.e30AccessoriesTitle3 = this.e30AccessoriesTitle3_En;
+        this.e30AccessoriesDes1 = this.e30AccessoriesDes1_En;
+        this.e30AccessoriesDes2 = this.e30AccessoriesDes2_En;
+        this.e30AccessoriesDes3 = this.e30AccessoriesDes3_En;
       }
     }
   }

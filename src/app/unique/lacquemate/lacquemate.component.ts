@@ -21,6 +21,7 @@ export class LacquemateComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.navigationService.currentPage = 'unique';
     this.previousUniquePage = this.navigationService.previousUniquePage().text;
     this.previousUniqueUrl = this.navigationService.previousUniquePage().url;
     this.nextUniquePage = this.navigationService.nextUniquePage().text;

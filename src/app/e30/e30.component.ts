@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguagesService } from '../languages.service';
+import { Router } from '@angular/router';
 import { NavigationService } from '../navigation.service';
 
 @Component({
@@ -8,10 +10,14 @@ import { NavigationService } from '../navigation.service';
 })
 export class E30Component implements OnInit {
 
-  constructor(public navigationService: NavigationService) { }
+  constructor(private router: Router, public languagesService: LanguagesService, public navigationService: NavigationService) { }
 
   ngOnInit() {
     this.navigationService.currentPage = 'e30';
+  }
+
+  navigate(e30Page) {
+    this.router.navigateByUrl('/e30/' + e30Page);
   }
 
 }

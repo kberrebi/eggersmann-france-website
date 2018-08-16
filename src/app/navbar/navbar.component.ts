@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LanguagesService } from '../languages.service';
+import { NavigationService } from '../navigation.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,17 +9,10 @@ import { LanguagesService } from '../languages.service';
 })
 export class NavbarComponent implements OnInit {
 
-  item1: string;
-  item2: string;
-  item3: string;
-
-  constructor(public languagesService: LanguagesService) {
+  constructor(public languagesService: LanguagesService, public navigationService: NavigationService) {
   }
 
   ngOnInit() {
-    this.item1 = this.languagesService.navItem1;
-    this.item2 = this.languagesService.navItem2;
-    this.item3 = this.languagesService.navItem3;
   }
 
 }

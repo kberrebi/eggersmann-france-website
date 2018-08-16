@@ -6,8 +6,7 @@ import { MatButtonModule,
          MatStepperModule,
          MatFormFieldModule,
          MatInputModule,
-         MatRadioModule
-} from '@angular/material';
+         MatRadioModule} from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -15,7 +14,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -66,11 +64,26 @@ import { LacquemateComponent } from './unique/lacquemate/lacquemate.component';
 import { VolcanoComponent } from './unique/volcano/volcano.component';
 import { SlateComponent } from './unique/slate/slate.component';
 import { loadQueryList } from '../../node_modules/@angular/core/src/render3/instructions';
+import { DistributorsComponent } from './distributors/distributors.component';
+import { WorksBlackStripesComponent } from './works/works-black-stripes/works-black-stripes.component';
+import { WorksMirrorTypeComponent } from './works/works-mirror-type/works-mirror-type.component';
+import { WorksTurnComponent } from './works/works-turn/works-turn.component';
+import { WorksIslandComponent } from './works/works-island/works-island.component';
+import { WorksBridgeComponent } from './works/works-bridge/works-bridge.component';
+import { AluminumQuartziteComponent } from './e30/aluminum-quartzite/aluminum-quartzite.component';
+import { ConcreteVintageOakComponent } from './e30/concrete-vintage-oak/concrete-vintage-oak.component';
+import { LaminatePureWhiteComponent } from './e30/laminate-pure-white/laminate-pure-white.component';
+import { StainlessExcentricComponent } from './e30/stainless-excentric/stainless-excentric.component';
+import { QuartzWalnutComponent } from './e30/quartz-walnut/quartz-walnut.component';
+import { OakLaminateComponent } from './e30/oak-laminate/oak-laminate.component';
+import { AluminumNicheSystemComponent } from './e30/aluminum-niche-system/aluminum-niche-system.component';
+import { BoxtecComponent } from './e30/boxtec/boxtec.component';
+import { AluminumDrawerSystemComponent } from './e30/aluminum-drawer-system/aluminum-drawer-system.component';
 
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'distributors', component: ProductsComponent },
+  { path: 'distributors', component: DistributorsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'lookbook', component: LookbookComponent },
   { path: 'lookbook/seaside', component: SeasideResortComponent },
@@ -117,6 +130,21 @@ const appRoutes: Routes = [
   { path: 'programme', component: E30Component },
   { path: 'unique', component: UniqueComponent },
   { path: 'works', component: WorksComponent },
+  { path: 'works/works-black-stripes', component: WorksBlackStripesComponent },
+  { path: 'works/works-bridge', component: WorksBridgeComponent },
+  { path: 'works/works-island', component: WorksIslandComponent },
+  { path: 'works/works-black-stripes', component: WorksBlackStripesComponent },
+  { path: 'works/works-mirror-type', component: WorksMirrorTypeComponent },
+  { path: 'works/works-turn', component: WorksTurnComponent },
+  { path: 'e30/aluminum-quartzite', component: AluminumQuartziteComponent },
+  { path: 'e30/concrete-vintage-oak', component: ConcreteVintageOakComponent },
+  { path: 'e30/laminate-pure-white', component: LaminatePureWhiteComponent },
+  { path: 'e30/stainless-excentric', component: StainlessExcentricComponent },
+  { path: 'e30/quartz-walnut', component: QuartzWalnutComponent },
+  { path: 'e30/oak-laminate', component: OakLaminateComponent },
+  { path: 'e30/aluminum-niche-system', component: AluminumNicheSystemComponent },
+  { path: 'e30/boxtec', component: BoxtecComponent },
+  { path: 'e30/aluminum-drawer-system', component: AluminumDrawerSystemComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 
@@ -125,7 +153,6 @@ const appRoutes: Routes = [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    ProductsComponent,
     ContactComponent,
     FooterComponent,
     LookbookComponent,
@@ -172,7 +199,22 @@ const appRoutes: Routes = [
     SilverTouchComponent,
     LacquemateComponent,
     VolcanoComponent,
-    SlateComponent
+    SlateComponent,
+    DistributorsComponent,
+    WorksBlackStripesComponent,
+    WorksMirrorTypeComponent,
+    WorksTurnComponent,
+    WorksIslandComponent,
+    WorksBridgeComponent,
+    AluminumQuartziteComponent,
+    ConcreteVintageOakComponent,
+    LaminatePureWhiteComponent,
+    StainlessExcentricComponent,
+    QuartzWalnutComponent,
+    OakLaminateComponent,
+    AluminumNicheSystemComponent,
+    BoxtecComponent,
+    AluminumDrawerSystemComponent
   ],
   imports: [
     BrowserModule,

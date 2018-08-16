@@ -1,1 +1,74 @@
-<h1 style="margin-top: 300px;margin-left:700px;margin-bottom: 300px;">Working on it...</h1>
+<div class="container-fluid gallery-container" style="background-color:#232323;">
+  <div class="container-fluid" style="margin:0px auto 130px auto;">
+    <div class="container-fluid" style="text-align:center;">
+      <img style="margin-bottom:50px;padding-top:150px;" src="../../assets/images/works/works-logo.png" />
+    </div>
+
+    <p class="page-description text-center" style="color:white;">{{this.languagesService.worksIntro}}</p>
+
+  </div>
+
+    <div class="tz-gallery">
+
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail" (click)="navigate('works-black-stripes')">
+                  <a class="lightbox">
+                      <img class="image" src="../../assets/images/works/works1.jpg">
+                  </a>
+                  <div class="caption">
+                      <h3>{{this.languagesService.worksTitle1}}</h3>
+                      <p>{{this.languagesService.worksDes1}}</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <div class="thumbnail" (click)="navigate('works-mirror-type')">
+                  <a class="lightbox">
+                      <img class="image" src="../../assets/images/works/works2.jpg">
+                  </a>
+                  <div class="caption">
+                      <h3>{{this.languagesService.worksTitle2}}</h3>
+                      <p>{{this.languagesService.worksDes2}}</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <div class="thumbnail" (click)="navigate('works-turn')">
+                  <a class="lightbox">
+                      <img class="image" src="../../assets/images/works/works3.jpg">
+                  </a>
+                  <div class="caption">
+                      <h3>{{this.languagesService.worksTitle3}}</h3>
+                      <p>{{this.languagesService.worksDes3}}</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+              <div class="thumbnail" (click)="navigate('works-island')">
+                  <a class="lightbox">
+                      <img class="image" src="../../assets/images/works/works4.jpg">
+                  </a>
+                  <div class="caption">
+                      <h3>{{this.languagesService.worksTitle4}}</h3>
+                      <p>{{this.languagesService.worksDes4}}</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+                <div class="thumbnail" (click)="navigate('works-bridge')">
+                    <a class="lightbox">
+                        <img class="image" src="../../assets/images/works/works5.jpg">
+                    </a>
+                    <div class="caption">
+                        <h3>{{this.languagesService.worksTitle5}}</h3>
+                        <p>{{this.languagesService.worksDes5}}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

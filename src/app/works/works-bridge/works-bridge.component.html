@@ -1,0 +1,22 @@
+<div style="background-color:#232323;">
+  <div class="container-fluid title-container" style="margin:0px auto 60px auto;">
+    <h1 style="margin-bottom:10px;">{{this.LanguagesService.worksTitle5}}</h1>
+    <div>
+      <a *ngIf="this.previousWorksPage!==''"  (click)="navigate(this.previousWorksUrl)" style="float:left;cursor:pointer;color:white"><i class="material-icons" style="font-size:30px;">navigate_before</i><span style="position:relative;top:-9px;">{{this.previousWorksPage}}</span></a>
+      <a *ngIf="this.nextWorksPage!==''" (click)="navigate(this.nextWorksUrl)" style="float:right;cursor:pointer;color:white"><span style="position:relative;top:-9px;">{{this.nextWorksPage}}</span><i class="material-icons" style="font-size:30px;">navigate_next</i></a>
+    </div>
+  </div>
+  <div id="gallery" class="container-fluid" style="margin-bottom:10px">
+    <div class="col-xs-12 col-bottom-border col-image gallery-image" style="background-image:url('../../../assets/images/works/bridge/WORKS_001.jpg')"></div>
+    <div class="row gallery-row">
+      <div class="col-xs-12 col-md-4 col-bottom-border col-right-border col-image gallery-image" style="background-image:url('../../../assets/images/works/bridge/csm_WORKS_bridge2016_002_44921cbfe4.jpg')"></div>
+      <div class="col-xs-12 col-md-8 col-bottom-border col-image gallery-image" style="background-image:url('../../../assets/images/works/bridge/works_bridge03_1400x800.jpg')"></div>
+    </div>
+    <div class="col-xs-12 col-bottom-border col-image gallery-image" style="background-image:url('../../../assets/images/works/bridge/csm_WORKS_bridge2016_004_fe5a85a6a8.jpg')"></div>
+    <div class="col-xs-12 col-bottom-border col-image gallery-image" style="background-image:url('../../../assets/images/works/bridge/works_bridge05_1400x800.jpg')"></div>
+  </div>
+  <div style="height:140px;">
+      <a *ngIf="this.previousWorksPage!==''"  (click)="navigate(this.previousWorksUrl)" style="float:left;cursor:pointer;color:white"><i class="material-icons" style="font-size:30px;">navigate_before</i><span style="position:relative;top:-9px;">{{this.previousWorksPage}}</span></a>
+      <a *ngIf="this.nextWorksPage!==''" (click)="navigate(this.nextWorksUrl)" style="float:right;cursor:pointer;color:white"><span style="position:relative;top:-9px;">{{this.nextWorksPage}}</span><i class="material-icons" style="font-size:30px;">navigate_next</i></a>
+  </div>
+</div>
