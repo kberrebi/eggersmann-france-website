@@ -127,7 +127,7 @@ const appRoutes: Routes = [
   { path: 'unique/taj-mahal', component: TajMahalComponent },
   { path: 'unique/valcamonica', component: ValcamonicaComponent },
   { path: 'unique/volcano', component: VolcanoComponent },
-  { path: 'programme', component: E30Component },
+  { path: 'e30', component: E30Component },
   { path: 'unique', component: UniqueComponent },
   { path: 'works', component: WorksComponent },
   { path: 'works/works-black-stripes', component: WorksBlackStripesComponent },

@@ -158,35 +158,35 @@ export class LanguagesService {
   navItemFr7 = 'work\'s';
   homeTitleFr1 = 'eggersmann';
   homeTitleFr2 = 'Titre ici';
-  homeContentFr1 =  'Notre choix, tout miser sur une personnalisation maximale plutôt que' +
-  'sur la production en série. Les gestes et techniques ancestrales des Maîtres ébénistes et' +
-  'des meilleurs professionnels qui ont fait eggersmann depuis plus de 110 années nous inspirent.' +
+  homeContentFr1 =  'Notre choix, tout miser sur une personnalisation maximale plutôt que ' +
+  'sur la production en série. Les gestes et techniques ancestrales des Maîtres ébénistes et ' +
+  'des meilleurs professionnels qui ont fait eggersmann depuis plus de 110 années nous inspirent. ' +
   'Nous avons choisi d’en améliorer les possibilités au moyen de machines ultra-modernes. ';
-  homeContentFr2 =  'C’est au travers de la symbiose entre volonté et possibilités que naissent nos' +
-  'ensembles de cuisines sur mesure, esthétiques et luxueux. Nos clients, sont ceux qui en affectionnent' +
-  'le résultat. Respectés et accompagnés par nos partenaires, ils bénéficient de ce qui peut être réalisé' +
+  homeContentFr2 =  'C’est au travers de la symbiose entre volonté et possibilités que naissent nos ' +
+  'ensembles de cuisines sur mesure, esthétiques et luxueux. Nos clients, sont ceux qui en affectionnent ' +
+  'le résultat. Respectés et accompagnés par nos partenaires, ils bénéficient de ce qui peut être réalisé ' +
   'de mieux aujourd’hui dans l’univers de la cuisine individuelle.';
-  homeContentFr3 =  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, amet.' +
-  'Nostrum rem cum laudantium voluptatem. Dignissimos, eveniet quasi hic totam corporis' +
+  homeContentFr3 =  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, amet. ' +
+  'Nostrum rem cum laudantium voluptatem. Dignissimos, eveniet quasi hic totam corporis ' +
   'dolore nesciunt, asperiores perspiciatis similique a fugit, aspernatur ducimus.';
-  homeContentFr4 =  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, amet.' +
-  'Nostrum rem cum laudantium voluptatem. Dignissimos, eveniet quasi hic totam corporis' +
+  homeContentFr4 =  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, amet. ' +
+  'Nostrum rem cum laudantium voluptatem. Dignissimos, eveniet quasi hic totam corporis ' +
   'dolore nesciunt, asperiores perspiciatis similique a fugit, aspernatur ducimus.';
-  homeContentFr5 =  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, amet.' +
-  'Nostrum rem cum laudantium voluptatem. Dignissimos, eveniet quasi hic totam corporis' +
+  homeContentFr5 =  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, amet. ' +
+  'Nostrum rem cum laudantium voluptatem. Dignissimos, eveniet quasi hic totam corporis ' +
   'dolore nesciunt, asperiores perspiciatis similique a fugit, aspernatur ducimus.';
-  lookbookIntro_Fr = 'Rien ne vaut des photos de projets achevés pour présenter de manière aussi réaliste et authentique que possible' +
+  lookbookIntro_Fr = 'Rien ne vaut des photos de projets achevés pour présenter de manière aussi réaliste et authentique que possible ' +
   'l’espace de vie qu’est la cuisine. Photographiées aux domiciles de nos clients, ces cuisines illustrent de manière exemplaire ' +
-  'l’abondance de matériaux,' +
-  'de couleurs et de possibilités d’agencement qui permettent de créer des solutions sur mesure et personnalisées pour chacun.' +
-  'Et ces images éliminent la' +
-  'possibilité, comme en studio photographique, de manipuler les choses pour les embellir ou bien de travailler dans des situations' +
-  'spatiales peu réalistes.' +
-  'Les installations présentées ici sont photographiées « live on stage » au sens strict du terme et elles offrent une grande' +
-  'authenticité. Nous adressons' +
-  'nos remerciements à tous les maîtres d’ouvrage qui nous ont permis ces reportages photos. Ainsi, évidemment, qu’aux partenaires' +
-  'eggersmann qui ont conçu' +
-  'ces cuisines avec enthousiasme, savoir-faire et beaucoup de finesse.';
+  'l’abondance de matériaux, ' +
+  'de couleurs et de possibilités d’agencement qui permettent de créer des solutions sur mesure et personnalisées pour chacun. ' +
+  'Et ces images éliminent la ' +
+  'possibilité, comme en studio photographique, de manipuler les choses pour les embellir ou bien de travailler dans des situations ' +
+  'spatiales peu réalistes. ' +
+  'Les installations présentées ici sont photographiées « live on stage » au sens strict du terme et elles offrent une grande ' +
+  'authenticité. Nous adressons ' +
+  'nos remerciements à tous les maîtres d’ouvrage qui nous ont permis ces reportages photos. Ainsi, évidemment, qu’aux partenaires ' +
+  'eggersmann qui ont conçu ' +
+  'ces cuisines avec enthousiasme, savoir-faire et beaucoup de finesse. ';
   lookbookTitle1_Fr = 'Seaside Resort';
   lookbookTitle2_Fr = 'Villa London';
   lookbookTitle3_Fr = 'Villa Salzburg';
@@ -240,13 +240,13 @@ export class LanguagesService {
   lookbookDes25_Fr = 'corian, placage';
   lookbookDes26_Fr = 'matériau minéral, acrylux camé';
 
-  uniqueIntro_Fr = 'Depuis 2006, eggersmann a fait de l’idée une réalité : fabriquer et toujours renouveler' +
-  'une collection de cuisines et d’équipements dont l’intemporalité et le minimalisme soient difficilement' +
-  'égalables. Et le nom UNIQUE parle de lui-même. L’accent est mis sur l’individualité ainsi que sur des' +
-  'matériaux exceptionnels et prestigieux. L’homogénéité de toutes les surfaces concernées est un principe' +
-  'fondamental de ce système. Ainsi, les surfaces frontales et latérales, de même que les éléments de préhension' +
-  'et les surfaces de travail sont tous en un seul et même matériau. En plus du CORIAN®, diverses variétés de' +
-  'pierre et de granit peuvent être utilisées, de même que des pierres composites. En outre, des détails complexes' +
+  uniqueIntro_Fr = 'Depuis 2006, eggersmann a fait de l’idée une réalité : fabriquer et toujours renouveler ' +
+  'une collection de cuisines et d’équipements dont l’intemporalité et le minimalisme soient difficilement ' +
+  'égalables. Et le nom UNIQUE parle de lui-même. L’accent est mis sur l’individualité ainsi que sur des ' +
+  'matériaux exceptionnels et prestigieux. L’homogénéité de toutes les surfaces concernées est un principe ' +
+  'fondamental de ce système. Ainsi, les surfaces frontales et latérales, de même que les éléments de préhension ' +
+  'et les surfaces de travail sont tous en un seul et même matériau. En plus du CORIAN®, diverses variétés de ' +
+  'pierre et de granit peuvent être utilisées, de même que des pierres composites. En outre, des détails complexes ' +
   'tels que des joints d’onglet sont utilisés sur les façades et les parties latérales.';
   uniqueTitle1_Fr = 'Beola Nera';
   uniqueTitle2_Fr = 'Carbono';
@@ -279,18 +279,18 @@ export class LanguagesService {
   uniqueDes14_Fr = 'Granite';
   uniqueDes15_Fr = 'Montank Black Slate';
 
-  worksIntro_Fr = 'Le concept de work’s repose sur la vision d’une cuisine "atelier" qui met l’accent' +
-  'sur la fonctionnalité, en plus de l’esthétique et du design. Petites distances, organisation parfaite,' +
-  'accès, structure, vision d’ensemble - semblable à une cuisine professionelle "artisanale", cuisiner' +
+  worksIntro_Fr = 'Le concept de work’s repose sur la vision d’une cuisine "atelier" qui met l’accent ' +
+  'sur la fonctionnalité, en plus de l’esthétique et du design. Petites distances, organisation parfaite, ' +
+  'accès, structure, vision d’ensemble - semblable à une cuisine professionelle "artisanale", cuisiner ' +
   'devient sophistiqué avec work’s.';
   worksTitle1_Fr = 'work’s black stripes';
   worksTitle2_Fr = 'work’s miroir';
   worksTitle3_Fr = 'work’s turn';
   worksTitle4_Fr = 'work’s islands';
   worksTitle5_Fr = 'work’s bridge';
-  e30Intro_Fr = 'Grâce à la fabrication uniquement sur commande, nous pouvons également réaliser des commandes' +
-  'personnalisées en parallèle à notre gamme très large de séries. Le point fort de notre développement produit' +
-  'réside sur le design contemporain et moderne. En termes de qualité, nous utilisons exclusivement des composants' +
+  e30Intro_Fr = 'Grâce à la fabrication uniquement sur commande, nous pouvons également réaliser des commandes ' +
+  'personnalisées en parallèle à notre gamme très large de séries. Le point fort de notre développement produit ' +
+  'réside sur le design contemporain et moderne. En termes de qualité, nous utilisons exclusivement des composants ' +
   'de première qualité, en cherchant la meilleure solution technique pour tout profil d’exigences.';
   e30Title1_Fr = 'Aluminium Quartzite';
   e30Title2_Fr = 'Béton Chêne Bois Ancien';
@@ -322,31 +322,31 @@ export class LanguagesService {
   navItemEn7 = 'work\'s';
   homeTitleEn1 = 'Title here';
   homeTitleEn2 = 'Title here';
-  homeContentEn1 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas' +
-  'tempore error accusamus dolorem aperiam suscipit ipsam. Praesentium distinctio dolore eos eius quos' +
+  homeContentEn1 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas ' +
+  'tempore error accusamus dolorem aperiam suscipit ipsam. Praesentium distinctio dolore eos eius quos ' +
   'perspiciatis ipsam repellat? Nulla impedit sit necessitatibus!';
-  homeContentEn2 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas' +
-  'tempore error accusamus dolorem aperiam suscipit ipsam. Praesentium distinctio dolore eos eius quos' +
+  homeContentEn2 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas ' +
+  'tempore error accusamus dolorem aperiam suscipit ipsam. Praesentium distinctio dolore eos eius quos ' +
   'perspiciatis ipsam repellat? Nulla impedit sit necessitatibus!';
-  homeContentEn3 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas' +
-  'tempore error accusamus dolorem aperiam suscipit ipsam. Praesentium distinctio dolore eos eius quos' +
+  homeContentEn3 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas ' +
+  'tempore error accusamus dolorem aperiam suscipit ipsam. Praesentium distinctio dolore eos eius quos ' +
   'perspiciatis ipsam repellat? Nulla impedit sit necessitatibus!';
-  homeContentEn4 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas' +
-  'tempore error accusamus dolorem aperiam suscipit ipsam. Praesentium distinctio dolore eos eius quos' +
+  homeContentEn4 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas ' +
+  'tempore error accusamus dolorem aperiam suscipit ipsam. Praesentium distinctio dolore eos eius quos ' +
   'perspiciatis ipsam repellat? Nulla impedit sit necessitatibus!';
-  homeContentEn5 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas' +
-  'tempore error accusamus dolorem aperiam suscipit ipsam. Praesentium distinctio dolore eos eius quos' +
+  homeContentEn5 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas ' +
+  'tempore error accusamus dolorem aperiam suscipit ipsam. Praesentium distinctio dolore eos eius quos ' +
   'perspiciatis ipsam repellat? Nulla impedit sit necessitatibus!';
-  lookbookIntro_En = 'Kitchen space is best presented most realistically and authentically with pictures of finished jobs.' +
-  'These kitchens,' +
-  'which were photographed in our customers’ homes, represent examples of the abundance of materials, colours and planning' +
-  'possibilities for' +
-  'creating custom solutions for individual people. And they prohibit us from manipulating things to make them look better or' +
-  'working with unrealistic' +
-  'space situations, as in a photo studio. The equipment shown is literally portrayed “live on stage” and offers the highest' +
-  'authenticity. We thank all those' +
-  'clients who made these pictorial reports possible. And, of course, also all eggersmann partners who planned these kitchens' +
-  'with enthusiasm, expertise and a' +
+  lookbookIntro_En = 'Kitchen space is best presented most realistically and authentically with pictures of finished jobs. ' +
+  'These kitchens, ' +
+  'which were photographed in our customers’ homes, represent examples of the abundance of materials, colours and planning ' +
+  'possibilities for ' +
+  'creating custom solutions for individual people. And they prohibit us from manipulating things to make them look better or ' +
+  'working with unrealistic ' +
+  'space situations, as in a photo studio. The equipment shown is literally portrayed “live on stage” and offers the highest ' +
+  'authenticity. We thank all those ' +
+  'clients who made these pictorial reports possible. And, of course, also all eggersmann partners who planned these kitchens ' +
+  'with enthusiasm, expertise and a ' +
   'great deal of sensitivity.';
   lookbookTitle1_En = 'Seaside Resort';
   lookbookTitle2_En = 'Villa London';
@@ -401,11 +401,11 @@ export class LanguagesService {
   lookbookDes25_En = 'corian, block veneer';
   lookbookDes26_En = 'mineral, acrylux camé';
 
-  uniqueIntro_En = 'Since 2006, eggersmann has been busy realising the idea of manufacturing and further developing a collection' +
-  'of kitchens and equipment which can hardly be matched for its timelessness and minimalism. The name UNIQUE really says it all.' +
-  'The focus is on individuality and also exceptional and exquisite materials. A decisive and fundamental idea for this system is the' +
-  'homogeneity of all relevant surfaces. Front and side surfaces and also handles and working surfaces are made of just one identical' +
-  'material. In addition to CORIAN®, various types of stone and granite as well as mineral materials can be used. Intricate details' +
+  uniqueIntro_En = 'Since 2006, eggersmann has been busy realising the idea of manufacturing and further developing a collection ' +
+  'of kitchens and equipment which can hardly be matched for its timelessness and minimalism. The name UNIQUE really says it all. ' +
+  'The focus is on individuality and also exceptional and exquisite materials. A decisive and fundamental idea for this system is the ' +
+  'homogeneity of all relevant surfaces. Front and side surfaces and also handles and working surfaces are made of just one identical ' +
+  'material. In addition to CORIAN®, various types of stone and granite as well as mineral materials can be used. Intricate details ' +
   'such as mitre joints are applied on fronts and side panels.';
   uniqueTitle1_En = 'Beola Nera';
   uniqueTitle2_En = 'Carbono';
@@ -438,18 +438,18 @@ export class LanguagesService {
   uniqueDes14_En = 'Granite';
   uniqueDes15_En = 'Ardoise Montank Black';
 
-  worksIntro_En = 'The concept of the work’s is based on the vision of a kitchen "workshop" that places emphasis on the functionality' +
-  'in addition' +
-  'to aesthetics and design. Short distances, perfect arrangement, access, structure, overview - similar to a professional kitchen' +
-  '"skilled" cooking' +
+  worksIntro_En = 'The concept of the work’s is based on the vision of a kitchen "workshop" that places emphasis on the functionality ' +
+  'in addition ' +
+  'to aesthetics and design. Short distances, perfect arrangement, access, structure, overview - similar to a professional kitchen ' +
+  '"skilled" cooking ' +
   'becomes sophisticated with the work’s.';
   worksTitle1_En = 'work’s black stripes';
   worksTitle2_En = 'work’s mirror type';
   worksTitle3_En = 'work’s turn';
   worksTitle4_En = 'work’s islands';
   worksTitle5_En = 'work’s bridge';
-  e30Intro_En = 'By the exclusively order-based production, we can cater for any special requirements in addition to the extensive' +
-  'standard range. The focus of our product development is on contemporary and modern design. Only top quality components are used,' +
+  e30Intro_En = 'By the exclusively order-based production, we can cater for any special requirements in addition to the extensive ' +
+  'standard range. The focus of our product development is on contemporary and modern design. Only top quality components are used, ' +
   'whereby we look for the best possible technical solution for each requirement profile. ';
   e30Title1_En = 'Aluminum Quartzite';
   e30Title2_En = 'Concrete Vintage Oak';
