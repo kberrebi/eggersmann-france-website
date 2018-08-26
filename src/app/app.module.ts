@@ -6,9 +6,11 @@ import { MatButtonModule,
          MatStepperModule,
          MatFormFieldModule,
          MatInputModule,
-         MatRadioModule} from '@angular/material';
+         MatRadioModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -214,11 +216,12 @@ const appRoutes: Routes = [
     OakLaminateComponent,
     AluminumNicheSystemComponent,
     BoxtecComponent,
-    AluminumDrawerSystemComponent
+    AluminumDrawerSystemComponent,
   ],
   imports: [
     BrowserModule,
     MatButtonModule,
+    MatGridListModule,
     MatCheckboxModule,
     MatStepperModule,
     MatFormFieldModule,
@@ -227,6 +230,7 @@ const appRoutes: Routes = [
     MatInputModule,
     BrowserAnimationsModule,
     MatRadioModule,
+    MatExpansionModule,
     RouterModule.forRoot(appRoutes),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBX6cQ6943N2LLdlGP_0mHBRf_mWWy2GNo'

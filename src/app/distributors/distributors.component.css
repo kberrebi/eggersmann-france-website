@@ -1,0 +1,66 @@
+.gallery-container h1 {
+  font-size:48px;
+  text-align: center;
+  margin-top: 150px;
+  font-family: 'Brandon_light', Arial, Verdana;
+  color: black;
+}
+
+.gallery-container p.page-description {
+  width:80%;
+  font-family: 'Brandon_light', Arial, Verdana;
+  font-size: 24px !important;
+  line-height: 42px;
+  text-align: center;
+  margin: 30px auto;
+  font-size: 18px;
+  color: black;
+}
+
+.france-map__image{
+  width:100%;
+  margin:auto;
+}
+
+.france-map__image path{
+  fill: lightgrey;
+  stroke: white;
+  stroke-width: 1px;
+  transition: fill 0.3s;
+}
+
+.france-map__image .active-region:hover{
+  fill: grey;
+}
+
+.lux-map__image{
+  width:20%;
+  margin:auto;
+}
+
+.lux-map__image path{
+  fill: lightgrey;
+  stroke: white;
+  stroke-width: 1px;
+  transition: fill 0.3s;
+}
+
+.lux-map__image .active-region:hover{
+  fill: grey;
+}
+
+.nc-map__image{
+  width:50%;
+  margin:auto;
+}
+
+.nc-map__image path{
+  fill: lightgrey;
+  stroke: white;
+  stroke-width: 1px;
+  transition: fill 0.3s;
+}
+
+.nc-map__image .active-region:hover{
+  fill: grey;
+}
