@@ -146,6 +146,11 @@ export class LanguagesService {
   e30AccessoriesDes2: string;
   e30AccessoriesDes3: string;
 
+  mapTitle1: string;
+  mapTitle2: string;
+  mapTitle3: string;
+  mapTitle4: string;
+
 
 
   // French version of contents
@@ -312,6 +317,11 @@ export class LanguagesService {
   e30AccessoriesDes2_Fr = 'Aluminium, Bois';
   e30AccessoriesDes3_Fr = 'Aluminium';
 
+  mapTitle1_Fr = 'Luxembourg';
+  mapTitle2_Fr = 'Nouvelle-Calédonie';
+  mapTitle3_Fr = 'Maroc';
+  mapTitle4_Fr = 'St Barthélémy';
+
   // ENGLISH ----------------------------------------------------------------------------------------------------
   navItemEn1 = 'Home';
   navItemEn2 = 'Distributors';
@@ -471,6 +481,11 @@ export class LanguagesService {
   e30AccessoriesDes2_En = 'Aluminum, Wood';
   e30AccessoriesDes3_En = 'Aluminum';
 
+  mapTitle1_En = 'Luxembourg';
+  mapTitle2_En = 'New Caledonia';
+  mapTitle3_En = 'Marocco';
+  mapTitle4_En = 'St Barthelemy';
+
 
   constructor() {
     this.setLanguage('fr');
@@ -608,6 +623,10 @@ export class LanguagesService {
         this.e30AccessoriesDes1 = this.e30AccessoriesDes1_Fr;
         this.e30AccessoriesDes2 = this.e30AccessoriesDes2_Fr;
         this.e30AccessoriesDes3 = this.e30AccessoriesDes3_Fr;
+        this.mapTitle1 = this.mapTitle1_Fr;
+        this.mapTitle2 = this.mapTitle2_Fr;
+        this.mapTitle3 = this.mapTitle3_Fr;
+        this.mapTitle4 = this.mapTitle4_Fr;
       } else if (this.language === 'en') {
         this.navItem1 = this.navItemEn1;
         this.navItem2 = this.navItemEn2;
@@ -736,6 +755,11 @@ export class LanguagesService {
         this.e30AccessoriesDes1 = this.e30AccessoriesDes1_En;
         this.e30AccessoriesDes2 = this.e30AccessoriesDes2_En;
         this.e30AccessoriesDes3 = this.e30AccessoriesDes3_En;
+
+        this.mapTitle1 = this.mapTitle1_En;
+        this.mapTitle2 = this.mapTitle2_En;
+        this.mapTitle3 = this.mapTitle3_En;
+        this.mapTitle4 = this.mapTitle4_En;
       }
     }
   }

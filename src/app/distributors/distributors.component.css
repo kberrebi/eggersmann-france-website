@@ -17,6 +17,14 @@
   color: black;
 }
 
+.map-title{
+  padding-top:25px;
+  padding-bottom:15px;
+  font-family: 'Brandon_light', Arial, Verdana;
+  text-align: center;
+  color:lightgrey;
+}
+
 .france-map__image{
   width:100%;
   margin:auto;
@@ -38,10 +46,14 @@
   margin:auto;
 }
 
+.lux-map__image:hover{
+  cursor:pointer;
+}
+
 .lux-map__image path{
   fill: lightgrey;
   stroke: white;
-  stroke-width: 1px;
+  stroke-width: 0px;
   transition: fill 0.3s;
 }
 
@@ -54,10 +66,14 @@
   margin:auto;
 }
 
+.nc-map__image:hover{
+  cursor:pointer;
+}
+
 .nc-map__image path{
   fill: lightgrey;
   stroke: white;
-  stroke-width: 1px;
+  stroke-width: 0px;
   transition: fill 0.3s;
 }
 
@@ -70,13 +86,35 @@
   margin:auto;
 }
 
+.morroco-map__image:hover{
+  cursor:pointer;
+}
+
 .morroco-map__image path{
   fill: lightgrey;
   stroke: white;
-  stroke-width: 1px;
+  stroke-width: 0px;
   transition: fill 0.3s;
 }
 
 .morroco-map__image:hover path{
+  fill: grey;
+}
+
+.barthelemy-map__image{
+  width:70%;
+  margin:auto;
+}
+
+.barthelemy-map__image:hover{
+  cursor:pointer;
+}
+
+.barthelemy-map__image path{
+  fill: lightgrey;
+  transition: fill 0.3s;
+}
+
+.barthelemy-map__image:hover path{
   fill: grey;
 }
