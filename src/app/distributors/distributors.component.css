@@ -18,16 +18,27 @@
 }
 
 .map-title{
-  padding-top:25px;
-  padding-bottom:15px;
+  margin-top:10px;
+  margin-bottom:15px;
   font-family: 'Brandon_light', Arial, Verdana;
   text-align: center;
   color:lightgrey;
+  transition: color 0.3s;
+}
+
+.map-title-row2{
+  margin-top:70px;
+  margin-bottom:15px;
+  font-family: 'Brandon_light', Arial, Verdana;
+  text-align: center;
+  color:lightgrey;
+  transition: color 0.3s;
 }
 
 .france-map__image{
-  width:100%;
+  width:80%;
   margin:auto;
+  margin-bottom:100px;
 }
 
 .france-map__image path{
@@ -43,11 +54,14 @@
 
 .lux-map__image{
   width:50%;
-  margin:auto;
 }
 
 .lux-map__image:hover{
   cursor:pointer;
+}
+
+.lux-map__image:hover .map-title{
+  color:grey;
 }
 
 .lux-map__image path{
@@ -63,11 +77,14 @@
 
 .nc-map__image{
   width:70%;
-  margin:auto;
 }
 
 .nc-map__image:hover{
   cursor:pointer;
+}
+
+.nc-map__image:hover .map-title-row2{
+  color:grey;
 }
 
 .nc-map__image path{
@@ -81,33 +98,39 @@
   fill: grey;
 }
 
-.morroco-map__image{
-  width:70%;
-  margin:auto;
+.morocco-map__image{
+  width:60%;
 }
 
-.morroco-map__image:hover{
+.morocco-map__image:hover{
   cursor:pointer;
 }
 
-.morroco-map__image path{
+.morocco-map__image:hover .map-title{
+  color:grey;
+}
+
+.morocco-map__image path{
   fill: lightgrey;
   stroke: white;
   stroke-width: 0px;
   transition: fill 0.3s;
 }
 
-.morroco-map__image:hover path{
+.morocco-map__image:hover path{
   fill: grey;
 }
 
 .barthelemy-map__image{
   width:70%;
-  margin:auto;
 }
 
 .barthelemy-map__image:hover{
   cursor:pointer;
+}
+
+.barthelemy-map__image:hover .map-title-row2{
+  color:grey;
 }
 
 .barthelemy-map__image path{
@@ -117,4 +140,22 @@
 
 .barthelemy-map__image:hover path{
   fill: grey;
+}
+
+@media only screen and (max-width: 1100px){
+  .map-title-row2{
+    margin-top:50px;
+  }
+  .lux-map__image{
+    margin:auto;
+  }
+  .morocco-map__image{
+    margin:auto;
+  }
+  .nc-map__image{
+    margin:auto;
+  }
+  .barthelemy-map__image{
+    margin:auto;
+  }
 }
