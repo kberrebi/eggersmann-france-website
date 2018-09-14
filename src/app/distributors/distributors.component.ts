@@ -9,9 +9,6 @@ import { LanguagesService } from '../languages.service';
 })
 export class DistributorsComponent implements OnInit {
 
-  lat1 = 51.678418;
-  lng1 = 7.809007;
-
   constructor(public languagesService: LanguagesService, public navigationService: NavigationService) { }
 
   ngOnInit() {
