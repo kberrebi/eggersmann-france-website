@@ -81,9 +81,17 @@ button:focus {outline:0 !important;}
   border-right: 14px solid white;
 }
 
+.row.contact-container{
+  background-image: url(assets/images/contact.jpg);
+  background-size: cover;
+}
+
 mat-vertical-stepper.mat-stepper-vertical.ng-tns-c4-0{
-  padding-bottom:230px !important;
-  background-color:white;
+  background-color:rgba(255,255,255,0.8);
+}
+
+.row.contact-container{
+  min-height:954px !important;
 }
 
 @media only screen and (max-width: 1600px) and (min-width:1200px){

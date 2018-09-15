@@ -1,11 +1,3 @@
-mat-vertical-stepper.mat-stepper-vertical.ng-tns-c4-0{
-  padding-bottom:230px !important;
-  background-color:white;
-}
-
-.contact-container{
-}
-
 .mat-step-header .mat-step-icon{
   background-color:black !important;
 }
@@ -32,4 +24,9 @@ mat-vertical-stepper.mat-stepper-vertical.ng-tns-c4-0{
 .next-back-button{
   color:white;
   background-color:black;
+}
+
+.contact-container .col-md-4{
+  min-height:954px !important;
+  background-color:rgba(255, 255, 255, 0.0) !important;
 }
