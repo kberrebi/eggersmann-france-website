@@ -1,3 +1,11 @@
+mat-vertical-stepper.mat-stepper-vertical.ng-tns-c4-0{
+  padding-bottom:230px !important;
+  background-color:white;
+}
+
+.contact-container{
+}
+
 .mat-step-header .mat-step-icon{
   background-color:black !important;
 }
@@ -14,4 +22,14 @@
 .contact-fields-container{
   display: inline-flex;
   flex-direction: column;
+}
+
+.next-back-button-container{
+  margin-top:50px;
+  margin-bottom:20px;
+}
+
+.next-back-button{
+  color:white;
+  background-color:black;
 }

@@ -38,20 +38,6 @@
   border-color: black;
 }
 
-mat-radio-group.radio-group.mat-radio-group{
-  padding-top:50px;
-  margin-left:42%;
-}
-
-mat-radio-button#mat-radio-2{
-  padding-bottom:20px;
-}
-
-.contact-fields-container{
-  padding-top:50px;
-  margin-left:37%;
-}
-
 .mat-form-field{
   padding-bottom:20px;
   width:300px;
@@ -63,9 +49,8 @@ button:focus {outline:0 !important;}
   background-color:black;
 }
 
-mat-checkbox#mat-checkbox-1{
-  padding-top:50px;
-  margin-left:37%;
+.mat-vertical-content{
+  margin-top:50px;
 }
 
 /* LOOKBOOK */
@@ -94,6 +79,11 @@ mat-checkbox#mat-checkbox-1{
 
 .col-right-border {
   border-right: 14px solid white;
+}
+
+mat-vertical-stepper.mat-stepper-vertical.ng-tns-c4-0{
+  padding-bottom:230px !important;
+  background-color:white;
 }
 
 @media only screen and (max-width: 1600px) and (min-width:1200px){

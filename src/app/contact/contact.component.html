@@ -1,61 +1,66 @@
-<mat-horizontal-stepper [linear]="true" #stepper style="padding-top: 100px;">
-    <mat-step [stepControl]="firstFormGroup">
-      <form [formGroup]="firstFormGroup">
-        <ng-template matStepLabel>Become partner ?</ng-template>
-        <div style="margin-top:30px;padding-bottom:40px;">
-            <button mat-button matStepperNext class="stepper-next-button">Next</button>
-        </div>
-        <div>
-            <mat-radio-group class="radio-group">
-                <mat-radio-button [checked]="true" value="1">I am a customer</mat-radio-button>
-                <mat-radio-button value="2">I want to become a reseller</mat-radio-button>
-            </mat-radio-group>
-        </div>
-      </form>
-    </mat-step>
-    <mat-step [stepControl]="secondFormGroup">
-      <form [formGroup]="secondFormGroup">
-        <ng-template matStepLabel>Personal information</ng-template>
-        <div style="margin-top:30px;padding-bottom:40px;">
-            <button mat-button matStepperPrevious>Back</button>
-            <button mat-button matStepperNext class="stepper-next-button">Next</button>
-        </div>
-        <div class="contact-fields-container">
-              <mat-form-field>
-                <input matInput placeholder="First Name" formControlName="firstNameCtrl" required>
-              </mat-form-field>
-              <mat-form-field>
-                <input matInput placeholder="Last Name" formControlName="lastNameCtrl" required>
-              </mat-form-field>
-              <mat-form-field>
-                <input matInput placeholder="Email" formControlName="emailCtrl" required>
-              </mat-form-field>
-              <mat-form-field>
-                  <input matInput placeholder="Country" formControlName="countryCtrl" required>
-              </mat-form-field>
-              <mat-form-field>
-                <input matInput placeholder="Address" formControlName="addressCtrl" required>
-              </mat-form-field>
-              <mat-form-field>
-                <input matInput placeholder="Phone" formControlName="phoneCtrl" required>
-              </mat-form-field>
-        </div>
-      </form>
-    </mat-step>
-    <mat-step>
-      <ng-template matStepLabel>Catalog</ng-template>
-      <div style="margin-top:30px;padding-bottom:40px;">
-          <button mat-button matStepperPrevious>Back</button>
-          <button mat-button matStepperNext class="stepper-next-button">Next</button>
-      </div>
-      <mat-checkbox>I want to receive an eggersmann book</mat-checkbox>
-    </mat-step>
-    <mat-step>
-        <ng-template matStepLabel>Done</ng-template>
-        You are now done.
-        <div>
-          <button mat-button matStepperPrevious>Back</button>
-          <button mat-button (click)="stepper.reset()">Reset</button>
-        </div>
-    </mat-step>
-</mat-horizontal-stepper>
+<div class="row contact-container">
+  <div class="col-xs-12 col-md-4">
+      <mat-vertical-stepper [linear]="false" #stepper style="padding-top: 100px;">
+          <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup">
+              <ng-template matStepLabel>Become partner ?</ng-template>
+              <div>
+                  <mat-radio-group class="radio-group">
+                      <mat-radio-button [checked]="true" value="1">I am a customer</mat-radio-button>
+                      <mat-radio-button value="2">I want to become a reseller</mat-radio-button>
+                  </mat-radio-group>
+                  <div class="next-back-button-container">
+                      <button mat-button matStepperNext class="next-back-button">Next</button>
+                  </div>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step [stepControl]="secondFormGroup">
+            <form [formGroup]="secondFormGroup">
+              <ng-template matStepLabel>Personal information</ng-template>
+              <div class="contact-fields-container">
+                    <mat-form-field>
+                      <input matInput placeholder="First Name" formControlName="firstNameCtrl" required>
+                    </mat-form-field>
+                    <mat-form-field>
+                      <input matInput placeholder="Last Name" formControlName="lastNameCtrl" required>
+                    </mat-form-field>
+                    <mat-form-field>
+                      <input matInput placeholder="Email" formControlName="emailCtrl" required>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Country" formControlName="countryCtrl" required>
+                    </mat-form-field>
+                    <mat-form-field>
+                      <input matInput placeholder="Address" formControlName="addressCtrl" required>
+                    </mat-form-field>
+                    <mat-form-field>
+                      <input matInput placeholder="Phone" formControlName="phoneCtrl" required>
+                    </mat-form-field>
+              </div>
+            </form>
+            <div class="next-back-button-container">
+                <button mat-button matStepperNext class="next-back-button">Next</button>
+            </div>
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>Catalog</ng-template>
+            <mat-checkbox>I want to receive an eggersmann book</mat-checkbox>
+            <div class="next-back-button-container">
+                <button mat-button matStepperNext class="next-back-button">Next</button>
+            </div>
+          </mat-step>
+          <div class="next-back-button-container">
+              <button mat-button matStepperNext class="next-back-button">Next</button>
+          </div>
+          <mat-step>
+              <ng-template matStepLabel>Done</ng-template>
+              <div>
+                  <i class="material-icons" style="font-size:30px;padding-right:10px;">done_all</i>
+                  <span style="position:relative; top:-7px;">Your request has been sent.</span>
+              </div>
+          </mat-step>
+      </mat-vertical-stepper>
+  </div>
+</div>
+
