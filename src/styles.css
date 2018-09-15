@@ -82,7 +82,6 @@ button:focus {outline:0 !important;}
 }
 
 .row.contact-container{
-  background-image: url(assets/images/contact.jpg);
   background-size: cover;
 }
 
