@@ -1,3 +1,12 @@
+.contact-container{
+  background-image: url('../../assets/images/contact.jpg');
+}
+
+.contact-container .col-md-4{
+  min-height:954px !important;
+  background-color: rgba(255,255,255,0.8);
+}
+
 .mat-step-header .mat-step-icon{
   background-color:black !important;
 }
@@ -24,9 +33,4 @@
 .next-back-button{
   color:white;
   background-color:black;
-}
-
-.contact-container .col-md-4{
-  min-height:954px !important;
-  background-color:rgba(255, 255, 255, 0.0) !important;
 }
