@@ -1,12 +1,21 @@
-<div class="container-fluid" *ngIf="!detectmob()">
-  <video autoplay muted loop id="myVideo" poster="../../assets/images/4.jpeg">
-    <source src="../../assets/videos/Eggermann-video.mp4" type="video/mp4">
-  </video>
-</div>
-
-<script>
-    document.getElementById('myVideo').play();
-</script>
+<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../../assets/images/carousel/carousel2.png" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../../assets/images/carousel/carousel4.png" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../../assets/images/carousel/carousel7.png" alt="Third slide">
+      </div>
+    </div>
+  </div>
 
 <div class="container img-txt">
   <div class="row">
@@ -46,7 +55,7 @@
   </div>
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner" role="listbox" style="margin-bottom:110px !important;">
       <div class="carousel-item active">
         <img class="img-carousel" src="../../assets/images/1.jpg" alt="First slide">
       </div>

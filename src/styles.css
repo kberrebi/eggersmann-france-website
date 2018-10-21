@@ -8,10 +8,11 @@
 
 .mat-step-header .mat-step-icon{
   background-color:black !important;
+  color:lightgrey !important;
 }
 
 .mat-form-field.mat-focused .mat-form-field-ripple{
-  background-color:black;
+  background-color:lightgrey;
 }
 
 .mat-form-field.mat-form-field-invalid .mat-form-field-ripple{
@@ -19,7 +20,7 @@
 }
 
 .mat-form-field.mat-focused .mat-form-field-label{
-  color:black;
+  color:lightgrey;
 }
 
 .mat-form-field.mat-form-field-invalid .mat-form-field-label{
@@ -31,16 +32,35 @@
 }
 
 .mat-radio-button.mat-accent .mat-radio-inner-circle{
-  background-color: black;
+  background-color: lightgrey;
 }
 
 .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
-  border-color: black;
+  border-color: lightgrey;
 }
 
 .mat-form-field{
   padding-bottom:20px;
   width:300px;
+}
+
+.mat-step-header .mat-step-label.mat-step-label-active{
+  color:lightgrey !important;
+  font-size:20px;
+}
+
+.mat-radio-outer-circle{
+  border-color: lightgrey;
+}
+
+.mat-radio-label-content{
+  color:lightgray;
+  font-family: 'Brandon_light', Arial, Verdana;
+}
+
+.mat-step-header .mat-step-icon-not-touched{
+  background-color:black;
+  color:lightgrey;
 }
 
 button:focus {outline:0 !important;}
@@ -51,6 +71,71 @@ button:focus {outline:0 !important;}
 
 .mat-vertical-content{
   margin-top:50px;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline{
+  background-color:lightgrey !important;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label{
+  color:lightgrey;
+
+}
+
+input.mat-input-element{
+  color:lightgrey;
+  font-family: 'Brandon_light', Arial, Verdana;
+}
+
+span.mat-button-wrapper{
+  color:lightgrey;
+  font-family: 'Brandon_light', Arial, Verdana;
+  font-size:18px;
+}
+
+span.mat-checkbox-label{
+  color:lightgray;
+  font-family: 'Brandon_light', Arial, Verdana;
+  font-size:18px;
+}
+
+.mat-checkbox-frame{
+  border-color:lightgrey;
+}
+
+.mat-select-content, .mat-select-panel-done-animating{
+  background-color:black;
+}
+
+.mat-select-value{
+  color:lightgrey;
+}
+
+.mat-select-arrow{
+  color:lightgrey;
+}
+
+.mat-form-field.mat-focused.mat-primary .mat-select-arrow{
+  color:lightgrey;
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled){
+  color:lightgrey;
+}
+
+.mat-optgroup-label{
+  color:gray;
+  font-family: 'Brandon_light', Arial, Verdana;
+}
+
+.mat-option{
+  color:lightgrey;
+  font-family: 'Brandon_light', Arial, Verdana;
+}
+
+.mat-option.mat-active{
+  color:lightgrey;
+  font-family: 'Brandon_light', Arial, Verdana;
 }
 
 /* LOOKBOOK */

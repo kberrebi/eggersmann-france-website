@@ -1,16 +1,13 @@
 .black-navbar{
   background-color: rgb(0, 0, 0);
-  opacity: 0.9;
 }
 
 .white-navbar{
   background-color: rgb(255, 255, 255);
-  opacity: 0.97;
 }
 
 .brown-navbar{
   background-color: #232323;
-  opacity: 0.98;
 }
 
 .top-right-link{

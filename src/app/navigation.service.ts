@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { LanguagesService } from './languages.service';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +21,7 @@ export class NavigationService {
   currentE30Page = '';
   e30Pages = [];
 
-  constructor(public languagesService: LanguagesService) {
+  constructor(public languagesService: LanguagesService, private router: Router) {
     this.lookBookPages = [{text: this.languagesService.lookbookTitle1, url: 'seaside'},
                           {text: this.languagesService.lookbookTitle2, url: 'london'},
                           {text: this.languagesService.lookbookTitle3, url: 'villa-salzburg'},
@@ -80,6 +81,10 @@ export class NavigationService {
                      {text: this.languagesService.e30AccessoriesTitle2, url: 'boxtec'},
                      {text: this.languagesService.e30AccessoriesTitle3, url: 'aluminum-drawer-system'},
                     ];
+  }
+
+  navigateTo(destinationPage) {
+    this.router.navigateByUrl(destinationPage);
   }
 
   previousLookbookPage() {

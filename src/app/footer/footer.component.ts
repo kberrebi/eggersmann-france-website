@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LanguagesService } from '../languages.service';
+import { NavigationService } from '../navigation.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,9 +9,13 @@ import { LanguagesService } from '../languages.service';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(public languagesService: LanguagesService) { }
+  constructor(public languagesService: LanguagesService, public navigationService: NavigationService) { }
 
   ngOnInit() {
+  }
+
+  goTo(destinationPage) {
+    this.navigationService.navigateTo(destinationPage);
   }
 
   setFrLanguage() {

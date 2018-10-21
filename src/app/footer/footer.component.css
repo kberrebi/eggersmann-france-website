@@ -1,21 +1,40 @@
-.dark-footer{
+.default-footer{
   background-color: black;
+  font-family: 'Brandon_light';
+}
+
+.black-footer{
+  background-color: rgb(0, 0, 0);
+}
+
+.white-footer{
+  background-color: rgb(255, 255, 255);
+}
+
+.brown-footer{
+  background-color: #232323;
 }
 
 .fa {
   padding: 20px;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
   margin: 10px 10px 10px 10px;
   border-radius: 50%;
-  width:70px;
+  width:60px;
 }
 
-.fa-facebook, .fa-twitter, .fa-google, .fa-linkedin, .fa-youtube {
-  background: gray;
+.fa-facebook{
   color: white;
-  box-shadow: 5px 5px 20px #292929;
+}
+
+.fa-bg-dark{
+  background: rgb(61, 61, 61);
+}
+
+.fa-bg-light{
+  background: black;
 }
 
 .fa-facebook:hover{
@@ -36,6 +55,26 @@
 
 .fa-youtube:hover{
   background: #bb0000;
+}
+
+.btn-outline-dark{
+  color:black;
+  border-color:black;
+  outline:none !important;
+}
+
+.btn-outline-light{
+  outline:none !important;
+}
+
+.btn-outline-dark:hover{
+  color:white;
+  border-color:black;
+  background-color:black;
+}
+
+.btn:focus {
+  outline: none;
 }
 
 /* Langages */
@@ -155,4 +194,29 @@
   transform-origin: left top;
   transform: scale(1, 1);
   background-color: lightgray;
+}
+
+.spacer-footer-container {
+  display: block;
+  clear: both;
+  font-size: 1px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top:0px;
+}
+
+.spacer-footer-container .spacer-footer-line {
+  height: 3px;
+  width: 200px;
+  font-size: 1px;
+  display: inline-block;
+  background-color: #000;
+}
+
+.spacer-footer-container .spacer-footer-white-line {
+  height: 3px;
+  width: 200px;
+  font-size: 1px;
+  display: inline-block;
+  background-color: white;
 }

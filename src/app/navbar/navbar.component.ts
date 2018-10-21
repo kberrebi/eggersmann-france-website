@@ -12,6 +12,10 @@ export class NavbarComponent implements OnInit {
   constructor(public languagesService: LanguagesService, public navigationService: NavigationService) {
   }
 
+  goTo(destinationPage) {
+    this.navigationService.navigateTo(destinationPage);
+  }
+
   ngOnInit() {
   }
 

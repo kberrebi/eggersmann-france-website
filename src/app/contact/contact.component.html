@@ -45,7 +45,18 @@
           </mat-step>
           <mat-step>
             <ng-template matStepLabel>Catalog</ng-template>
-            <mat-checkbox>I want to receive an eggersmann book</mat-checkbox>
+            <mat-checkbox [(ngModel)]="checked">I want to receive an eggersmann book</mat-checkbox>
+            <div *ngIf="checked">
+                <mat-form-field style="margin-top:30px;">
+                    <mat-select placeholder="Showroom" [formControl]="showroomControl">
+                      <mat-optgroup *ngFor="let group of showroomGroups" [label]="group.name">
+                        <mat-option *ngFor="let showroom of group.Showroom" [value]="showroom.value">
+                          {{showroom.viewValue}}
+                        </mat-option>
+                      </mat-optgroup>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
             <div class="next-back-button-container">
                 <button mat-button matStepperNext class="next-back-button">Next</button>
             </div>
@@ -56,8 +67,8 @@
           <mat-step>
               <ng-template matStepLabel>Done</ng-template>
               <div>
-                  <i class="material-icons" style="font-size:30px;padding-right:10px;">done_all</i>
-                  <span style="position:relative; top:-7px;">Your request has been sent.</span>
+                  <i class="material-icons" style="font-size:30px;padding-right:10px;color:lightgrey">done_all</i>
+                  <span style="position:relative; top:-7px;color:lightgrey">Your request has been sent.</span>
               </div>
           </mat-step>
       </mat-vertical-stepper>

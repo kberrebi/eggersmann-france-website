@@ -1,16 +1,28 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<div class="container-fluid dark-footer">
-  <div style="text-align: center; padding-top:30px; padding-bottom: 30px">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-youtube"></a>
+<div class="container-fluid default-footer" [ngClass]="{'black-footer':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact']), 'white-footer':this.navigationService.isIn(['e30', 'lookbook']),
+'navbar-light':this.navigationService.isIn(['e30', 'lookbook']), 'brown-footer': this.navigationService.isIn(['works'])}">
+<div class="spacer-footer-container">
+  <div class="spacer-footer-line" [ngClass]="{'spacer-footer-white-line':this.navigationService.isIn(['unique', 'works'])}"></div>
+</div>
+  <div class="row">
+    <div class="col centered">
+        <div style="text-align: center; padding-top:30px; padding-bottom: 30px">
+            <a href="#" class="fa fa-facebook" [ngClass]="{'fa-bg-dark':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact', 'works']), 'fa-bg-light':this.navigationService.isIn(['e30', 'lookbook'])}"></a>
+        </div>
+    </div>
+    <div class="col centered">
+      <div style="text-align: center; padding-top:48px;">
+          <button type="button" class="btn btn-outline-light" (click)="goTo('contact')" [ngClass]="{'btn-outline-light':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact', 'works']), 'btn-outline-dark':this.navigationService.isIn(['e30', 'lookbook'])}"><span style="font-size:20px;">Contact us</span></button>
+      </div>
+    </div>
+    <div class="col"></div>
   </div>
-  <div class="text-center" style="color:gray; padding-bottom:10px; font-size: 12px;">© 2018 Copyright: Eggersmann-france.com
-  </div>
-  <div id="langages">
-      <span [class]="this.languagesService.language === 'en'?'item':'item2'"><a (click)="setFrLanguage()">Fr</a></span>
-      <span [class]="this.languagesService.language === 'fr'?'item':'item2'"><a (click)="setEnLanguage()">En</a></span>
+  <div class="row">
+      <div class="col"></div>
+      <div class="col">
+          <div class="text-center" style="color:gray; padding-bottom:10px; font-size: 15px;">© 2018 Copyright: Eggersmann-france.com
+          </div>
+      </div>
+      <div class="col"></div>
   </div>
 </div>
 
