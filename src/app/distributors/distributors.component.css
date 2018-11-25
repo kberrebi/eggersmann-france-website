@@ -6,19 +6,27 @@
   color: black;
 }
 
-.gallery-container p.page-description {
+p.page-description {
   width:80%;
   font-family: 'Brandon_light', Arial, Verdana;
-  font-size: 24px !important;
+  font-size: 24px;
   line-height: 42px;
-  text-align: center;
+  text-align: justify;
   margin: 30px auto;
-  font-size: 18px;
   color: black;
 }
 
+.first-row-container {
+  width:100%;
+  margin:auto;
+}
+
+.second-row-container {
+  width: 80%;
+  margin: auto !important;
+}
+
 .map-title{
-  margin-top:10px;
   margin-bottom:15px;
   font-family: 'Brandon_light', Arial, Verdana;
   text-align: center;
@@ -27,7 +35,7 @@
 }
 
 .map-title-row2{
-  margin-top:70px;
+  margin-top: 40px;
   margin-bottom:15px;
   font-family: 'Brandon_light', Arial, Verdana;
   text-align: center;
@@ -36,8 +44,8 @@
 }
 
 .france-map__image{
-  width:80%;
-  margin:auto;
+  width:75%;
+  float:right;
   margin-bottom:100px;
 }
 
@@ -53,7 +61,8 @@
 }
 
 .lux-map__image{
-  width:50%;
+  width:48%;
+  margin:auto;
 }
 
 .lux-map__image:hover{
@@ -76,14 +85,14 @@
 }
 
 .nc-map__image{
-  width:70%;
+  width:100%;
 }
 
 .nc-map__image:hover{
   cursor:pointer;
 }
 
-.nc-map__image:hover .map-title-row2{
+.nc-map__image:hover .map-title{
   color:grey;
 }
 
@@ -100,6 +109,7 @@
 
 .morocco-map__image{
   width:60%;
+  margin:auto;
 }
 
 .morocco-map__image:hover{
@@ -121,15 +131,39 @@
   fill: grey;
 }
 
-.barthelemy-map__image{
+.switzerland-map__image{
   width:70%;
+  margin:auto;
+}
+
+.switzerland-map__image:hover{
+  cursor:pointer;
+}
+
+.switzerland-map__image:hover .map-title-row2{
+  color:grey;
+}
+
+.switzerland-map__image path{
+  fill: lightgrey;
+  stroke: white;
+  stroke-width: 0px;
+  transition: fill 0.3s;
+}
+
+.switzerland-map__image:hover path{
+  fill: grey;
+}
+
+.barthelemy-map__image{
+  width:100%;
 }
 
 .barthelemy-map__image:hover{
   cursor:pointer;
 }
 
-.barthelemy-map__image:hover .map-title-row2{
+.barthelemy-map__image:hover .map-title{
   color:grey;
 }
 
@@ -171,13 +205,13 @@
 
 
 @media only screen and (max-width: 1100px){
-  .map-title-row2{
-    margin-top:50px;
-  }
   .lux-map__image{
     margin:auto;
   }
   .morocco-map__image{
+    margin:auto;
+  }
+  .switzerland-map__image{
     margin:auto;
   }
   .nc-map__image{
@@ -195,4 +229,24 @@
 
 .mat-expansion-panel{
   box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08) !important;
+}
+
+@media screen and (max-width: 767px) {
+  .france-map__image {
+    float:none;
+    margin:auto;
+    margin-bottom: 40px;
+  }
+  .map-title-row2{
+    margin-top: 0px;
+  }
+  .second-row-container .map-title {
+    margin-top:40px;
+  }
+  p.page-description {
+    font-size: 16px;
+    line-height: 28px;
+    width: 100%;
+    text-align: justify;
+  }
 }

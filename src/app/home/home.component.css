@@ -24,15 +24,13 @@
 .img-right, .img-left{
   width:100%;
   min-width: 300px;
-  padding-top:150px;
-  padding-bottom:110px;
+  padding-top:130px;
+  padding-bottom:130px;
 }
 
 .txt-left, .txt-right{
   font-family: 'Brandon_light';
   text-align: justify;
-  padding-top:110px;
-  padding-bottom:110px;
   min-width: 300px;
   max-width: 600px;
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { NavigationService } from '../navigation.service';
+import { MailServiceService } from '../mail-service.service';
 
 export interface Showroom {
   value: string;
@@ -20,6 +21,16 @@ export interface ShowroomGroup {
 export class ContactComponent implements OnInit {
 
   checked = false;
+  mailObject = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    country: '',
+    address: '',
+    phone: '',
+    catalog: 'non',
+    showroomCatalog: '/'
+  };
 
   showroomControl = new FormControl();
   showroomGroups: ShowroomGroup[] = [
@@ -46,7 +57,7 @@ export class ContactComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
 
-  constructor(private _formBuilder: FormBuilder, public navigationService: NavigationService) { }
+  constructor(private _formBuilder: FormBuilder, public navigationService: NavigationService, public mailService: MailServiceService) { }
 
   ngOnInit() {
     this.navigationService.currentPage = 'contact';
@@ -61,6 +72,15 @@ export class ContactComponent implements OnInit {
       addressCtrl: ['', Validators.required],
       phoneCtrl: ['', Validators.pattern('([(+]*[0-9]+[()+. -]*)')]
     });
+  }
+
+  sendEmail() {
+    if (this.checked === true) {
+      this.mailObject.catalog = 'oui';
+    }
+    this.mailService.sendMail(this.mailObject).subscribe(() => {
+        console.log('email sent with success');
+      });
   }
 
 }

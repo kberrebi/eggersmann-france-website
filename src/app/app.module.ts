@@ -13,6 +13,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSelectModule } from '@angular/material/select';
 
+import { HttpClientModule } from '@angular/common/http';
+import { MailServiceService } from './mail-service.service';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Routes, RouterModule } from '@angular/router';
@@ -221,6 +224,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     MatButtonModule,
     MatGridListModule,
     MatCheckboxModule,
@@ -238,7 +242,7 @@ const appRoutes: Routes = [
       apiKey: 'AIzaSyBX6cQ6943N2LLdlGP_0mHBRf_mWWy2GNo'
     })
   ],
-  providers: [],
+  providers: [MailServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

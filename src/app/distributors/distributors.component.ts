@@ -9,13 +9,16 @@ import { LanguagesService } from '../languages.service';
 })
 export class DistributorsComponent implements OnInit {
 
+  focus = '';
+
   constructor(public languagesService: LanguagesService, public navigationService: NavigationService) { }
 
   ngOnInit() {
     this.navigationService.currentPage = 'distributors';
   }
 
-  goToExpansionPanel(region) {
+  goToExpansionPanel(region, focused = '') {
+    this.focus = focused;
     region.scrollIntoView({behavior: 'smooth'});
   }
 

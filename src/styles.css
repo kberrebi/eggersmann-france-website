@@ -170,6 +170,10 @@ span.mat-checkbox-label{
   background-size: cover;
 }
 
+a.nav-link.top-right-link {
+  text-align: center;
+}
+
 @media only screen and (max-width: 1600px) and (min-width:1200px){
   .gallery-image{
     min-height: 640px;
