@@ -44,6 +44,19 @@
   width:300px;
 }
 
+.mat-vertical-content {
+  padding: 0px 0px 0px 0px !important;
+}
+
+.mat-stepper-vertical-line::before {
+  display:none;
+}
+
+.mat-vertical-content-container {
+  margin-left: 0px !important;
+  padding-left: 15px;
+}
+
 .mat-step-header .mat-step-label.mat-step-label-active{
   color:lightgrey !important;
   font-size:20px;

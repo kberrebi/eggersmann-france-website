@@ -13,11 +13,10 @@
 .gallery-container p.page-description {
   width:80%;
   font-family: 'Brandon_light', Arial, Verdana;
-  font-size: 24px !important;
+  font-size: 24px;
   line-height: 42px;
-  text-align: center;
+  text-align: justify;
   margin: 30px auto;
-  font-size: 18px;
   color: black;
 }
 
@@ -67,4 +66,13 @@
 
 .image{
   width:100%;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery-container p.page-description {
+    font-size: 16px;
+    line-height: 28px;
+    width: 100%;
+    text-align: justify;
+  }
 }

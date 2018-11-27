@@ -17,7 +17,8 @@ export class HomeComponent implements OnInit {
   content4: string;
   content5: string;
 
-  constructor(public languagesService: LanguagesService, public navigationService: NavigationService) { }
+  constructor(public languagesService: LanguagesService, public navigationService: NavigationService) {
+  }
 
   ngOnInit() {
     this.navigationService.currentPage = 'home';

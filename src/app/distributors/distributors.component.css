@@ -228,17 +228,32 @@ p.page-description {
 }
 
 .mat-expansion-panel{
-  box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08) !important;
+  box-shadow: 0 25px 30px 0 rgba(0,0,0,.11) !important;
 }
 
 @media screen and (max-width: 767px) {
   .france-map__image {
+    width: 100%;
     float:none;
     margin:auto;
     margin-bottom: 40px;
   }
+  .distributor-expansion{
+    width:100%;
+    margin:auto;
+  }
+  .lux-map__image {
+    width: 58%;
+  }
+  .switzerland-map__image {
+    width: 100%;
+  }
   .map-title-row2{
     margin-top: 0px;
+  }
+  .second-row-container{
+    width: 100%;
+    padding-left: 15px;
   }
   .second-row-container .map-title {
     margin-top:40px;
