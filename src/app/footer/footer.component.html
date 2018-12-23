@@ -1,4 +1,4 @@
-<div class="container-fluid default-footer" [ngClass]="{'black-footer':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact']), 'white-footer':this.navigationService.isIn(['e30', 'lookbook']),
+<div *ngIf="this.navigationService.currentPage != 'contact'" class="container-fluid default-footer" [ngClass]="{'black-footer':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact']), 'white-footer':this.navigationService.isIn(['e30', 'lookbook']),
 'navbar-light':this.navigationService.isIn(['e30', 'lookbook']), 'brown-footer': this.navigationService.isIn(['works'])}">
 <div class="spacer-footer-container">
   <div class="spacer-footer-line" [ngClass]="{'spacer-footer-white-line':this.navigationService.isIn(['unique', 'works'])}"></div>
