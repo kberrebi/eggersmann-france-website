@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationService } from '../navigation.service';
 import { LanguagesService } from '../languages.service';
+import distributors from '../../assets/JSON/distributors.json';
 
 @Component({
   selector: 'app-distributors',
@@ -14,6 +15,7 @@ export class DistributorsComponent implements OnInit {
   constructor(public languagesService: LanguagesService, public navigationService: NavigationService) { }
 
   ngOnInit() {
+    console.log(distributors);
     this.navigationService.currentPage = 'distributors';
   }
 
