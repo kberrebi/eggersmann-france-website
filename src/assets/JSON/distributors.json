@@ -1,0 +1,61 @@
+{
+  "regions": [
+    {
+      "name": "Île de France",
+      "formattedName": "IledeFrance",
+      "showrooms": [
+        {
+          "title": "Paris 7ème",
+          "formattedTitle": "paris7",
+          "name": "Dimi Interior Design",
+          "displayedAddress": "4 rue de Luynes, 75007 Paris",
+          "googleMapsAddress": "4 Rue de Luynes, 75007 Paris",
+          "phone": "Tél. +33 1 42 84 36 06",
+          "email": "paris07@eggersmann.fr",
+          "website": "http://dimi-interiordesign.com/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du mardi au samedi : 10:00 - 13:00 / 14:00 - 19:00",
+            "Lundi sur rendez-vous"
+          ]
+        },
+        {
+          "title": "Paris 8ème",
+          "formattedTitle": "paris7",
+          "name": "Dimi Interior Design",
+          "displayedAddress": "4 rue de Luynes, 75007 Paris",
+          "googleMapsAddress": "4 Rue de Luynes, 75007 Paris",
+          "phone": "Tél. +33 1 42 84 36 06",
+          "email": "paris07@eggersmann.fr",
+          "website": "http://dimi-interiordesign.com/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du mardi au samedi : 10:00 - 13:00 / 14:00 - 19:00",
+            "Lundi sur rendez-vous"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Auvergne Rhône Alpes",
+      "formattedName": "AuvergneRhoneAlpes",
+      "showrooms": [
+        {
+          "title": "Paris 7ème",
+          "formattedTitle": "paris7",
+          "name": "Dimi Interior Design",
+          "displayedAddress": "4 rue de Luynes, 75007 Paris",
+          "googleMapsAddress": "4 Rue de Luynes, 75007 Paris",
+          "phone": "Tél. +33 1 42 84 36 06",
+          "email": "paris07@eggersmann.fr",
+          "website": "http://dimi-interiordesign.com/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du mardi au samedi : 10:00 - 13:00 / 14:00 - 19:00",
+            "Lundi sur rendez-vous"
+          ]
+        }
+      ]
+    }
+  ]
+}
