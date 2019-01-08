@@ -1,3 +1,44 @@
+.send-email-container {
+  cursor:pointer;
+  font-family: 'Brandon_light', Arial, Verdana;
+  font-size: 25px;
+  color: white;
+  width:236px;
+  padding: 20px 0px 20px 0px;
+  margin:auto;
+  text-align: center;
+  outline: 1px solid white;
+  margin-bottom:45px;
+  transition: all 0.3s !important;
+}
+
+.send-email-container:hover {
+  background-color: white;
+  color: black;
+}
+
+.send-email-container:hover .send-email-text{
+  color: black;
+}
+
+.send-email-text {
+  text-align:center;
+  padding: 20px;
+  text-decoration: none;
+  color:white;
+  transition: all 0.3s !important;
+}
+
+.contact-container {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color:black;
+}
+
 .contact-outer {
   display: table;
   position: absolute;

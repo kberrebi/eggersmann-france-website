@@ -22,7 +22,7 @@ export interface ShowroomGroup {
 export class ContactComponent implements OnInit {
 
   innerWidth: any;
-  pannel = 1;
+  pannel = 0;
   pannel1Option1 = false;
   pannel1Option2 = false;
   pannel3Option1 = false;
@@ -149,9 +149,7 @@ export class ContactComponent implements OnInit {
     if (this.pannel3Option2) {
       this.mailObject.paymentOption = 'oui';
     }
-    this.mailService.sendMail(this.mailObject).subscribe(() => {
-        console.log('email sent with success');
-    });
+    this.mailService.sendMail(this.mailObject);
   }
 
 }

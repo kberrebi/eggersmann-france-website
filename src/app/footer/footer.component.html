@@ -1,12 +1,12 @@
-<div *ngIf="this.navigationService.currentPage != 'contact'" class="container-fluid default-footer" [ngClass]="{'black-footer':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact']), 'white-footer':this.navigationService.isIn(['e30', 'lookbook']),
-'navbar-light':this.navigationService.isIn(['e30', 'lookbook']), 'brown-footer': this.navigationService.isIn(['works'])}">
+<div *ngIf="this.navigationService.currentPage != 'contact'" data-aos="fade-in" data-aos-once="true" data-aos-duration="1200" class="container-fluid default-footer" [ngClass]="{'black-footer':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact']), 'white-footer':this.navigationService.isIn(['e30', 'lookbook']),
+'brown-footer': this.navigationService.isIn(['works'])}">
 <div class="spacer-footer-container">
   <div class="spacer-footer-line" [ngClass]="{'spacer-footer-white-line':this.navigationService.isIn(['unique', 'works'])}"></div>
 </div>
   <div class="row">
     <div class="col centered">
         <div style="text-align: center; padding-top:30px; padding-bottom: 30px" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="200" data-aos-duration="1200" data-aos-once="true">
-            <a href="https://www.facebook.com/eggersmann.unique/" class="fa fa-facebook" [ngClass]="{'fa-bg-dark':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact', 'works']), 'fa-bg-light':this.navigationService.isIn(['e30', 'lookbook'])}"></a>
+            <a href="https://www.facebook.com/eggersmann.france/" target="_blank" class="fa fa-facebook" [ngClass]="{'fa-bg-dark':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact', 'works']), 'fa-bg-light':this.navigationService.isIn(['e30', 'lookbook'])}"></a>
         </div>
     </div>
     <div class="col centered">
