@@ -9,7 +9,8 @@ export class MailServiceService {
   constructor(private _http: HttpClient) { }
 
   sendMail(body) {
-    console.log('service function');
-    return this._http.post('http://localhost:3000/form', body);
+    return this._http.post('http://eggersmann.fr/backend/form.php', body, {responseType: 'text'})
+    .toPromise()
+    .then((response) => response);
   }
 }

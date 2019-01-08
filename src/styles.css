@@ -40,8 +40,9 @@
 }
 
 .mat-form-field{
-  padding-bottom:20px;
-  width:300px;
+  padding-bottom:8px;
+  width:70%;
+  font-family: 'BrandonText-Regular', Arial, Verdana;
 }
 
 .mat-vertical-content {
@@ -220,6 +221,9 @@ a.nav-link.top-right-link {
   .col-right-border {
     border-right: none;
   }
+  .mat-form-field {
+    width:90%;
+  }
 }
 
 @media only screen and (max-width: 500px){
@@ -232,5 +236,8 @@ a.nav-link.top-right-link {
   }
   .col-right-border {
     border-right: none;
+  }
+  .mat-form-field {
+    width:90%;
   }
 }

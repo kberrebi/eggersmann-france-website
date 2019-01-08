@@ -1,5 +1,200 @@
 <div class="contact-container">
-  <div class="temporary-announcement" data-aos="fade-up" data-aos-once="true" data-aos-duration="1200">
-    Bientôt...
+<div class="contact-outer" data-aos="fade-in" data-aos-once="true" data-aos-duration="1200">
+    <div class="contact-middle">
+      <div class="contact-inner">
+          <div class="black-box-container" data-aos="fade-up" data-aos-once="true" data-aos-duration="1200">
+            <div class="pannel-outer">
+                <div *ngIf="(this.pannel !== 1) && (this.pannel !== 0)" class="back-button-container" (click)="back()" data-aos="fade" data-aos-once="true" data-aos-duration="1200">
+                    <i class="material-icons back-button-icon" style="font-size:23px;">navigate_before</i>
+                    <span class="back-button-text">Retour</span>
+                </div>
+              <div class="pannel-middle">
+                  <!-- PANNEL 0 -->
+                  <div [ngClass]="this.pannel == 0 ? 'pannel-visible' : 'pannel-hidden'" *ngIf="this.pannel == 0">
+                  <div class="pannel-0" [ngClass]="this.pannel == 0 ? 'pannel-visible' : 'pannel-hidden'" *ngIf="this.pannel == 0">
+                    <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200">
+                      <div class="contact-title">
+                          Contactez-nous
+                      </div>
+                    </div>
+                  </div>
+                  <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="200">
+                      <div class="send-email-container">
+                          <a class="send-email-text" href="Mailto:contact@eggersmann.fr">
+                              Envoyer un e-mail
+                          </a>
+                      </div>
+                  </div>
+                  <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="200" style="display:none;">
+                    <div class="send-email-container">
+                        <a class="send-email-text" (click)="goToPannel(3, 'pannel1Option1')">
+                            Envoyer un e-mail
+                        </a>
+                    </div>
+                </div>
+                </div>
+                  <!-- PANNEL 1 -->
+                  <div class="pannel-1" [ngClass]="this.pannel == 1 ? 'pannel-visible' : 'pannel-hidden'" *ngIf="this.pannel == 1">
+                    <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200">
+                      <div class="contact-title">
+                          Contactez-nous
+                      </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="200">
+                        <div class="opt-container" (click)="goToPannel(3, 'pannel1Option1')">
+                            <div class="panel-1-opt-2">
+                                Vous avez le projet de réaliser une cuisine eggersmann et vous souhaitez recevoir le luxueux  Lookbook de la marque.
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="400">
+                        <div class="opt-container" (click)="goToPannel(2, 'pannel1Option2')">
+                            <div class="panel-1-opt-1">
+                                Vous souhaitez être mis en contact avec la marque eggersmann pour devenir un partenaire distributeur.
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="600">
+                        <div class="other-opt" (click)="goToPannel(2)">
+                            <div class="panel-1-opt-3">
+                                Autre
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- PANNEL 2 -->
+                  <div class="pannel-2" [ngClass]="this.pannel == 2 ? 'pannel-visible' : 'pannel-hidden'" *ngIf="this.pannel == 2">
+                      <div>
+                        <div class="pre-form-title" data-aos="fade-up" data-aos-once="true" data-aos-duration="1200">
+                          <span>Remplissez pour cela les informations suivantes, nous vous assurons d’une parfaite confidentialité de votre contact avec nous :</span>
+                        </div>
+                          <form [formGroup]="formGroup" data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="200">
+                              <div class="row">
+                                  <div class="col-sm-12 col-md-6">
+                                      <div class="contact-fields-container">
+                                          <mat-form-field class="centered-field">
+                                            <input matInput placeholder="Prénom" formControlName="firstNameCtrl" required>
+                                          </mat-form-field>
+                                          <mat-form-field class="centered-field">
+                                            <input matInput placeholder="Nom" formControlName="lastNameCtrl" required>
+                                          </mat-form-field>
+                                          <mat-form-field class="centered-field">
+                                            <input matInput placeholder="Email" formControlName="emailCtrl" required>
+                                          </mat-form-field>
+                                          <mat-form-field class="centered-field">
+                                            <input matInput placeholder="Pays" formControlName="countryCtrl" required>
+                                          </mat-form-field>
+                                          <mat-form-field class="centered-field">
+                                            <input matInput placeholder="Adresse" formControlName="addressCtrl" required>
+                                          </mat-form-field>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-12 col-md-6">
+                                      <div class="contact-fields-container">
+                                          <mat-form-field class="centered-field">
+                                            <input matInput placeholder="Ville" formControlName="cityCtrl" required>
+                                          </mat-form-field>
+                                          <mat-form-field class="centered-field">
+                                            <input matInput class="example-right-align" placeholder="Code Postal" formControlName="postCodeCtrl" type="number" required>
+                                          </mat-form-field>
+                                          <mat-form-field class="centered-field">
+                                            <input matInput placeholder="Téléphone" formControlName="phoneCtrl" required>
+                                          </mat-form-field>
+                                          <mat-form-field class="centered-field">
+                                            <textarea matInput placeholder="Message" formControlName="messageCtrl"></textarea>
+                                          </mat-form-field>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div *ngIf="this.innerWidth <= 767">
+                                  <div class="next-button">
+                                      <button type="button" class="btn btn-outline-light" (click)="sendEmail()">Suivant</button>
+                                  </div>
+                              </div>
+                          </form>
+                          <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="400" *ngIf="this.innerWidth > 767">
+                              <div class="next-button">
+                                  <button type="button" class="btn btn-outline-light" (click)="this.formGroup.valid ? sendEmail() : null">Suivant</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- PANNEL 3 -->
+                  <div class="pannel-3" [ngClass]="this.pannel == 3 ? 'pannel-visible' : 'pannel-hidden'" *ngIf="this.pannel == 3">
+                      <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200">
+                          <div class="before-opt">
+                              Nous vous offrons 2 possibilités :
+                          </div>
+                      </div>
+                      <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="200">
+                          <div class="opt-container" (click)="goToPannel(4, 'pannel3Option1')">
+                              <div class="panel-1-opt-1">
+                                  La remise en main propre à votre convenance dans le showroom que vous sélectionnez
+                              </div>
+                          </div>
+                      </div>
+                      <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="400">
+                          <div class="opt-container" (click)="goToPannel(2, 'pannel3Option2')">
+                              <div class="panel-1-opt-2">
+                                  La réception par courrier à votre adresse moyennant une participation aux frais d’expédition d’un montant de 5€ payable uniquement par virement bancaire.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- PANNEL 4 -->
+                  <div class="pannel-4" [ngClass]="this.pannel == 4 ? 'pannel-visible' : 'pannel-hidden'" *ngIf="this.pannel == 4">
+                      <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200">
+                          <div class="select-title">
+                              Veuillez sélectionner un showroom :
+                          </div>
+                      </div>
+                      <div style="text-align: center;" data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="200">
+                          <mat-form-field class="showroom-select">
+                              <mat-select placeholder="Showroom" [formControl]="showroomControl">
+                                <mat-optgroup *ngFor="let group of showroomGroups" [label]="group.name">
+                                  <mat-option *ngFor="let showroom of group.Showroom" [value]="showroom.value">
+                                    {{showroom.viewValue}}
+                                  </mat-option>
+                                </mat-optgroup>
+                              </mat-select>
+                          </mat-form-field>
+                      </div>
+                      <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="400">
+                          <div class="next-button">
+                              <button type="button" class="btn btn-outline-light" (click)="goToPannel(2, 4)">Suivant</button>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- PANNEL 5 -->
+                  <div class="pannel-5" [ngClass]="this.pannel == 5 ? 'pannel-visible' : 'pannel-hidden'" *ngIf="this.pannel == 5">
+                      <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200">
+                          <div class="payment-title">
+                              Nous venons de vous adresser un e-mail qui contient les indications qui vous permettent de procéder au règlement demandé en toute sécurité.
+                          </div>
+                      </div>
+                      <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="200">
+                          <div class="next-button">
+                              <button type="button" class="btn btn-outline-light" (click)="goToPannel(6, 5)">Terminer</button>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- PANNEL 6 -->
+                  <div class="pannel-6" [ngClass]="this.pannel == 6 ? 'pannel-visible' : 'pannel-hidden'" *ngIf="this.pannel == 6">
+                      <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200">
+                          <div class="thanks-title">
+                              Merci
+                          </div>
+                      </div>
+                      <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="200">
+                          <div class="thanks-description">
+                              Votre demande sera traitée dans les meilleurs délais.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
   </div>
 </div>
