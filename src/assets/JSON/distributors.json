@@ -9,9 +9,9 @@
           "formattedTitle": "paris7",
           "name": "Dimi Interior Design",
           "displayedAddress": "4 rue de Luynes, 75007 Paris",
-          "googleMapsAddress": "4 Rue de Luynes, 75007 Paris",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=4 Rue de Luynes, 75007 Paris",
           "phone": "Tél. +33 1 42 84 36 06",
-          "email": "paris07@eggersmann.fr",
+          "email": "Mailto:paris07@eggersmann.fr",
           "website": "http://dimi-interiordesign.com/",
           "availabilities": [
             "Ouverture du Showroom :",
@@ -21,17 +21,46 @@
         },
         {
           "title": "Paris 8ème",
-          "formattedTitle": "paris7",
-          "name": "Dimi Interior Design",
-          "displayedAddress": "4 rue de Luynes, 75007 Paris",
-          "googleMapsAddress": "4 Rue de Luynes, 75007 Paris",
-          "phone": "Tél. +33 1 42 84 36 06",
-          "email": "paris07@eggersmann.fr",
-          "website": "http://dimi-interiordesign.com/",
+          "formattedTitle": "paris8",
+          "name": "Habitat Project",
+          "displayedAddress": "157 Rue du Faubourg Saint-Honoré, 75008 Paris",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=157 Rue du Faubourg Saint-Honoré, 75008 Paris",
+          "phone": "Tél. +33 1 45 61 24 44",
+          "email": "Mailto:paris08@eggersmann.fr",
+          "website": "http://www.habitat-project.com/cuisines/particulier/",
           "availabilities": [
             "Ouverture du Showroom :",
-            "Du mardi au samedi : 10:00 - 13:00 / 14:00 - 19:00",
-            "Lundi sur rendez-vous"
+            "Du lundi au vendredi : 10:00 - 13:00 / 14:00 - 19:00",
+            "Samedi sur rendez-vous"
+          ]
+        },
+        {
+          "title": "Paris 12ème",
+          "formattedTitle": "paris12",
+          "name": "Paul & Benjamin",
+          "displayedAddress": "68 Avenue Ledru-Rollin, 75012 Paris",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=68 Avenue Ledru-Rollin, 75012 Paris",
+          "phone": "Tél. +33 7 86 11 06 37",
+          "email": "Mailto:paris12@eggersmann.fr",
+          "website": "",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du lundi au samedi : 10:00 - 12:00 / 14:00 - 19:00"
+          ]
+        },
+        {
+          "title": "Le Perreux",
+          "formattedTitle": "lePerreux",
+          "name": "Harmonique",
+          "displayedAddress": "232 avenue Pierre Brossolette, 94170 Le Perreux-sur-Marne",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=232 avenue Pierre Brossolette, 94170 Le Perreux-sur-Marne",
+          "phone": "Tél. +33 1 48 72 95 95",
+          "email": "Mailto:leperreux@eggersmann.fr",
+          "website": "http://www.harmonique.fr/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du lundi au vendredi : 10:00 - 12:30 / 14:00 - 18:30",
+            "Samedi sur rendez-vous"
           ]
         }
       ]
@@ -41,18 +70,298 @@
       "formattedName": "AuvergneRhoneAlpes",
       "showrooms": [
         {
-          "title": "Paris 7ème",
-          "formattedTitle": "paris7",
-          "name": "Dimi Interior Design",
-          "displayedAddress": "4 rue de Luynes, 75007 Paris",
-          "googleMapsAddress": "4 Rue de Luynes, 75007 Paris",
-          "phone": "Tél. +33 1 42 84 36 06",
-          "email": "paris07@eggersmann.fr",
-          "website": "http://dimi-interiordesign.com/",
+          "title": "Clermont-Ferrand",
+          "formattedTitle": "clermontFerrand",
+          "name": "Idées Nouvelles",
+          "displayedAddress": "78 Rue Lamartine, 63000 Clermont-Ferrand",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=78 Rue Lamartine, 63000 Clermont-Ferrand",
+          "phone": "Tél. +33 6 09 46 44 95",
+          "email": "Mailto:clermont@eggersmann.fr",
+          "website": "",
           "availabilities": [
             "Ouverture du Showroom :",
-            "Du mardi au samedi : 10:00 - 13:00 / 14:00 - 19:00",
-            "Lundi sur rendez-vous"
+            "Du lundi au samedi",
+            "Uniquement sur rendez-vous"
+          ]
+        },
+        {
+          "title": "Lyon",
+          "formattedTitle": "lyon",
+          "name": "Cuisine Actuelle",
+          "displayedAddress": "32 Cours de la Liberté, 69003 Lyon",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=32 Cours de la Liberté, 69003 Lyon",
+          "phone": "Tél. +33 4 78 60 71 27",
+          "email": "Mailto:lyon@eggersmann.fr",
+          "website": "",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du mardi au samedi : 10:00 - 12:00 / 15:00 - 19:00",
+            "(Samedi : 10:00 - 12:00 / 15:00 - 18:00)"
+          ]
+        },
+        {
+          "title": "Annecy",
+          "formattedTitle": "annecy",
+          "name": "Studio 4",
+          "displayedAddress": "5 rue de l’espace 55, 74330 Poisy",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=Espace 55, 5 rue de l’espace 55, 74330 Poisy",
+          "phone": "Tél. +33 4 50 27 50 48",
+          "email": "Mailto:annecy@eggersmann.fr",
+          "website": "http://www.studio4cuisines.fr/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du lundi au samedi : 09:00 - 12:00 / 14:00 - 19:00"
+          ]
+        },
+        {
+          "title": "Douvaine",
+          "formattedTitle": "douvaine",
+          "name": "Eurocasa",
+          "displayedAddress": "3 Rue des Vignes de Bachelard, 74140 Douvaine",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=3 Rue des Vignes de Bachelard, 74140 Douvaine",
+          "phone": "Tél. +33 4 50 35 45 91",
+          "email": "Mailto:douvaine@eggersmann.fr",
+          "website": "",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du mardi au samedi : 09:00 - 12:00 / 14:00 - 18:00"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bourgogne Franche Comté",
+      "formattedName": "BourgogneFrancheComte",
+      "showrooms": [
+        {
+          "title": "Besançon",
+          "formattedTitle": "besancon",
+          "name": "ETS Rognon",
+          "displayedAddress": "1 Rue Midol, 25000 Besançon",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=1 Rue Midol, 25000 Besançon",
+          "phone": "Tél. +33 3 81 47 44 00",
+          "email": "Mailto:besancon@eggersmann.fr",
+          "website": "http://www.cuisines-rognon.com/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du lundi au samedi : 09:00 - 12:00 / 14:00 - 19:00",
+            "Autres horaires sur rendez-vous"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bretagne",
+      "formattedName": "Bretagne",
+      "showrooms": [
+        {
+          "title": "Brest",
+          "formattedTitle": "brest",
+          "name": "Couleurs Cuisines by Steliana",
+          "displayedAddress": "50 boulevard Montaigne, 29000 Brest",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=50 boulevard Montaigne, 29000 Brest",
+          "phone": "Tél. +33 2 98 05 33 73‬",
+          "email": "Mailto:brest@eggersmann.fr",
+          "website": "",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du mardi au samedi : 11:00 - 12:30 / 14:30 - 17:00",
+            "Autres horaires sur rendez-vous"
+          ]
+        },
+        {
+          "title": "La Gacilly",
+          "formattedTitle": "lagacilly",
+          "name": "Pierrick Clainchard",
+          "displayedAddress": "Villeneuve, D777, 35550 Sixt-sur-Aff",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=Villeneuve, D777, 35550 Sixt-sur-Aff",
+          "phone": "Tél. +33 2 99 08 04 61‬",
+          "email": "Mailto:lagacilly@eggersmann.fr",
+          "website": "http://www.clainchard.com/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du mardi au vendredi : 09:00 - 12:00 / 14:00 - 18:15 (17:00 le vendredi)",
+            "Le samedi sur rendez-vous"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Corse",
+      "formattedName": "Corse",
+      "showrooms": [
+        {
+          "title": "Suzzoni Balagne",
+          "formattedTitle": "suzzonibalagne",
+          "name": "Suzzoni Balagne",
+          "displayedAddress": "Galerie Ferrandini, 3 Avenue Paul Doumer, 20220 L'Île-Rousse",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=3 Avenue Paul Doumer, 20220 L'Île-Rousse",
+          "phone": "Tél. +33 4 95 55 86 41‬",
+          "email": "Mailto:corse@eggersmann.fr",
+          "website": "http://www.suzzoni-cuisines.fr",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du mardi au samedi : 10:00 - 12:00 / 15:00 - 18:00",
+            "Autres horaires sur rendez-vous"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Occitanie",
+      "formattedName": "Occitanie",
+      "showrooms": [
+        {
+          "title": "Toulouse",
+          "formattedTitle": "toulouse",
+          "name": "Maxime Home Design",
+          "displayedAddress": "15 Avenue Jean Gonord, 31500 Toulouse",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=15 Avenue Jean Gonord, 31500 Toulouse",
+          "phone": "Tél. +33 5 32 02 22 52‬",
+          "email": "Mailto:toulouse@eggersmann.fr",
+          "website": "",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du mardi au samedi : 09:00 - 12:00 / 14:00 - 19:00",
+            "Autres horaires sur rendez-vous"
+          ]
+        },
+        {
+          "title": "Montpellier",
+          "formattedTitle": "montpellier",
+          "name": "Premium Conception",
+          "displayedAddress": "3 impasse du Merle Blanc, 34000 Montpellier",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=3 impasse du Merle Blanc, 34000 Montpellier",
+          "phone": "Tél. ‭+33 6 68 79 95 66",
+          "email": "Mailto:montpellier@eggersmann.fr",
+          "website": "http://www.premiumconception.com",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du lundi au samedi",
+            "Uniquement sur rendez-vous"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hauts de France",
+      "formattedName": "HautsdeFrance",
+      "showrooms": [
+        {
+          "title": "Marcq-en-Barœul",
+          "formattedTitle": "marcqEnBarœul",
+          "name": "La Brigade",
+          "displayedAddress": "43 Rue de Menin, 59700 Marcq-en-Barœul",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=43 Rue de Menin, 59700 Marcq-en-Barœul",
+          "phone": "Tél. +33 3 61 97 37 88‬",
+          "email": "Mailto:marcqenbaroeul@eggersmann.fr",
+          "website": "http://kookup.fr/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du mardi au samedi : 10:00 - 12:00 / 14:00 - 19:00",
+            "Autres horaires sur rendez-vous"
+          ]
+        },
+        {
+          "title": "Wasquehal",
+          "formattedTitle": "wasquehal",
+          "name": "Numero Zero",
+          "displayedAddress": "79 Rue Léon Jouhaux, 59290 Wasquehal",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=79 Rue Léon Jouhaux, 59290 Wasquehal",
+          "phone": "Tél. +33 6 74 68 88 86",
+          "email": "Mailto:wasquehal@eggersmann.fr",
+          "website": "",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du mardi au samedi",
+            "Uniquement sur rendez-vous"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Provence Alpes Côte d'Azur",
+      "formattedName": "ProvenceAlpesCoteAzur",
+      "showrooms": [
+        {
+          "title": "Aix-en-Provence",
+          "formattedTitle": "aixEnProvence",
+          "name": "Le Laureat",
+          "displayedAddress": "42 Boulevard de la République, 13100 Aix-en-Provence",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=42 Boulevard de la République, 13100 Aix-en-Provence",
+          "phone": "Tél. +33 4 42 27 43 25‬",
+          "email": "Mailto:aixenprovence@eggersmann.fr",
+          "website": "http://www.cuisinesbainslelaureat.com/nos-activites-cuisine-0.html",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du mardi au samedi : 09:00 - 12:00 / 14:00 - 19:00",
+            "Autres horaires sur rendez-vous"
+          ]
+        },
+        {
+          "title": "Marseille",
+          "formattedTitle": "marseille",
+          "name": "Ambiance Cuisine",
+          "displayedAddress": "82 Boulevard de la Corderie, 13007 Marseille",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=82 Boulevard de la Corderie, 13007 Marseille",
+          "phone": "Tél. +33 4 91 33 40 44",
+          "email": "Mailto:marseille@eggersmann.fr",
+          "website": "http://www.ambiance.archi/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du lundi au vendredi : 09:00 - 12:00 / 15:00 - 19:00",
+            "Autres horaires sur rendez-vous"
+          ]
+        },
+        {
+          "title": "Cannes",
+          "formattedTitle": "cannes",
+          "name": "Urbann diffusion",
+          "displayedAddress": "140 Rue d'Antibes, Le Wagram, 06400 Cannes",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=140 Rue d'Antibes, Le Wagram, 06400 Cannes",
+          "phone": "Tél. +33 4 93 38 37 87 / +33 6 60 27 17 19",
+          "email": "Mailto:cannes@eggersmann.fr",
+          "website": "",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du lundi au samedi",
+            "Uniquement sur rendez-vous"
+          ]
+        },
+        {
+          "title": "Monaco",
+          "formattedTitle": "monaco",
+          "name": "ADB Cuisines Décoration",
+          "displayedAddress": "17 Boulevard d'Italie, 98000 Monaco",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=17 Boulevard d'Italie, 98000 Monaco",
+          "phone": "Tél. +377 932 55 915",
+          "email": "Mailto:monaco@eggersmann.fr",
+          "website": "http://www.adbcuisines.com/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du lundi au vendredi : 09:00 - 12:00 / 14:00 - 18:00",
+            "Entre 12h et 14h uniquement sur rendez-vous"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nouvelle Aquitaine",
+      "formattedName": "NouvelleAquitaine",
+      "showrooms": [
+        {
+          "title": "Bordeaux",
+          "formattedTitle": "bordeaux",
+          "name": "Créations St Bruno",
+          "displayedAddress": "189 Rue Georges Bonnac, 33000 Bordeaux",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=189 Rue Georges Bonnac, 33000 Bordeaux",
+          "phone": "Tél. +33 5 56 15 06 18",
+          "email": "Mailto:bordeaux@eggersmann.fr",
+          "website": "http://www.creationsstbruno.fr/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du mardi au samedi : 09:00 - 12:00 / 14:00 - 19:00",
+            "Autres horaires sur rendez-vous"
           ]
         }
       ]

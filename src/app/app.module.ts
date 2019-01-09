@@ -85,6 +85,7 @@ import { OakLaminateComponent } from './e30/oak-laminate/oak-laminate.component'
 import { AluminumNicheSystemComponent } from './e30/aluminum-niche-system/aluminum-niche-system.component';
 import { BoxtecComponent } from './e30/boxtec/boxtec.component';
 import { AluminumDrawerSystemComponent } from './e30/aluminum-drawer-system/aluminum-drawer-system.component';
+import { SafePipePipe } from './safe-pipe.pipe';
 
 
 const appRoutes: Routes = [
@@ -221,6 +222,7 @@ const appRoutes: Routes = [
     AluminumNicheSystemComponent,
     BoxtecComponent,
     AluminumDrawerSystemComponent,
+    SafePipePipe,
   ],
   imports: [
     BrowserModule,

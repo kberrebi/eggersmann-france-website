@@ -23,9 +23,7 @@ export class DistributorsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.regions.forEach(region => {
-      console.log(region);
-    });
+    console.log(this.regions[0].content[0]);
     this.navigationService.currentPage = 'distributors';
   }
 

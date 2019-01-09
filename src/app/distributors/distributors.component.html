@@ -177,10 +177,10 @@
            île de France
         </div>
         <mat-accordion>
-            <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'paris7'">
+            <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'paris7'" *ngFor="let showroom of this.regions[0].content[0]">
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        <div class="title-expansion">Paris 7ème</div>
+                        <div class="title-expansion">{{showroom.title}}</div>
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <ng-template matExpansionPanelContent>
@@ -190,746 +190,348 @@
                           width="100%"
                           height="320"
                           frameborder="0" style="border:0"
-                          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                            &q=4 Rue de Luynes, 75007 Paris" allowfullscreen>
+                          [src]="showroom.googleMapsAddress | safePipe" allowfullscreen>
                         </iframe>
                     </div>
                     <div class="col-xs-12 col-md-6">
                       <div class="right-text-expansion">
-                        <h3 style="color:gray;font-weight: bold;">Dimi Interior Design</h3>
-                        <h6 style="color:gray;">4 rue de Luynes, 75007 Paris</h6>
-                        <h6 style="color:gray; margin-top:60px;">Tél. +33 1 42 84 36 06</h6>
-                        <h6><a style="color:gray" href="Mailto:paris07@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                        <h6><a style="color:gray" href="http://dimi-interiordesign.com/" target="_blank" title="Ouverture nouvelle fenêtre">Site Internet</a></h6>
-                        <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                        <p style="color:gray; margin-bottom:0px;"> Du mardi au samedi : 10:00 - 13:00 / 14:00 - 19:00</p>
-                        <p style="color:gray; margin-bottom:0px;"> Lundi sur rendez-vous</p>
+                        <h3 style="color:gray;font-weight: bold;" *ngIf="showroom.name !== null && showroom.name !== ''">{{showroom.name}}</h3>
+                        <h6 style="color:gray;" *ngIf="showroom.displayedAddress !== null && showroom.displayedAddress !== ''">{{showroom.displayedAddress}}</h6>
+                        <h6 style="color:gray; margin-top:60px;" *ngIf="showroom.phone !== null && showroom.phone !== ''">{{showroom.phone}}</h6>
+                        <h6><a style="color:gray" [href]="showroom.email" title="Envoyer un email" *ngIf="showroom.email !== null">e-mail</a></h6>
+                        <h6><a style="color:gray" [href]="showroom.website" target="_blank" title="Ouverture nouvelle fenêtre" *ngIf="showroom.website !== null && showroom.website !== ''">Site Internet</a></h6>
+                        <h6 style="color:gray; margin-top:60px;font-weight: bold" *ngIf="showroom.availabilities[0] !== null && showroom.availabilities[0] !== ''">{{showroom.availabilities[0]}}</h6>
+                        <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[1] !== null && showroom.availabilities[1] !== ''">{{showroom.availabilities[1]}}</p>
+                        <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[2] !== null && showroom.availabilities[2] !== ''">{{showroom.availabilities[2]}}</p>
+                        <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[3] !== null && showroom.availabilities[3] !== ''">{{showroom.availabilities[3]}}</p>
                       </div>
                     </div>
                   </div>
                 </ng-template>
             </mat-expansion-panel>
-          <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'paris8'">
-            <mat-expansion-panel-header>
-                <mat-panel-title>
-                    <div class="title-expansion">Paris 8ème</div>
-                </mat-panel-title>
-            </mat-expansion-panel-header>
-            <ng-template matExpansionPanelContent>
-              <div class="row">
-                <div class="col-xs-12 col-md-6">
-                  <iframe
-                      width="100%"
-                      height="320"
-                      frameborder="0" style="border:0"
-                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                        &q=157 Rue du Faubourg Saint-Honoré, 75008 Paris" allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                  <div class="right-text-expansion">
-                    <h3 style="color:gray;font-weight: bold;">Habitat Project</h3>
-                    <h6 style="color:gray;">157 Rue du Faubourg Saint-Honoré, 75008 Paris</h6>
-                    <h6 style="color:gray; margin-top:60px;">Tél. +33 1 45 61 24 44</h6>
-                    <h6><a style="color:gray" href="Mailto:paris08@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                    <h6><a style="color:gray" href="http://www.habitat-project.com/cuisines/particulier/" target="_blank" title="Ouverture nouvelle fenêtre">Site Internet</a></h6>
-                    <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                    <p style="color:gray; margin-bottom:0px;"> Du lundi au vendredi : 10:00 - 13:00 / 14:00 - 19:00</p>
-                    <p style="color:gray; margin-bottom:0px;"> Samedi sur rendez-vous</p>
-                  </div>
-                </div>
-              </div>
-            </ng-template>
-          </mat-expansion-panel>
-            <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'paris12'">
-                <mat-expansion-panel-header>
-                    <mat-panel-title>
-                        <div class="title-expansion">Paris 12ème</div>
-                    </mat-panel-title>
-                </mat-expansion-panel-header>
-                <ng-template matExpansionPanelContent>
-                  <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                      <iframe
-                          width="100%"
-                          height="320"
-                          frameborder="0" style="border:0"
-                          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                            &q=68 Avenue Ledru-Rollin, 75012 Paris" allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                      <div class="right-text-expansion">
-                        <h3 style="color:gray;font-weight: bold;">Paul & Benjamin</h3>
-                        <h6 style="color:gray;">68 Avenue Ledru-Rollin, 75012 Paris</h6>
-                        <h6 style="color:gray; margin-top:60px;">Tél. +33 7 86 11 06 37</h6>
-                        <h6><a style="color:gray" href="Mailto:paris12@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                        <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                        <p style="color:gray; margin-bottom:0px;"> Du lundi au samedi : 10:00 - 12:00 / 14:00 - 19:00</p>
-                      </div>
-                    </div>
-                  </div>
-                </ng-template>
-            </mat-expansion-panel>
-            <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'lePerreux'">
-                <mat-expansion-panel-header>
-                    <mat-panel-title>
-                        <div class="title-expansion">Le Perreux</div>
-                    </mat-panel-title>
-                </mat-expansion-panel-header>
-                <ng-template matExpansionPanelContent>
-                  <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                      <iframe
-                          width="100%"
-                          height="320"
-                          frameborder="0" style="border:0"
-                          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                            &q=232 Avenue Pierre Brossolette, 94170 Le Perreux-sur-Marne" allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                      <div class="right-text-expansion">
-                        <h3 style="color:gray;font-weight: bold;">Harmonique</h3>
-                        <h6 style="color:gray;">232 avenue Pierre Brossolette, 94170 LE Perreux-sur-Marne</h6>
-                        <h6 style="color:gray; margin-top:60px;">Tél. +33 1 48 72 95 95</h6>
-                        <h6><a style="color:gray" href="Mailto:leperreux@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                        <h6><a style="color:gray" href="http://www.harmonique.fr/" target="_blank" title="Ouverture nouvelle fenêtre">Site Internet</a></h6>
-                        <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                        <p style="color:gray; margin-bottom:0px;"> Du lundi au vendredi : 10:00 - 12:30 / 14:00 - 18:30</p>
-                        <p style="color:gray; margin-bottom:0px;"> Samedi sur rendez-vous</p>
-                      </div>
-                    </div>
-                  </div>
-                </ng-template>
-              </mat-expansion-panel>
         </mat-accordion>
     </div>
+
     <div class="col-xs-12 col-md-12">
       <div #AuvergneRhoneAlpes class="accordion-title">
-         Auvergne Rhône Alpes
+        Auvergne Rhône Alpes
       </div>
       <mat-accordion>
-        <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'clermontFerrand'">
-          <mat-expansion-panel-header>
-              <mat-panel-title>
-                  <div class="title-expansion">Clermont-Ferrand</div>
-              </mat-panel-title>
-          </mat-expansion-panel-header>
-          <ng-template matExpansionPanelContent>
-            <div class="row">
-              <div class="col-xs-12 col-md-6">
-                <iframe
-                    width="100%"
-                    height="320"
-                    frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                      &q=78 Rue Lamartine, 63000 Clermont-Ferrand" allowfullscreen>
-                  </iframe>
-              </div>
-              <div class="col-xs-12 col-md-6">
-                <div class="right-text-expansion">
-                  <h3 style="color:gray;font-weight: bold;">Idées Nouvelles</h3>
-                  <h6 style="color:gray;">78 Rue Lamartine, 63000 Clermont-Ferrand</h6>
-                  <h6 style="color:gray; margin-top:60px;">Tél. +33 6 09 46 44 95</h6>
-                  <h6><a style="color:gray" href="Mailto:clermont@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                  <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                  <p style="color:gray; margin-bottom:0px;"> Du lundi au samedi</p>
-                  <p style="color:gray; margin-bottom:0px;"> Uniquement sur rendez-vous</p>
-                </div>
-              </div>
-            </div>
-          </ng-template>
-        </mat-expansion-panel>
-        <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'lyon'">
-            <mat-expansion-panel-header>
-                <mat-panel-title>
-                    <div class="title-expansion">Lyon</div>
-                </mat-panel-title>
-            </mat-expansion-panel-header>
-            <ng-template matExpansionPanelContent>
-            <div class="row">
-              <div class="col-xs-12 col-md-6">
-                <iframe
-                    width="100%"
-                    height="320"
-                    frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                      &q=32 Cours de la Liberté, 69003 Lyon" allowfullscreen>
-                  </iframe>
-              </div>
-              <div class="col-xs-12 col-md-6">
-                <div class="right-text-expansion">
-                  <h3 style="color:gray;font-weight: bold;">Cuisine Actuelle</h3>
-                  <h6 style="color:gray;">32 Cours de la Liberté, 69003 Lyon</h6>
-                  <h6 style="color:gray; margin-top:60px;">Tél. +33 4 78 60 71 27</h6>
-                  <h6><a style="color:gray" href="Mailto:lyon@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                  <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                  <p style="color:gray; margin-bottom:0px;"> Du mardi au samedi : 10:00 - 12:00 / 15:00 - 19:00</p>
-                  <p style="color:gray; margin-bottom:0px;"> (Samedi : 10:00 - 12:00 / 15:00 - 18:00)</p>
-                </div>
-              </div>
-            </div>
-          </ng-template>
-          </mat-expansion-panel>
-          <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'annecy'">
+          <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'paris7'" *ngFor="let showroom of this.regions[1].content[0]">
               <mat-expansion-panel-header>
                   <mat-panel-title>
-                      <div class="title-expansion">Annecy</div>
+                      <div class="title-expansion">{{showroom.title}}</div>
                   </mat-panel-title>
               </mat-expansion-panel-header>
               <ng-template matExpansionPanelContent>
-              <div class="row">
-                <div class="col-xs-12 col-md-6">
-                  <iframe
-                      width="100%"
-                      height="320"
-                      frameborder="0" style="border:0"
-                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                        &q=espace 55, 5 rue de l'espace, 74330 Poisy" allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                  <div class="right-text-expansion">
-                    <h3 style="color:gray;font-weight: bold;">Studio 4</h3>
-                    <h6 style="color:gray;">5 rue de l’espace 55, 74330 Poisy</h6>
-                    <h6 style="color:gray; margin-top:60px;">Tél. +33 4 50 27 50 48</h6>
-                    <h6><a style="color:gray" href="Mailto:annecy@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                    <h6><a style="color:gray" href="http://www.studio4cuisines.fr/" target="_blank" title="Ouverture nouvelle fenêtre">Site Internet</a></h6>
-                    <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                    <p style="color:gray; margin-bottom:0px;"> Du lundi au samedi : 09:00 - 12:00 / 14:00 - 19:00</p>
-                  </div>
-                </div>
-              </div>
-            </ng-template>
-            </mat-expansion-panel>
-            <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'sallanches'">
-                <mat-expansion-panel-header>
-                    <mat-panel-title>
-                        <div class="title-expansion">Sallanches</div>
-                    </mat-panel-title>
-                </mat-expansion-panel-header>
-                <ng-template matExpansionPanelContent>
                 <div class="row">
                   <div class="col-xs-12 col-md-6">
                     <iframe
                         width="100%"
                         height="320"
                         frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                          &q=1490 Rue du Général de Gaulle, 74700 Sallanches" allowfullscreen>
+                        [src]="showroom.googleMapsAddress | safePipe" allowfullscreen>
                       </iframe>
                   </div>
                   <div class="col-xs-12 col-md-6">
                     <div class="right-text-expansion">
-                      <h3 style="color:gray;font-weight: bold;">Sallanches Meubles</h3>
-                      <h6 style="color:gray;">1490 Rue du Général de Gaulle, 74700 Sallanches</h6>
-                      <h6 style="color:gray; margin-top:60px;">Tél. +33 4 50 93 30 51</h6>
-                      <h6><a style="color:gray" href="Mailto:sallanches@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                      <h6><a style="color:gray" href="http://www.sallanches-meubles.com/" target="_blank" title="Ouverture nouvelle fenêtre">Site Internet</a></h6>
-                      <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                      <p style="color:gray; margin-bottom:0px;"> lundi - mardi - jeudi - vendredi : 09:30 - 12:00 / 14:30 - 19:00</p>
-                      <p style="color:gray; margin-bottom:0px;"> samedi : 09:30 - 12:30 / 14:30 - 17:00</p>
+                      <h3 style="color:gray;font-weight: bold;" *ngIf="showroom.name !== null && showroom.name !== ''">{{showroom.name}}</h3>
+                      <h6 style="color:gray;" *ngIf="showroom.displayedAddress !== null && showroom.displayedAddress !== ''">{{showroom.displayedAddress}}</h6>
+                      <h6 style="color:gray; margin-top:60px;" *ngIf="showroom.phone !== null && showroom.phone !== ''">{{showroom.phone}}</h6>
+                      <h6><a style="color:gray" [href]="showroom.email" title="Envoyer un email" *ngIf="showroom.email !== null">e-mail</a></h6>
+                      <h6><a style="color:gray" [href]="showroom.website" target="_blank" title="Ouverture nouvelle fenêtre" *ngIf="showroom.website !== null && showroom.website !== ''">Site Internet</a></h6>
+                      <h6 style="color:gray; margin-top:60px;font-weight: bold" *ngIf="showroom.availabilities[0] !== null && showroom.availabilities[0] !== ''">{{showroom.availabilities[0]}}</h6>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[1] !== null && showroom.availabilities[1] !== ''">{{showroom.availabilities[1]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[2] !== null && showroom.availabilities[2] !== ''">{{showroom.availabilities[2]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[3] !== null && showroom.availabilities[3] !== ''">{{showroom.availabilities[3]}}</p>
                     </div>
                   </div>
                 </div>
               </ng-template>
-              </mat-expansion-panel>
-              <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'douvaines'">
-                <mat-expansion-panel-header>
-                    <mat-panel-title>
-                        <div class="title-expansion">Douvaine</div>
-                    </mat-panel-title>
-                </mat-expansion-panel-header>
-                <ng-template matExpansionPanelContent>
-                <div class="row">
-                  <div class="col-xs-12 col-md-6">
-                    <iframe
-                        width="100%"
-                        height="320"
-                        frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                          &q=3 Rue des Vignes de Bachelard, 74140 Douvaine" allowfullscreen>
-                      </iframe>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <div class="right-text-expansion">
-                      <h3 style="color:gray;font-weight: bold;">Eurocasa</h3>
-                      <h6 style="color:gray;">3 Rue des Vignes de Bachelard, 74140 Douvaine</h6>
-                      <h6 style="color:gray; margin-top:60px;">Tél. +33 4 50 35 45 91</h6>
-                      <h6><a style="color:gray" href="Mailto:douvaine@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                      <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                      <p style="color:gray; margin-bottom:0px;"> Du mardi au samedi : 09:00 - 12:00 / 14:00 - 18:00</p>
-                    </div>
-                  </div>
-                </div>
-              </ng-template>
-              </mat-expansion-panel>
+          </mat-expansion-panel>
       </mat-accordion>
     </div>
+
     <div class="col-xs-12 col-md-12">
       <div #BourgogneFrancheComte class="accordion-title">
         Bourgogne Franche Comté
       </div>
       <mat-accordion>
-        <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'besancon'">
-          <mat-expansion-panel-header>
-              <mat-panel-title>
-                  <div class="title-expansion">Besançon</div>
-              </mat-panel-title>
-          </mat-expansion-panel-header>
-          <ng-template matExpansionPanelContent>
-          <div class="row">
-            <div class="col-xs-12 col-md-6">
-              <iframe
-                  width="100%"
-                  height="320"
-                  frameborder="0" style="border:0"
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                    &q=1 Rue Midol, 25000 Besançon" allowfullscreen>
-                </iframe>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <div class="right-text-expansion">
-                <h3 style="color:gray;font-weight: bold;">ETS Rognon</h3>
-                <h6 style="color:gray;">1 Rue Midol, 25000 Besançon</h6>
-                <h6 style="color:gray; margin-top:60px;">Tél. +33 3 81 47 44 00</h6>
-                <h6><a style="color:gray" href="Mailto:besancon@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                <h6><a style="color:gray" href="http://www.cuisines-rognon.com/" target="_blank" title="Ouverture nouvelle fenêtre">Site Internet</a></h6>
-                <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                <p style="color:gray; margin-bottom:0px;"> Du lundi au samedi : 09:00 - 12:00 / 14:00 - 19:00</p>
-                <p style="color:gray; margin-bottom:0px;"> Autres horaires sur rendez-vous</p>
-              </div>
-            </div>
-          </div>
-        </ng-template>
-        </mat-expansion-panel>
+          <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'paris7'" *ngFor="let showroom of this.regions[2].content[0]">
+              <mat-expansion-panel-header>
+                  <mat-panel-title>
+                      <div class="title-expansion">{{showroom.title}}</div>
+                  </mat-panel-title>
+              </mat-expansion-panel-header>
+              <ng-template matExpansionPanelContent>
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <iframe
+                        width="100%"
+                        height="320"
+                        frameborder="0" style="border:0"
+                        [src]="showroom.googleMapsAddress | safePipe" allowfullscreen>
+                      </iframe>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="right-text-expansion">
+                      <h3 style="color:gray;font-weight: bold;" *ngIf="showroom.name !== null && showroom.name !== ''">{{showroom.name}}</h3>
+                      <h6 style="color:gray;" *ngIf="showroom.displayedAddress !== null && showroom.displayedAddress !== ''">{{showroom.displayedAddress}}</h6>
+                      <h6 style="color:gray; margin-top:60px;" *ngIf="showroom.phone !== null && showroom.phone !== ''">{{showroom.phone}}</h6>
+                      <h6><a style="color:gray" [href]="showroom.email" title="Envoyer un email" *ngIf="showroom.email !== null">e-mail</a></h6>
+                      <h6><a style="color:gray" [href]="showroom.website" target="_blank" title="Ouverture nouvelle fenêtre" *ngIf="showroom.website !== null && showroom.website !== ''">Site Internet</a></h6>
+                      <h6 style="color:gray; margin-top:60px;font-weight: bold" *ngIf="showroom.availabilities[0] !== null && showroom.availabilities[0] !== ''">{{showroom.availabilities[0]}}</h6>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[1] !== null && showroom.availabilities[1] !== ''">{{showroom.availabilities[1]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[2] !== null && showroom.availabilities[2] !== ''">{{showroom.availabilities[2]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[3] !== null && showroom.availabilities[3] !== ''">{{showroom.availabilities[3]}}</p>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+          </mat-expansion-panel>
       </mat-accordion>
     </div>
+
     <div class="col-xs-12 col-md-12">
       <div #Bretagne class="accordion-title">
-         Bretagne
+        Bretagne
       </div>
       <mat-accordion>
-        <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'brest'">
-          <mat-expansion-panel-header>
-              <mat-panel-title>
-                  <div class="title-expansion">Brest</div>
-              </mat-panel-title>
-          </mat-expansion-panel-header>
-          <ng-template matExpansionPanelContent>
-          <div class="row">
-            <div class="col-xs-12 col-md-6">
-              <iframe
-                  width="100%"
-                  height="320"
-                  frameborder="0" style="border:0"
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                    &q=50 boulevard Montaigne, 29000 Brest" allowfullscreen>
-                </iframe>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <div class="right-text-expansion">
-                <h3 style="color:gray;font-weight: bold;">Couleurs Cuisines by Steliana</h3>
-                <h6 style="color:gray;">50 boulevard Montaigne, 29000 Brest</h6>
-                <h6 style="color:gray; margin-top:60px;">Tél. +33 2 98 05 33 73‬</h6>
-                <h6><a style="color:gray" href="Mailto:brest@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                <p style="color:gray; margin-bottom:0px;"> Du mardi au samedi : 11:00 - 12:30 / 14:30 - 17:00</p>
-                <p style="color:gray; margin-bottom:0px;"> Autres horaires sur rendez-vous</p>
-              </div>
-            </div>
-          </div>
-        </ng-template>
-        </mat-expansion-panel>
-        <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'laGacilly'">
-            <mat-expansion-panel-header>
-                <mat-panel-title>
-                    <div class="title-expansion">La Gacilly</div>
-                </mat-panel-title>
-            </mat-expansion-panel-header>
-            <ng-template matExpansionPanelContent>
-            <div class="row">
-              <div class="col-xs-12 col-md-6">
-                <iframe
-                    width="100%"
-                    height="320"
-                    frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                      &q=Villeneuve%2C%20D777%2C%2035550%20Sixt-sur-Aff" allowfullscreen>
-                  </iframe>
-              </div>
-              <div class="col-xs-12 col-md-6">
-                <div class="right-text-expansion">
-                  <h3 style="color:gray;font-weight: bold;">Pierrick Clainchard</h3>
-                  <h6 style="color:gray;">Villeneuve, D777, 35550 Sixt-sur-Aff</h6>
-                  <h6 style="color:gray; margin-top:60px;">Tél. +33 2 99 08 04 61</h6>
-                  <h6><a style="color:gray" href="Mailto:lagacilly@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                  <h6><a style="color:gray" href="http://www.clainchard.com/" target="_blank" title="Ouverture nouvelle fenêtre">Site Internet</a></h6>
-                  <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                  <p style="color:gray; margin-bottom:0px;"> Du mardi au vendredi : 09:00 - 12:00 / 14:00 - 18:15 (17:00 le vendredi)</p>
-                  <p style="color:gray; margin-bottom:0px;"> Le samedi sur rendez-vous</p>
+          <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'paris7'" *ngFor="let showroom of this.regions[3].content[0]">
+              <mat-expansion-panel-header>
+                  <mat-panel-title>
+                      <div class="title-expansion">{{showroom.title}}</div>
+                  </mat-panel-title>
+              </mat-expansion-panel-header>
+              <ng-template matExpansionPanelContent>
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <iframe
+                        width="100%"
+                        height="320"
+                        frameborder="0" style="border:0"
+                        [src]="showroom.googleMapsAddress | safePipe" allowfullscreen>
+                      </iframe>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="right-text-expansion">
+                      <h3 style="color:gray;font-weight: bold;" *ngIf="showroom.name !== null && showroom.name !== ''">{{showroom.name}}</h3>
+                      <h6 style="color:gray;" *ngIf="showroom.displayedAddress !== null && showroom.displayedAddress !== ''">{{showroom.displayedAddress}}</h6>
+                      <h6 style="color:gray; margin-top:60px;" *ngIf="showroom.phone !== null && showroom.phone !== ''">{{showroom.phone}}</h6>
+                      <h6><a style="color:gray" [href]="showroom.email" title="Envoyer un email" *ngIf="showroom.email !== null">e-mail</a></h6>
+                      <h6><a style="color:gray" [href]="showroom.website" target="_blank" title="Ouverture nouvelle fenêtre" *ngIf="showroom.website !== null && showroom.website !== ''">Site Internet</a></h6>
+                      <h6 style="color:gray; margin-top:60px;font-weight: bold" *ngIf="showroom.availabilities[0] !== null && showroom.availabilities[0] !== ''">{{showroom.availabilities[0]}}</h6>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[1] !== null && showroom.availabilities[1] !== ''">{{showroom.availabilities[1]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[2] !== null && showroom.availabilities[2] !== ''">{{showroom.availabilities[2]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[3] !== null && showroom.availabilities[3] !== ''">{{showroom.availabilities[3]}}</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </ng-template>
+              </ng-template>
           </mat-expansion-panel>
       </mat-accordion>
     </div>
+
     <div class="col-xs-12 col-md-12">
       <div #Corse class="accordion-title">
-         Corse
+        Corse
       </div>
       <mat-accordion>
-        <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'suzzoniBalagne'">
-          <mat-expansion-panel-header>
-              <mat-panel-title>
-                  <div class="title-expansion">Suzzoni Balagne</div>
-              </mat-panel-title>
-          </mat-expansion-panel-header>
-          <ng-template matExpansionPanelContent>
-          <div class="row">
-            <div class="col-xs-12 col-md-6">
-              <iframe
-                  width="100%"
-                  height="320"
-                  frameborder="0" style="border:0"
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                    &q=3 Avenue Paul Doumer, 20220 L'Île-Rousse" allowfullscreen>
-                </iframe>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <div class="right-text-expansion">
-                <h3 style="color:gray;font-weight: bold;">Suzzoni Balagne</h3>
-                <h6 style="color:gray;">Galerie Ferrandini, 3 Avenue Paul Doumer, 20220 L'Île-Rousse</h6>
-                <h6 style="color:gray; margin-top:60px;">Tél. +33 4 95 55 86 41</h6>
-                <h6><a style="color:gray" href="Mailto:corse@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                <h6><a style="color:gray" href="http://www.suzzoni-cuisines.fr" target="_blank" title="Ouverture nouvelle fenêtre">Site Internet</a></h6>
-                <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                <p style="color:gray; margin-bottom:0px;"> Du mardi au samedi : 10:00 - 12:00 / 15:00 - 18:00</p>
-                <p style="color:gray; margin-bottom:0px;"> Autres horaires sur rendez-vous</p>
-              </div>
-            </div>
-          </div>
-        </ng-template>
-        </mat-expansion-panel>
-      </mat-accordion>
-  </div>
-  <div class="col-xs-12 col-md-12">
-    <div #Occitanie class="accordion-title">
-       Occitanie
-    </div>
-    <mat-accordion>
-      <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'toulouse'">
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                <div class="title-expansion">Toulouse</div>
-            </mat-panel-title>
-        </mat-expansion-panel-header>
-        <ng-template matExpansionPanelContent>
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <iframe
-                width="100%"
-                height="320"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                  &q=15 Avenue Jean Gonord, 31500 Toulouse" allowfullscreen>
-              </iframe>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <div class="right-text-expansion">
-              <h3 style="color:gray;font-weight: bold;">Maxime Home Design</h3>
-              <h6 style="color:gray;">15 Avenue Jean Gonord, 31500 Toulouse</h6>
-              <h6 style="color:gray; margin-top:60px;">Tél. +33 5 32 02 22 52</h6>
-              <h6><a style="color:gray" href="Mailto:toulouse@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-              <h6><a style="color:gray" href="http://www.eggersmann.com/fr.html" target="_blank" title="Ouverture nouvelle fenêtre">Site Internet</a></h6>
-              <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-              <p style="color:gray; margin-bottom:0px;"> Du mardi au samedi : 09:00 - 12:00 / 14:00 - 19:00</p>
-              <p style="color:gray; margin-bottom:0px;"> Autres horaires sur rendez-vous</p>
-            </div>
-          </div>
-        </div>
-      </ng-template>
-      </mat-expansion-panel>
-      <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'montpellier'">
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                <div class="title-expansion">Montpellier</div>
-            </mat-panel-title>
-        </mat-expansion-panel-header>
-        <ng-template matExpansionPanelContent>
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <iframe
-                width="100%"
-                height="320"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                  &q=3 impasse du Merle Blanc, 34000 Montpellier" allowfullscreen>
-              </iframe>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <div class="right-text-expansion">
-              <h3 style="color:gray;font-weight: bold;">Premium Conception</h3>
-              <h6 style="color:gray;">3 impasse du Merle Blanc, 34000 Montpellier</h6>
-              <h6 style="color:gray; margin-top:60px;">Tél. ‭+33 6 68 79 95 66</h6>
-              <h6><a style="color:gray" href="Mailto:montpellier@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-              <h6><a style="color:gray" href="http://www.premiumconception.com" target="_blank" title="Ouverture nouvelle fenêtre">Site Internet</a></h6>
-              <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-              <p style="color:gray; margin-bottom:0px;"> Du lundi au samedi</p>
-              <p style="color:gray; margin-bottom:0px;"> Uniquement sur rendez-vous</p>
-            </div>
-          </div>
-        </div>
-      </ng-template>
-      </mat-expansion-panel>
-    </mat-accordion>
-  </div>
-  <div class="col-xs-12 col-md-12">
-    <div #HautsdeFrance class="accordion-title">
-       Hauts de France
-    </div>
-    <mat-accordion>
-      <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'marcqEnBarœul'">
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                <div class="title-expansion">Marcq-en-Barœul</div>
-            </mat-panel-title>
-        </mat-expansion-panel-header>
-        <ng-template matExpansionPanelContent>
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <iframe
-                width="100%"
-                height="320"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                  &q=43 Rue de Menin, 59700 Marcq-en-Barœul" allowfullscreen>
-              </iframe>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <div class="right-text-expansion">
-              <h3 style="color:gray;font-weight: bold;">La Brigade</h3>
-              <h6 style="color:gray;">43 Rue de Menin, 59700 Marcq-en-Barœul</h6>
-              <h6 style="color:gray; margin-top:60px;">Tél. +33 3 61 97 37 88</h6>
-              <h6><a style="color:gray" href="Mailto:marcqenbaroeul@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-              <h6><a style="color:gray" href="http://kookup.fr/" target="_blank" title="Ouverture nouvelle fenêtre">Site Internet</a></h6>
-              <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-              <p style="color:gray; margin-bottom:0px;"> Du mardi au samedi : 10:00 - 12:00 / 14:00 - 19:00</p>
-              <p style="color:gray; margin-bottom:0px;"> Autres horaires sur rendez-vous</p>
-            </div>
-          </div>
-        </div>
-      </ng-template>
-      </mat-expansion-panel>
-      <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'wasquehal'">
-          <mat-expansion-panel-header>
-              <mat-panel-title>
-                  <div class="title-expansion">Wasquehal</div>
-              </mat-panel-title>
-          </mat-expansion-panel-header>
-          <ng-template matExpansionPanelContent>
-          <div class="row">
-            <div class="col-xs-12 col-md-6">
-              <iframe
-                  width="100%"
-                  height="320"
-                  frameborder="0" style="border:0"
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                    &q=79 Rue Léon Jouhaux, 59290 Wasquehal" allowfullscreen>
-                </iframe>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <div class="right-text-expansion">
-                <h3 style="color:gray;font-weight: bold;">Numero Zero</h3>
-                <h6 style="color:gray;">79 Rue Léon Jouhaux, 59290 Wasquehal</h6>
-                <h6 style="color:gray; margin-top:60px;">Tél. +33 6 74 68 88 86</h6>
-                <h6><a style="color:gray" href="Mailto:wasquehal@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                <h6><a style="color:gray" href="https://www.facebook.com/MarchandHubert" target="_blank" title="Ouverture nouvelle fenêtre">Facebook</a></h6>
-                <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                <p style="color:gray; margin-bottom:0px;"> Du mardi au samedi</p>
-                <p style="color:gray; margin-bottom:0px;"> Uniquement sur rendez-vous</p>
-              </div>
-            </div>
-          </div>
-        </ng-template>
-        </mat-expansion-panel>
-    </mat-accordion>
-</div>
-<div class="col-xs-12 col-md-12">
-  <div #ProvenceAlpesCoteAzur class="accordion-title">
-     Provence Alpes Côte d'Azur
-  </div>
-  <mat-accordion>
-    <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'aixEnProvence'">
-      <mat-expansion-panel-header>
-          <mat-panel-title>
-              <div class="title-expansion">Aix-en-Provence</div>
-          </mat-panel-title>
-      </mat-expansion-panel-header>
-      <ng-template matExpansionPanelContent>
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <iframe
-              width="100%"
-              height="320"
-              frameborder="0" style="border:0"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                &q=42 Boulevard de la République, 13100 Aix-en-Provence" allowfullscreen>
-            </iframe>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div class="right-text-expansion">
-            <h3 style="color:gray;font-weight: bold;">Le Laureat</h3>
-            <h6 style="color:gray;">42 Boulevard de la République, 13100 Aix-en-Provence</h6>
-            <h6 style="color:gray; margin-top:60px;">Tél. +33 4 42 27 43 25</h6>
-            <h6><a style="color:gray" href="Mailto:aixenprovence@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-            <h6><a style="color:gray" href="http://www.cuisinesbainslelaureat.com/nos-activites-cuisine-0.html" target="_blank" title="Ouverture nouvelle fenêtre">Site Internet</a></h6>
-            <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-            <p style="color:gray; margin-bottom:0px;"> Du mardi au samedi : 09:00 - 12:00 / 14:00 - 19:00</p>
-            <p style="color:gray; margin-bottom:0px;"> Autres horaires sur rendez-vous</p>
-          </div>
-        </div>
-      </div>
-    </ng-template>
-    </mat-expansion-panel>
-    <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'marseille'">
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                <div class="title-expansion">Marseille</div>
-            </mat-panel-title>
-        </mat-expansion-panel-header>
-        <ng-template matExpansionPanelContent>
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <iframe
-                width="100%"
-                height="320"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                  &q=4 Rue de Luynes, 75007 Paris" allowfullscreen>
-              </iframe>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <div class="right-text-expansion">
-              <h3 style="color:gray;font-weight: bold;">Ambiance Cuisine</h3>
-              <h6 style="color:gray;">82 Boulevard de la Corderie, 13007 Marseille</h6>
-              <h6 style="color:gray; margin-top:60px;">Tél. +33 4 91 33 40 44</h6>
-              <h6><a style="color:gray" href="Mailto:marseille@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-              <h6><a style="color:gray" href="http://www.ambiance.archi/" target="_blank" title="Ouverture nouvelle fenêtre">Site Internet</a></h6>
-              <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-              <p style="color:gray; margin-bottom:0px;"> Du lundi au vendredi : 09:00 - 12:00 / 15:00 - 19:00</p>
-              <p style="color:gray; margin-bottom:0px;"> Autres horaires sur rendez-vous</p>
-            </div>
-          </div>
-        </div>
-      </ng-template>
-      </mat-expansion-panel>
-      <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'cannes'">
-          <mat-expansion-panel-header>
-              <mat-panel-title>
-                  <div class="title-expansion">Cannes</div>
-              </mat-panel-title>
-          </mat-expansion-panel-header>
-          <ng-template matExpansionPanelContent>
-          <div class="row">
-            <div class="col-xs-12 col-md-6">
-              <iframe
-                  width="100%"
-                  height="320"
-                  frameborder="0" style="border:0"
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                    &q=140 Rue d'Antibes, 06400 Cannes" allowfullscreen>
-                </iframe>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <div class="right-text-expansion">
-                <h3 style="color:gray;font-weight: bold;">Urbann diffusion</h3>
-                <h6 style="color:gray;">140 Rue d'Antibes, Le Wagram, 06400 Cannes</h6>
-                <h6 style="color:gray; margin-top:60px;">Tél. +33 4 93 38 37 87 / +33 6 60 27 17 19</h6>
-                <h6><a style="color:gray" href="Mailto:cannes@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                <p style="color:gray; margin-bottom:0px;"> Du lundi au samedi</p>
-                <p style="color:gray; margin-bottom:0px;"> Uniquement sur rendez-vous</p>
-              </div>
-            </div>
-          </div>
-        </ng-template>
-        </mat-expansion-panel>
-        <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'monaco'">
-            <mat-expansion-panel-header>
-                <mat-panel-title>
-                    <div class="title-expansion">Monaco</div>
-                </mat-panel-title>
-            </mat-expansion-panel-header>
-            <ng-template matExpansionPanelContent>
-            <div class="row">
-              <div class="col-xs-12 col-md-6">
-                <iframe
-                    width="100%"
-                    height="320"
-                    frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                      &q=17 Boulevard d'Italie, 98000 Monaco" allowfullscreen>
-                  </iframe>
-              </div>
-              <div class="col-xs-12 col-md-6">
-                <div class="right-text-expansion">
-                  <h3 style="color:gray;font-weight: bold;">ADB Cuisines Décoration</h3>
-                  <h6 style="color:gray;">17 Boulevard d'Italie, 98000 Monaco</h6>
-                  <h6 style="color:gray; margin-top:60px;">Tél. +377 932 55 915</h6>
-                  <h6><a style="color:gray" href="Mailto:monaco@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-                  <h6><a style="color:gray" href="http://www.adbcuisines.com/" target="_blank" title="Ouverture nouvelle fenêtre">Site Internet</a></h6>
-                  <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-                  <p style="color:gray; margin-bottom:0px;"> Du lundi au vendredi : 09:00 - 12:00 / 14:00 - 18:00</p>
-                  <p style="color:gray; margin-bottom:0px;"> Entre 12h et 14h uniquement sur rendez-vous</p>
+          <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'paris7'" *ngFor="let showroom of this.regions[4].content[0]">
+              <mat-expansion-panel-header>
+                  <mat-panel-title>
+                      <div class="title-expansion">{{showroom.title}}</div>
+                  </mat-panel-title>
+              </mat-expansion-panel-header>
+              <ng-template matExpansionPanelContent>
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <iframe
+                        width="100%"
+                        height="320"
+                        frameborder="0" style="border:0"
+                        [src]="showroom.googleMapsAddress | safePipe" allowfullscreen>
+                      </iframe>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="right-text-expansion">
+                      <h3 style="color:gray;font-weight: bold;" *ngIf="showroom.name !== null && showroom.name !== ''">{{showroom.name}}</h3>
+                      <h6 style="color:gray;" *ngIf="showroom.displayedAddress !== null && showroom.displayedAddress !== ''">{{showroom.displayedAddress}}</h6>
+                      <h6 style="color:gray; margin-top:60px;" *ngIf="showroom.phone !== null && showroom.phone !== ''">{{showroom.phone}}</h6>
+                      <h6><a style="color:gray" [href]="showroom.email" title="Envoyer un email" *ngIf="showroom.email !== null">e-mail</a></h6>
+                      <h6><a style="color:gray" [href]="showroom.website" target="_blank" title="Ouverture nouvelle fenêtre" *ngIf="showroom.website !== null && showroom.website !== ''">Site Internet</a></h6>
+                      <h6 style="color:gray; margin-top:60px;font-weight: bold" *ngIf="showroom.availabilities[0] !== null && showroom.availabilities[0] !== ''">{{showroom.availabilities[0]}}</h6>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[1] !== null && showroom.availabilities[1] !== ''">{{showroom.availabilities[1]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[2] !== null && showroom.availabilities[2] !== ''">{{showroom.availabilities[2]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[3] !== null && showroom.availabilities[3] !== ''">{{showroom.availabilities[3]}}</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </ng-template>
+              </ng-template>
           </mat-expansion-panel>
-  </mat-accordion>
-</div>
-<div class="col-xs-12 col-md-12">
-  <div #NouvelleAquitaine class="accordion-title">
-     Nouvelle Aquitaine
-  </div>
-  <mat-accordion>
-    <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'bordeaux'">
-      <mat-expansion-panel-header>
-          <mat-panel-title>
-              <div class="title-expansion">Bordeaux</div>
-          </mat-panel-title>
-      </mat-expansion-panel-header>
-      <ng-template matExpansionPanelContent>
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <iframe
-              width="100%"
-              height="320"
-              frameborder="0" style="border:0"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM
-                &q=189 Rue Georges Bonnac, 33000 Bordeaux" allowfullscreen>
-            </iframe>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div class="right-text-expansion">
-            <h3 style="color:gray;font-weight: bold;">Créations St Bruno</h3>
-            <h6 style="color:gray;">189 Rue Georges Bonnac, 33000 Bordeaux</h6>
-            <h6 style="color:gray; margin-top:60px;">Tél. +33 5 56 15 06 18</h6>
-            <h6><a style="color:gray" href="Mailto:bordeaux@eggersmann.fr" title="Envoyer un email">e-mail</a></h6>
-            <h6><a style="color:gray" href="http://www.creationsstbruno.fr/" target="_blank" title="Ouverture nouvelle fenêtre">Site Internet</a></h6>
-            <h6 style="color:gray; margin-top:60px;font-weight: bold"> Ouverture du Showroom :</h6>
-            <p style="color:gray; margin-bottom:0px;"> Du mardi au samedi : 09:00 - 12:00 / 14:00 - 19:00</p>
-            <p style="color:gray; margin-bottom:0px;"> Autres horaires sur rendez-vous</p>
-          </div>
-        </div>
+      </mat-accordion>
+    </div>
+
+    <div class="col-xs-12 col-md-12">
+      <div #Occitanie class="accordion-title">
+        Occitanie
       </div>
-    </ng-template>
-    </mat-expansion-panel>
-  </mat-accordion>
-</div>
+      <mat-accordion>
+          <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'paris7'" *ngFor="let showroom of this.regions[5].content[0]">
+              <mat-expansion-panel-header>
+                  <mat-panel-title>
+                      <div class="title-expansion">{{showroom.title}}</div>
+                  </mat-panel-title>
+              </mat-expansion-panel-header>
+              <ng-template matExpansionPanelContent>
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <iframe
+                        width="100%"
+                        height="320"
+                        frameborder="0" style="border:0"
+                        [src]="showroom.googleMapsAddress | safePipe" allowfullscreen>
+                      </iframe>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="right-text-expansion">
+                      <h3 style="color:gray;font-weight: bold;" *ngIf="showroom.name !== null && showroom.name !== ''">{{showroom.name}}</h3>
+                      <h6 style="color:gray;" *ngIf="showroom.displayedAddress !== null && showroom.displayedAddress !== ''">{{showroom.displayedAddress}}</h6>
+                      <h6 style="color:gray; margin-top:60px;" *ngIf="showroom.phone !== null && showroom.phone !== ''">{{showroom.phone}}</h6>
+                      <h6><a style="color:gray" [href]="showroom.email" title="Envoyer un email" *ngIf="showroom.email !== null">e-mail</a></h6>
+                      <h6><a style="color:gray" [href]="showroom.website" target="_blank" title="Ouverture nouvelle fenêtre" *ngIf="showroom.website !== null && showroom.website !== ''">Site Internet</a></h6>
+                      <h6 style="color:gray; margin-top:60px;font-weight: bold" *ngIf="showroom.availabilities[0] !== null && showroom.availabilities[0] !== ''">{{showroom.availabilities[0]}}</h6>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[1] !== null && showroom.availabilities[1] !== ''">{{showroom.availabilities[1]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[2] !== null && showroom.availabilities[2] !== ''">{{showroom.availabilities[2]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[3] !== null && showroom.availabilities[3] !== ''">{{showroom.availabilities[3]}}</p>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+          </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+
+    <div class="col-xs-12 col-md-12">
+      <div #HautsdeFrance class="accordion-title">
+        Hauts de France
+      </div>
+      <mat-accordion>
+          <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'paris7'" *ngFor="let showroom of this.regions[6].content[0]">
+              <mat-expansion-panel-header>
+                  <mat-panel-title>
+                      <div class="title-expansion">{{showroom.title}}</div>
+                  </mat-panel-title>
+              </mat-expansion-panel-header>
+              <ng-template matExpansionPanelContent>
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <iframe
+                        width="100%"
+                        height="320"
+                        frameborder="0" style="border:0"
+                        [src]="showroom.googleMapsAddress | safePipe" allowfullscreen>
+                      </iframe>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="right-text-expansion">
+                      <h3 style="color:gray;font-weight: bold;" *ngIf="showroom.name !== null && showroom.name !== ''">{{showroom.name}}</h3>
+                      <h6 style="color:gray;" *ngIf="showroom.displayedAddress !== null && showroom.displayedAddress !== ''">{{showroom.displayedAddress}}</h6>
+                      <h6 style="color:gray; margin-top:60px;" *ngIf="showroom.phone !== null && showroom.phone !== ''">{{showroom.phone}}</h6>
+                      <h6><a style="color:gray" [href]="showroom.email" title="Envoyer un email" *ngIf="showroom.email !== null">e-mail</a></h6>
+                      <h6><a style="color:gray" [href]="showroom.website" target="_blank" title="Ouverture nouvelle fenêtre" *ngIf="showroom.website !== null && showroom.website !== ''">Site Internet</a></h6>
+                      <h6 style="color:gray; margin-top:60px;font-weight: bold" *ngIf="showroom.availabilities[0] !== null && showroom.availabilities[0] !== ''">{{showroom.availabilities[0]}}</h6>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[1] !== null && showroom.availabilities[1] !== ''">{{showroom.availabilities[1]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[2] !== null && showroom.availabilities[2] !== ''">{{showroom.availabilities[2]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[3] !== null && showroom.availabilities[3] !== ''">{{showroom.availabilities[3]}}</p>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+          </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+
+    <div class="col-xs-12 col-md-12">
+      <div #ProvenceAlpesCoteAzur class="accordion-title">
+        Provence Alpes Côte d'Azur
+      </div>
+      <mat-accordion>
+          <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'paris7'" *ngFor="let showroom of this.regions[7].content[0]">
+              <mat-expansion-panel-header>
+                  <mat-panel-title>
+                      <div class="title-expansion">{{showroom.title}}</div>
+                  </mat-panel-title>
+              </mat-expansion-panel-header>
+              <ng-template matExpansionPanelContent>
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <iframe
+                        width="100%"
+                        height="320"
+                        frameborder="0" style="border:0"
+                        [src]="showroom.googleMapsAddress | safePipe" allowfullscreen>
+                      </iframe>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="right-text-expansion">
+                      <h3 style="color:gray;font-weight: bold;" *ngIf="showroom.name !== null && showroom.name !== ''">{{showroom.name}}</h3>
+                      <h6 style="color:gray;" *ngIf="showroom.displayedAddress !== null && showroom.displayedAddress !== ''">{{showroom.displayedAddress}}</h6>
+                      <h6 style="color:gray; margin-top:60px;" *ngIf="showroom.phone !== null && showroom.phone !== ''">{{showroom.phone}}</h6>
+                      <h6><a style="color:gray" [href]="showroom.email" title="Envoyer un email" *ngIf="showroom.email !== null">e-mail</a></h6>
+                      <h6><a style="color:gray" [href]="showroom.website" target="_blank" title="Ouverture nouvelle fenêtre" *ngIf="showroom.website !== null && showroom.website !== ''">Site Internet</a></h6>
+                      <h6 style="color:gray; margin-top:60px;font-weight: bold" *ngIf="showroom.availabilities[0] !== null && showroom.availabilities[0] !== ''">{{showroom.availabilities[0]}}</h6>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[1] !== null && showroom.availabilities[1] !== ''">{{showroom.availabilities[1]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[2] !== null && showroom.availabilities[2] !== ''">{{showroom.availabilities[2]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[3] !== null && showroom.availabilities[3] !== ''">{{showroom.availabilities[3]}}</p>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+          </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+
+    <div class="col-xs-12 col-md-12">
+      <div #NouvelleAquitaine class="accordion-title">
+        Nouvelle Aquitaine
+      </div>
+      <mat-accordion>
+          <mat-expansion-panel class="distributor-expansion" [expanded]="focus == 'paris7'" *ngFor="let showroom of this.regions[8].content[0]">
+              <mat-expansion-panel-header>
+                  <mat-panel-title>
+                      <div class="title-expansion">{{showroom.title}}</div>
+                  </mat-panel-title>
+              </mat-expansion-panel-header>
+              <ng-template matExpansionPanelContent>
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <iframe
+                        width="100%"
+                        height="320"
+                        frameborder="0" style="border:0"
+                        [src]="showroom.googleMapsAddress | safePipe" allowfullscreen>
+                      </iframe>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="right-text-expansion">
+                      <h3 style="color:gray;font-weight: bold;" *ngIf="showroom.name !== null && showroom.name !== ''">{{showroom.name}}</h3>
+                      <h6 style="color:gray;" *ngIf="showroom.displayedAddress !== null && showroom.displayedAddress !== ''">{{showroom.displayedAddress}}</h6>
+                      <h6 style="color:gray; margin-top:60px;" *ngIf="showroom.phone !== null && showroom.phone !== ''">{{showroom.phone}}</h6>
+                      <h6><a style="color:gray" [href]="showroom.email" title="Envoyer un email" *ngIf="showroom.email !== null">e-mail</a></h6>
+                      <h6><a style="color:gray" [href]="showroom.website" target="_blank" title="Ouverture nouvelle fenêtre" *ngIf="showroom.website !== null && showroom.website !== ''">Site Internet</a></h6>
+                      <h6 style="color:gray; margin-top:60px;font-weight: bold" *ngIf="showroom.availabilities[0] !== null && showroom.availabilities[0] !== ''">{{showroom.availabilities[0]}}</h6>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[1] !== null && showroom.availabilities[1] !== ''">{{showroom.availabilities[1]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[2] !== null && showroom.availabilities[2] !== ''">{{showroom.availabilities[2]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[3] !== null && showroom.availabilities[3] !== ''">{{showroom.availabilities[3]}}</p>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+          </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+
 <div class="col-xs-12 col-md-12">
   <div #Switzerland class="accordion-title">
      Suisse
