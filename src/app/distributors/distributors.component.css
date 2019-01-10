@@ -1,3 +1,11 @@
+.visible {
+  display:initial;
+}
+
+.hidden {
+  display:none;
+}
+
 .gallery-container h1 {
   font-size:48px;
   text-align: center;
@@ -73,6 +81,10 @@ p.page-description {
   color:grey;
 }
 
+.lux-map__image:hover path{
+  fill:grey;
+}
+
 .lux-map__image path{
   fill: lightgrey;
   stroke: white;
@@ -80,8 +92,20 @@ p.page-description {
   transition: fill 0.3s;
 }
 
-.lux-map__image:hover path{
-  fill: grey;
+.lux-map__image_disabled{
+  width:48%;
+  margin:auto;
+}
+
+.lux-map__image_disabled:hover{
+  cursor:pointer;
+}
+
+.lux-map__image_disabled path{
+  fill: lightgrey;
+  stroke: white;
+  stroke-width: 0px;
+  transition: fill 0.3s;
 }
 
 .nc-map__image{
@@ -96,6 +120,10 @@ p.page-description {
   color:grey;
 }
 
+.nc-map__image:hover path{
+  fill:grey;
+}
+
 .nc-map__image path{
   fill: lightgrey;
   stroke: white;
@@ -103,8 +131,20 @@ p.page-description {
   transition: fill 0.3s;
 }
 
-.nc-map__image:hover path{
-  fill: grey;
+.nc-map__image_disabled{
+  width:100%;
+  margin:auto;
+}
+
+.nc-map__image_disabled:hover{
+  cursor:pointer;
+}
+
+.nc-map__image_disabled path{
+  fill: lightgrey;
+  stroke: white;
+  stroke-width: 0px;
+  transition: fill 0.3s;
 }
 
 .morocco-map__image{
@@ -120,6 +160,10 @@ p.page-description {
   color:grey;
 }
 
+.morocco-map__image:hover path{
+  fill:grey;
+}
+
 .morocco-map__image path{
   fill: lightgrey;
   stroke: white;
@@ -127,8 +171,20 @@ p.page-description {
   transition: fill 0.3s;
 }
 
-.morocco-map__image:hover path{
-  fill: grey;
+.morocco-map__image_disabled{
+  width:100%;
+  margin:auto;
+}
+
+.morocco-map__image_disabled:hover{
+  cursor:pointer;
+}
+
+.morocco-map__image_disabled path{
+  fill: lightgrey;
+  stroke: white;
+  stroke-width: 0px;
+  transition: fill 0.3s;
 }
 
 .switzerland-map__image{
@@ -144,6 +200,10 @@ p.page-description {
   color:grey;
 }
 
+.switzerland-map__image:hover path{
+  fill:grey;
+}
+
 .switzerland-map__image path{
   fill: lightgrey;
   stroke: white;
@@ -151,8 +211,20 @@ p.page-description {
   transition: fill 0.3s;
 }
 
-.switzerland-map__image:hover path{
-  fill: grey;
+.switzerland-map__image_disabled{
+  width:70%;
+  margin:auto;
+}
+
+.switzerland-map__image_disabled:hover{
+  cursor:pointer;
+}
+
+.switzerland-map__image_disabled path{
+  fill: lightgrey;
+  stroke: white;
+  stroke-width: 0px;
+  transition: fill 0.3s;
 }
 
 .barthelemy-map__image{
@@ -167,13 +239,31 @@ p.page-description {
   color:grey;
 }
 
+.barthelemy-map__image:hover path{
+  fill:grey;
+}
+
 .barthelemy-map__image path{
   fill: lightgrey;
+  stroke: white;
+  stroke-width: 0px;
   transition: fill 0.3s;
 }
 
-.barthelemy-map__image:hover path{
-  fill: grey;
+.barthelemy-map__image_disabled{
+  width:100%;
+  margin:auto;
+}
+
+.barthelemy-map__image_disabled:hover{
+  cursor:pointer;
+}
+
+.barthelemy-map__image_disabled path{
+  fill: lightgrey;
+  stroke: white;
+  stroke-width: 0px;
+  transition: fill 0.3s;
 }
 
 .distributor-expansion{

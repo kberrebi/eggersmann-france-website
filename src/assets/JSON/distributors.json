@@ -365,6 +365,140 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Suisse",
+      "formattedName": "Switzerland",
+      "showrooms": [
+        {
+          "title": "Versoix",
+          "formattedTitle": "versoix",
+          "name": "Agencement C. Kursner & Cie SA",
+          "displayedAddress": "Route de Suisse 137, 1290 Versoix",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=Route de Suisse 137, 1290 Versoix, Suisse",
+          "phone": "Tél. +41 22 755 21 57‬",
+          "email": "Mailto:info@ack.ch",
+          "website": "http://www.ack.ch/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du mardi au vendredi : 10:00 - 12:00 / 14:00 - 19:00",
+            "Le samedi sur rendez-vous"
+          ]
+        },
+        {
+          "title": "Morges",
+          "formattedTitle": "morges",
+          "name": "Passion Cuisine",
+          "displayedAddress": "Avenue Ignace Paderewski 32A, 1110 Morges",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=Avenue Ignace Paderewski 32A, 1110 Morges, Suisse",
+          "phone": "Tél. +41 21 802 32 75",
+          "email": "Mailto:morges@eggersmann.fr",
+          "website": "http://www.passion-cuisine.ch/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du lundi au vendredi : 09:00 - 12:00 / 13:30 - 18:30",
+            "Le samedi : 09:30 - 17:00"
+          ]
+        },
+        {
+          "title": "Lutry",
+          "formattedTitle": "lutry",
+          "name": "Passion Cuisine",
+          "displayedAddress": "Route Petite-Corniche 1, 1095 Lutry",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=Route Petite-Corniche 1, 1095 Lutry, Suisse",
+          "phone": "Tél. +41 21 311 11 90",
+          "email": "Mailto:lutry@eggersmann.fr",
+          "website": "http://www.passion-cuisine.ch/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du lundi au vendredi : 09:00 - 12:00 / 13:30 - 18:30",
+            "Le samedi : 09:30 - 17:00"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Luxembourg",
+      "formattedName": "Luxembourg",
+      "showrooms": [
+        {
+          "title": "Luxembourg",
+          "formattedTitle": "luxembourg",
+          "name": "Sur Mesure",
+          "displayedAddress": "3 Rue d'Eich, 1461 Luxembourg",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=3 Rue d'Eich, 1461 Luxembourg",
+          "phone": "Tél. +352 27489204‬",
+          "email": "Mailto:shop@surmesure.lu",
+          "website": "http://www.surmesure.lu/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du mardi au samedi",
+            "Uniquement sur rendez-vous"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Maroc",
+      "formattedName": "Maroc",
+      "showrooms": [
+        {
+          "title": "Casablanca",
+          "formattedTitle": "casablanca",
+          "name": "Kuchendesign",
+          "displayedAddress": "259 Boulevard Bir Anzarane, Casablanca 20250, Maroc",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=259 Boulevard Bir Anzarane, Casablanca 20250, Maroc",
+          "phone": "Tél. +212 52 2993099",
+          "email": "Mailto:casablanca@eggersmann.fr",
+          "website": "http://www.kuchendesign.net/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Du lundi au vendredi : 09:30 - 12:30 / 14:30 - 19:30",
+            "Autres horaires sur rendez-vous"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Nouvelle Calédonie",
+      "formattedName": "NouvelleCaledonie",
+      "showrooms": [
+        {
+          "title": "Nouméa",
+          "formattedTitle": "noumea",
+          "name": "Laetitia Huck, Esprit d'intérieur",
+          "displayedAddress": "9 impasse Albert Salles, 98835 Dumbéa",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=impasse Albert Salles, Dumbéa",
+          "phone": "Tél. +687 96 91 50",
+          "email": "Mailto:noumea@eggersmann.fr",
+          "website": "http://www.espritdinterieur.nc/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Tous les jours",
+            "Uniquement sur rendez-vous"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "St Barthélemy",
+      "formattedName": "Barthelemy",
+      "showrooms": [
+        {
+          "title": "Grand Fond",
+          "formattedTitle": "grandFond",
+          "name": "Habitat Project",
+          "displayedAddress": "65, rue de la paix, 97133 Saint Barthélemy",
+          "googleMapsAddress": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5SIVpkS8tQ7uQ_LVt8ysiSwtg4Uk7ujM&q=Rue de la Paix, Gustavia, Saint-Barthélemy",
+          "phone": "Tél. +33 6 68 69 10 15",
+          "email": "Mailto:stbarth@eggersmann.fr",
+          "website": "http://habitat-project.com/cuisines/particulier/",
+          "availabilities": [
+            "Ouverture du Showroom :",
+            "Uniquement sur rendez-vous"
+          ]
+        }
+      ]
     }
   ]
 }

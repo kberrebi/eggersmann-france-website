@@ -23,12 +23,10 @@ export class DistributorsComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.regions[0].content[0]);
     this.navigationService.currentPage = 'distributors';
   }
 
   sortDistributors() {
-    console.log('sorting');
     this.regions.forEach(localRegion => {
       distributors.regions.forEach(externalRegion => {
         if (externalRegion.formattedName == localRegion.formattedName) {
@@ -38,8 +36,14 @@ export class DistributorsComponent implements OnInit {
     });
   }
 
-  goToExpansionPanel(region, focused = '') {
-    this.focus = focused;
+  goToExpansionPanel(region, strRegion = '') {
+    this.regions.forEach(regionIndexed => {
+      if (regionIndexed.formattedName == strRegion) {
+        if (regionIndexed.content[0].length == 1) {
+          this.focus = regionIndexed.content[0][0].formattedTitle;
+        }
+      }
+    });
     region.scrollIntoView({behavior: 'smooth'});
   }
 
