@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationService } from '../navigation.service';
 import { LanguagesService } from '../languages.service';
-import distributors from '../../assets/JSON/distributors.json';
+import { HttpClient } from '@angular/common/http';
+
+declare function require(url: string);
 
 @Component({
   selector: 'app-distributors',
   templateUrl: './distributors.component.html',
   styleUrls: ['./distributors.component.css']
 })
+
 export class DistributorsComponent implements OnInit {
 
+  distributors: any;
   focus = '';
   regions = [{formattedName: "IledeFrance", content: []}, {formattedName: "AuvergneRhoneAlpes", content: []}, {formattedName: "BourgogneFrancheComte", content: []},
              {formattedName: "Bretagne", content: []}, {formattedName: "Corse", content: []}, {formattedName: "Occitanie", content: []}, {formattedName: "HautsdeFrance", content: []},
@@ -18,8 +22,11 @@ export class DistributorsComponent implements OnInit {
              {formattedName: "GrandEst", content: []}, {formattedName: "CentreValdeLoire", content: []}, {formattedName: "Normandie", content: []}, {formattedName: "PaysdelaLoire", content: []}
   ]
 
-  constructor(public languagesService: LanguagesService, public navigationService: NavigationService) {
-    this.sortDistributors();
+  constructor(public languagesService: LanguagesService, public navigationService: NavigationService, public http: HttpClient) {
+    this.http.get('/assets/JSON/distributors.json').subscribe(data => {
+      this.distributors = data['regions'];
+      this.sortDistributors();
+    }); 
   }
 
   ngOnInit() {
@@ -28,7 +35,7 @@ export class DistributorsComponent implements OnInit {
 
   sortDistributors() {
     this.regions.forEach(localRegion => {
-      distributors.regions.forEach(externalRegion => {
+      this.distributors.forEach(externalRegion => {
         if (externalRegion.formattedName == localRegion.formattedName) {
           localRegion.content.push(externalRegion.showrooms);
         }
