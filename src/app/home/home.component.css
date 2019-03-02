@@ -9,8 +9,10 @@
 }
 
 .carousel {
-  width:76%;
+  width:1300px;
   margin:auto;
+  padding-left:15px;
+  padding-right:15px;
 }
 
 .carousel-title {
@@ -90,9 +92,10 @@
   padding-bottom: 110px;
 }
 
-@media only screen and (max-width: 1150px){
+@media only screen and (max-width: 1300px){
   .carousel {
     width:100%;
+    padding:0px;
   }
 }
 

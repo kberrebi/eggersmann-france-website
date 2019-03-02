@@ -1,6 +1,7 @@
 .default-footer{
   background-color: black;
   font-family: 'Brandon_light';
+  height:300px;
 }
 
 .black-footer{
@@ -13,6 +14,11 @@
 
 .brown-footer{
   background-color: #232323;
+}
+
+.footer-buttons-container {
+  margin-top: 72px;
+  margin-bottom:30px;
 }
 
 .fa {
@@ -41,20 +47,50 @@
   background: #3B5998;
 }
 
-.fa-twitter:hover{
-  background: #55ACEE;
+.catalog-icon-container {
+  margin:auto;
+  width:60px;
+  height:60px;
+  padding: 15px 0px 0px 0px;
+  border-radius: 50px;
+  margin-top:10px;
+  transition: all, 0.3s;
 }
 
-.fa-google:hover{
-  background: #dd4b39;
+.catalog-icon-container-grey {
+  background-color:rgb(61,61,61);
 }
 
-.fa-linkedin:hover{
-  background: #007bb5;
+.catalog-icon-container-black {
+  background-color:black;
 }
 
-.fa-youtube:hover{
-  background: #bb0000;
+.catalog-icon-container:hover {
+  background-color:rgb(80,80,80);
+}
+
+.catalog-icon {
+  width:28px;
+}
+
+.catalog-label {
+  font-size:14px;
+  margin-top:5px;
+  margin-bottom: 0px;
+  cursor: default;
+  color: white;
+}
+
+.catalog-label-white {
+  color:white;
+}
+
+.catalog-label-black {
+  color:black;
+}
+
+.footer-catalog-hitbox {
+  padding: 20px 17px;
 }
 
 .btn-outline-dark{

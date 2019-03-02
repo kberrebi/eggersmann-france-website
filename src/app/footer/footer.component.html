@@ -3,22 +3,31 @@
 <div class="spacer-footer-container">
   <div class="spacer-footer-line" [ngClass]="{'spacer-footer-white-line':this.navigationService.isIn(['unique', 'works'])}"></div>
 </div>
-  <div class="row">
+  <div class="row footer-buttons-container">
     <div class="col centered">
-        <div style="text-align: center; padding-top:30px; padding-bottom: 30px" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="200" data-aos-duration="1200" data-aos-once="true">
+        <div style="text-align: center; padding-top:30px; padding-bottom: 30px" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1200" data-aos-once="true">
             <a href="https://www.facebook.com/eggersmann.france/" target="_blank" class="fa fa-facebook" [ngClass]="{'fa-bg-dark':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact', 'works']), 'fa-bg-light':this.navigationService.isIn(['e30', 'lookbook'])}"></a>
         </div>
     </div>
     <div class="col centered">
       <div style="text-align: center; padding-top:48px;">
-          <button type="button" class="btn btn-outline-light" (click)="goTo('contact')" [ngClass]="{'btn-outline-light':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact', 'works']), 'btn-outline-dark':this.navigationService.isIn(['e30', 'lookbook'])}"><span style="font-size:20px;">Contact us</span></button>
+          <button type="button" class="btn btn-outline-light" (click)="goTo('contact')" [ngClass]="{'btn-outline-light':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact', 'works']), 'btn-outline-dark':this.navigationService.isIn(['e30', 'lookbook'])}"><span style="font-size:20px;">Nous contacter</span></button>
       </div>
     </div>
-    <div class="col"></div>
+    <div class="col centered">
+      <div style="text-align: center; padding-top:30px; padding-bottom: 30px" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1200" data-aos-once="true">
+          <div class="catalog-icon-container" [ngClass]="{'catalog-icon-container-grey':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact', 'works']), 'catalog-icon-container-black':this.navigationService.isIn(['e30', 'lookbook'])}">
+            <a class="footer-catalog-hitbox" href="http://www.eggersmann.com/fileadmin/Onlinebroschueren/katalog-de-fr-nl/Katalog-DE_FR_NL/" target="_blank">
+              <img class="catalog-icon" src="../../assets/icons/baseline-import_contacts-24px.svg">
+            </a>
+          </div>
+          <p class="catalog-label" [ngClass]="{'catalog-label-white':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact', 'works']), 'catalog-label-black':this.navigationService.isIn(['e30', 'lookbook'])}">Catalogue</p>
+      </div>
+    </div>
   </div>
   <div class="row">
       <div class="col">
-          <div class="text-center" style="color:gray; padding-bottom:10px; font-size: 15px;">© 2018 Copyright: Ets b.products</div>
+          <div class="text-center" style="color:gray; padding-bottom:10px; font-size: 15px;">© 2019 Copyright: Ets B.products</div>
   </div>
 </div>
 
