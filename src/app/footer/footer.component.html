@@ -5,17 +5,17 @@
 </div>
   <div class="row footer-buttons-container">
     <div class="col centered">
-        <div style="text-align: center; padding-top:30px; padding-bottom: 30px" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1200" data-aos-once="true">
+        <div class="facebook-icon-container" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1200" data-aos-once="true">
             <a href="https://www.facebook.com/eggersmann.france/" target="_blank" class="fa fa-facebook" [ngClass]="{'fa-bg-dark':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact', 'works']), 'fa-bg-light':this.navigationService.isIn(['e30', 'lookbook'])}"></a>
         </div>
     </div>
     <div class="col centered">
       <div style="text-align: center; padding-top:48px;">
-          <button type="button" class="btn btn-outline-light" (click)="goTo('contact')" [ngClass]="{'btn-outline-light':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact', 'works']), 'btn-outline-dark':this.navigationService.isIn(['e30', 'lookbook'])}"><span style="font-size:20px;">Nous contacter</span></button>
+          <button type="button" class="btn btn-outline-light" (click)="goTo('contact')" [ngClass]="{'btn-outline-light':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact', 'works']), 'btn-outline-dark':this.navigationService.isIn(['e30', 'lookbook'])}"><span class="contact-button-label">Nous contacter</span></button>
       </div>
     </div>
     <div class="col centered">
-      <div style="text-align: center; padding-top:30px; padding-bottom: 30px" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1200" data-aos-once="true">
+      <div class="catalog-container" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1200" data-aos-once="true">
           <div class="catalog-icon-container" [ngClass]="{'catalog-icon-container-grey':this.navigationService.isIn(['home', 'unique', 'distributors', 'contact', 'works']), 'catalog-icon-container-black':this.navigationService.isIn(['e30', 'lookbook'])}">
             <a class="footer-catalog-hitbox" href="http://www.eggersmann.com/fileadmin/Onlinebroschueren/katalog-de-fr-nl/Katalog-DE_FR_NL/" target="_blank">
               <img class="catalog-icon" src="../../assets/icons/baseline-import_contacts-24px.svg">

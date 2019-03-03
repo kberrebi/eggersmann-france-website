@@ -21,6 +21,12 @@
   margin-bottom:30px;
 }
 
+.facebook-icon-container {
+  text-align: center;
+  padding-top:30px;
+  padding-bottom: 30px;
+}
+
 .fa {
   padding: 20px;
   font-size: 20px;
@@ -45,6 +51,16 @@
 
 .fa-facebook:hover{
   background: #3B5998;
+}
+
+.contact-button-label {
+  font-size:20px;
+}
+
+.catalog-container {
+  text-align: center;
+  padding-top:30px;
+  padding-bottom: 30px
 }
 
 .catalog-icon-container {
@@ -255,4 +271,60 @@
   font-size: 1px;
   display: inline-block;
   background-color: white;
+}
+
+@media screen and (min-width: 315px) and (max-width: 400px) {
+  .facebook-icon-container {
+    padding-top:36px;
+  }
+
+  .fa {
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin: 8px 8px 8px 8px;
+    border-radius: 50%;
+    width:46px;
+  }
+
+  .fa-facebook{
+    color: white;
+  }
+
+  .catalog-container {
+    padding-top:36px;
+  }
+
+  .catalog-icon-container {
+    margin:auto;
+    width:46px;
+    height:46px;
+    padding: 8px 0px 0px 0px;
+    border-radius: 50px;
+    margin-top:10px;
+    transition: all, 0.3s;
+  }
+
+  .catalog-icon {
+    width:22px;
+  }
+
+  .footer-catalog-hitbox {
+    padding: 15px 13px;
+  }
+
+  .catalog-label {
+    display:none;
+  }
+
+  .contact-button-label {
+    font-size:15px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .catalog-container {
+    display:none;
+  }
 }
