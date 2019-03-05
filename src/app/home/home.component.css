@@ -8,7 +8,7 @@
   padding:0px 0px 0px 0px;
 }
 
-.carousel {
+.secondary-carousel {
   width:1300px;
   margin:auto;
   padding-left:15px;
@@ -93,7 +93,7 @@
 }
 
 @media only screen and (max-width: 1300px){
-  .carousel {
+  .secondary-carousel {
     width:100%;
     padding:0px;
   }
