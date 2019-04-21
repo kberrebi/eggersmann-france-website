@@ -1,9 +1,9 @@
-.send-email-container {
+.contact-button-container {
+  display:inline-block;
   cursor:pointer;
   font-family: 'Brandon_light', Arial, Verdana;
   font-size: 25px;
   color: white;
-  width:236px;
   padding: 20px 0px 20px 0px;
   margin:auto;
   text-align: center;
@@ -12,12 +12,12 @@
   transition: all 0.3s !important;
 }
 
-.send-email-container:hover {
+.contact-button-container:hover {
   background-color: white;
   color: black;
 }
 
-.send-email-container:hover .send-email-text{
+.contact-button-container:hover .send-email-text{
   color: black;
 }
 
@@ -264,7 +264,7 @@ input.example-right-align::-webkit-inner-spin-button {
   .contact-outer {
     display: initial;
     width:100%;
-    min-height:1058px;
+    min-height:1158px;
   }
   .contact-middle {
     display: initial;

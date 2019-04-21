@@ -26,7 +26,7 @@ export class DistributorsComponent implements OnInit {
     this.http.get('/assets/JSON/distributors.json').subscribe(data => {
       this.distributors = data['regions'];
       this.sortDistributors();
-    }); 
+    });
   }
 
   ngOnInit() {
@@ -36,7 +36,7 @@ export class DistributorsComponent implements OnInit {
   sortDistributors() {
     this.regions.forEach(localRegion => {
       this.distributors.forEach(externalRegion => {
-        if (externalRegion.formattedName == localRegion.formattedName) {
+        if (externalRegion.formattedName === localRegion.formattedName) {
           localRegion.content.push(externalRegion.showrooms);
         }
       })
@@ -45,8 +45,8 @@ export class DistributorsComponent implements OnInit {
 
   goToExpansionPanel(region, strRegion = '') {
     this.regions.forEach(regionIndexed => {
-      if (regionIndexed.formattedName == strRegion) {
-        if (regionIndexed.content[0].length == 1) {
+      if (regionIndexed.formattedName === strRegion) {
+        if (regionIndexed.content[0].length === 1) {
           this.focus = regionIndexed.content[0][0].formattedTitle;
         }
       }

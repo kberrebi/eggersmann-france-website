@@ -4,7 +4,7 @@
       <div class="contact-inner">
           <div class="black-box-container" data-aos="fade-up" data-aos-once="true" data-aos-duration="1200">
             <div class="pannel-outer">
-                <div *ngIf="(this.pannel !== 1) && (this.pannel !== 0)" class="back-button-container" (click)="back()" data-aos="fade" data-aos-once="true" data-aos-duration="1200">
+                <div *ngIf="(this.pannel !== 1) && (this.pannel !== 0) && (this.pannel !== 6)" class="back-button-container" (click)="back()" data-aos="fade" data-aos-once="true" data-aos-duration="1200">
                     <i class="material-icons back-button-icon" style="font-size:23px;">navigate_before</i>
                     <span class="back-button-text">Retour</span>
                 </div>
@@ -18,20 +18,13 @@
                       </div>
                     </div>
                   </div>
-                  <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="200">
-                      <div class="send-email-container">
+                  <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="200" style="text-align: center;">
+                      <div class="contact-button-container">
                           <a class="send-email-text" href="Mailto:contact@eggersmann.fr">
                               Envoyer un e-mail
                           </a>
                       </div>
                   </div>
-                  <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="200" style="display:none;">
-                    <div class="send-email-container">
-                        <a class="send-email-text" (click)="goToPannel(3, 'pannel1Option1')">
-                            Envoyer un e-mail
-                        </a>
-                    </div>
-                </div>
                 </div>
                   <!-- PANNEL 1 -->
                   <div class="pannel-1" [ngClass]="this.pannel == 1 ? 'pannel-visible' : 'pannel-hidden'" *ngIf="this.pannel == 1">
@@ -41,9 +34,9 @@
                       </div>
                     </div>
                     <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="200">
-                        <div class="opt-container" (click)="goToPannel(3, 'pannel1Option1')">
+                        <div class="opt-container" (click)="goToPannel(4, 'pannel1Option1')">
                             <div class="panel-1-opt-2">
-                                Vous avez le projet de réaliser une cuisine eggersmann et vous souhaitez recevoir le luxueux  Lookbook de la marque.
+                                Vous avez le projet de réaliser une cuisine eggersmann et vous souhaitez retirer le luxueux  Lookbook de la marque dans le showroom de votre choix.
                             </div>
                         </div>
                     </div>
@@ -106,15 +99,15 @@
                                       </div>
                                   </div>
                               </div>
-                              <div *ngIf="this.innerWidth <= 767">
-                                  <div class="next-button">
-                                      <button type="button" class="btn btn-outline-light" (click)="sendEmail()">Suivant</button>
-                                  </div>
-                              </div>
                           </form>
-                          <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="400" *ngIf="this.innerWidth > 767">
-                              <div class="next-button">
-                                  <button type="button" class="btn btn-outline-light" (click)="this.formGroup.valid ? sendEmail() : null">Suivant</button>
+                          <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="400" style="height:44px;margin-top:30px;">
+                              <div class="next-button" *ngIf="!this.sendEmailLoading">
+                                  <button type="button" class="btn btn-outline-light" (click)="this.formGroup.valid ? sendEmail() : null">Envoyer</button>
+                              </div>
+                              <div style="text-align: center; width:44px;margin:auto;" *ngIf="this.sendEmailLoading">
+                                <div data-aos="fade" data-aos-once="true" data-aos-duration="1200">
+                                  <mat-spinner></mat-spinner>
+                                </div>
                               </div>
                           </div>
                       </div>
@@ -152,8 +145,8 @@
                           <mat-form-field class="showroom-select">
                               <mat-select placeholder="Showroom" [formControl]="showroomControl">
                                 <mat-optgroup *ngFor="let group of showroomGroups" [label]="group.name">
-                                  <mat-option *ngFor="let showroom of group.Showroom" [value]="showroom.value">
-                                    {{showroom.viewValue}}
+                                  <mat-option *ngFor="let showroom of group.showrooms" [value]="showroom.formattedTitle">
+                                    {{showroom.title}}
                                   </mat-option>
                                 </mat-optgroup>
                               </mat-select>
@@ -161,7 +154,7 @@
                       </div>
                       <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="400">
                           <div class="next-button">
-                              <button type="button" class="btn btn-outline-light" (click)="goToPannel(2, 4)">Suivant</button>
+                              <button type="button" class="btn btn-outline-light" (click)="this.showroomControl.value ? goToPannel(2, 'pannel3Option1') : null">Suivant</button>
                           </div>
                       </div>
                   </div>
@@ -190,6 +183,11 @@
                               Votre demande sera traitée dans les meilleurs délais.
                           </div>
                       </div>
+                      <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="400" *ngIf="this.innerWidth > 767">
+                        <div class="next-button">
+                            <button type="button" class="btn btn-outline-light" (click)="this.navigationService.navigateTo('/home')">Retour à la page d'accueil</button>
+                        </div>
+                    </div>
                   </div>
               </div>
             </div>

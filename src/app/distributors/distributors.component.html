@@ -252,6 +252,46 @@
       </mat-accordion>
     </div>
 
+    <div class="col-xs-12 col-md-12" [ngClass]="this.regions[14].content[0] == undefined ? 'hidden' : 'visible'">
+      <div #GrandEst class="accordion-title">
+        Grand Est
+      </div>
+      <mat-accordion>
+          <mat-expansion-panel class="distributor-expansion" *ngFor="let showroom of this.regions[14].content[0]" [expanded]="focus == showroom.formattedTitle">
+              <mat-expansion-panel-header>
+                  <mat-panel-title>
+                      <div class="title-expansion">{{showroom.title}}</div>
+                  </mat-panel-title>
+              </mat-expansion-panel-header>
+              <ng-template matExpansionPanelContent>
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <iframe
+                        width="100%"
+                        height="320"
+                        frameborder="0" style="border:0"
+                        [src]="showroom.googleMapsAddress | safePipe" allowfullscreen>
+                      </iframe>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="right-text-expansion">
+                      <h3 style="color:gray;font-weight: bold;" *ngIf="showroom.name !== null && showroom.name !== ''">{{showroom.name}}</h3>
+                      <h6 style="color:gray;" *ngIf="showroom.displayedAddress !== null && showroom.displayedAddress !== ''">{{showroom.displayedAddress}}</h6>
+                      <h6 style="color:gray; margin-top:60px;" *ngIf="showroom.phone !== null && showroom.phone !== ''">{{showroom.phone}}</h6>
+                      <h6><a style="color:gray" [href]="showroom.email" title="Envoyer un email" *ngIf="showroom.email !== null">e-mail</a></h6>
+                      <h6><a style="color:gray" [href]="showroom.website" target="_blank" title="Ouverture nouvelle fenêtre" *ngIf="showroom.website !== null && showroom.website !== ''">Site Internet</a></h6>
+                      <h6 style="color:gray; margin-top:60px;font-weight: bold" *ngIf="showroom.availabilities[0] !== null && showroom.availabilities[0] !== ''">{{showroom.availabilities[0]}}</h6>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[1] !== null && showroom.availabilities[1] !== ''">{{showroom.availabilities[1]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[2] !== null && showroom.availabilities[2] !== ''">{{showroom.availabilities[2]}}</p>
+                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[3] !== null && showroom.availabilities[3] !== ''">{{showroom.availabilities[3]}}</p>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+          </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+
     <div class="col-xs-12 col-md-12" [ngClass]="this.regions[2].content[0] == undefined ? 'hidden' : 'visible'">
       <div #BourgogneFrancheComte class="accordion-title">
         Bourgogne Franche Comté
@@ -698,46 +738,6 @@
       </div>
       <mat-accordion>
           <mat-expansion-panel class="distributor-expansion" *ngFor="let showroom of this.regions[13].content[0]" [expanded]="focus == showroom.formattedTitle">
-              <mat-expansion-panel-header>
-                  <mat-panel-title>
-                      <div class="title-expansion">{{showroom.title}}</div>
-                  </mat-panel-title>
-              </mat-expansion-panel-header>
-              <ng-template matExpansionPanelContent>
-                <div class="row">
-                  <div class="col-xs-12 col-md-6">
-                    <iframe
-                        width="100%"
-                        height="320"
-                        frameborder="0" style="border:0"
-                        [src]="showroom.googleMapsAddress | safePipe" allowfullscreen>
-                      </iframe>
-                  </div>
-                  <div class="col-xs-12 col-md-6">
-                    <div class="right-text-expansion">
-                      <h3 style="color:gray;font-weight: bold;" *ngIf="showroom.name !== null && showroom.name !== ''">{{showroom.name}}</h3>
-                      <h6 style="color:gray;" *ngIf="showroom.displayedAddress !== null && showroom.displayedAddress !== ''">{{showroom.displayedAddress}}</h6>
-                      <h6 style="color:gray; margin-top:60px;" *ngIf="showroom.phone !== null && showroom.phone !== ''">{{showroom.phone}}</h6>
-                      <h6><a style="color:gray" [href]="showroom.email" title="Envoyer un email" *ngIf="showroom.email !== null">e-mail</a></h6>
-                      <h6><a style="color:gray" [href]="showroom.website" target="_blank" title="Ouverture nouvelle fenêtre" *ngIf="showroom.website !== null && showroom.website !== ''">Site Internet</a></h6>
-                      <h6 style="color:gray; margin-top:60px;font-weight: bold" *ngIf="showroom.availabilities[0] !== null && showroom.availabilities[0] !== ''">{{showroom.availabilities[0]}}</h6>
-                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[1] !== null && showroom.availabilities[1] !== ''">{{showroom.availabilities[1]}}</p>
-                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[2] !== null && showroom.availabilities[2] !== ''">{{showroom.availabilities[2]}}</p>
-                      <p style="color:gray; margin-bottom:0px;" *ngIf="showroom.availabilities[3] !== null && showroom.availabilities[3] !== ''">{{showroom.availabilities[3]}}</p>
-                    </div>
-                  </div>
-                </div>
-              </ng-template>
-          </mat-expansion-panel>
-      </mat-accordion>
-    </div>
-
-    <div class="col-xs-12 col-md-12" [ngClass]="this.regions[14].content[0] == undefined ? 'hidden' : 'visible'">
-      <div #GrandEst class="accordion-title">
-        Grand Est
-      </div>
-      <mat-accordion>
-          <mat-expansion-panel class="distributor-expansion" *ngFor="let showroom of this.regions[14].content[0]" [expanded]="focus == showroom.formattedTitle">
               <mat-expansion-panel-header>
                   <mat-panel-title>
                       <div class="title-expansion">{{showroom.title}}</div>

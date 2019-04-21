@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSelectModule } from '@angular/material/select';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { HttpClientModule } from '@angular/common/http';
 import { MailServiceService } from './mail-service.service';
@@ -239,6 +240,7 @@ const appRoutes: Routes = [
     MatRadioModule,
     MatExpansionModule,
     MatSelectModule,
+    MatProgressSpinnerModule,
     RouterModule.forRoot(appRoutes),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBX6cQ6943N2LLdlGP_0mHBRf_mWWy2GNo'

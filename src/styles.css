@@ -45,6 +45,24 @@
   font-family: 'BrandonText-Regular', Arial, Verdana;
 }
 
+textarea.mat-input-element {
+  height:96px;
+}
+
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: lightgrey;
+}
+
+.mat-progress-spinner svg {
+  width:44px !important;
+  height: 44px !important;
+}
+
+mat-spinner.mat-spinner.mat-progress-spinner.mat-primary.mat-progress-spinner-indeterminate-animation {
+  width: 44px !important;
+  height: 44px !important;
+}
+
 .mat-vertical-content {
   padding: 0px 0px 0px 0px !important;
 }
@@ -97,6 +115,11 @@ button:focus {outline:0 !important;}
 }
 
 input.mat-input-element{
+  color:lightgrey;
+  font-family: 'Brandon_light', Arial, Verdana;
+}
+
+textarea.mat-input-element {
   color:lightgrey;
   font-family: 'Brandon_light', Arial, Verdana;
 }
@@ -187,6 +210,15 @@ span.mat-checkbox-label{
 a.nav-link.top-right-link {
   text-align: center;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s !important;
+    -webkit-text-fill-color: lightgrey !important;
+}
+
 
 @media only screen and (max-width: 1600px) and (min-width:1200px){
   .gallery-image{

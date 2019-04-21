@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { NavigationService } from '../navigation.service';
 import { MailServiceService } from '../mail-service.service';
+import { HttpClient } from '@angular/common/http';
 
 
 export interface Showroom {
@@ -22,12 +23,19 @@ export interface ShowroomGroup {
 
 export class ContactComponent implements OnInit {
 
+  distributors: any;
+
+  showroomControl = new FormControl();
+  showroomGroups: ShowroomGroup[] = [];
+
   innerWidth: any;
-  pannel = 0;
+  pannel = 1;
   pannel1Option1 = false;
   pannel1Option2 = false;
   pannel3Option1 = false;
   pannel3Option2 = false;
+
+  sendEmailLoading = false;
 
 
   checked = false;
@@ -42,35 +50,21 @@ export class ContactComponent implements OnInit {
     postCode: '',
     phone: '',
     message: '',
-    showroomCatalog: '',
-    paymentOption: ''
+    showroomCatalog: ''
   };
-
-  showroomControl = new FormControl();
-  showroomGroups: ShowroomGroup[] = [
-    {
-      name: 'Île de France',
-      Showroom: [
-        {value: 'Paris8', viewValue: 'Paris 8ème'},
-        {value: 'Paris7', viewValue: 'Paris 7ème'},
-        {value: 'Paris12', viewValue: 'Paris 12ème'},
-        {value: 'LePerreux', viewValue: 'Le Perreux'}
-      ]
-    },
-    {
-      name: 'Grand-Est',
-      Showroom: [
-        {value: 'City1', viewValue: 'City 1'},
-        {value: 'City2', viewValue: 'City 2'},
-        {value: 'City3', viewValue: 'City 3'}
-      ]
-    },
-  ];
 
   isLinear = false;
   formGroup: FormGroup;
 
-  constructor(private _formBuilder: FormBuilder, public navigationService: NavigationService, public mailService: MailServiceService) { }
+  // tslint:disable-next-line:max-line-length
+  constructor(private _formBuilder: FormBuilder, public navigationService: NavigationService, public mailService: MailServiceService, public http: HttpClient) {
+    this.http.get('/assets/JSON/distributors.json').subscribe(data => {
+      this.distributors = data['regions'];
+      this.distributors.forEach(region => {
+        this.showroomGroups.push(region);
+      });
+    });
+  }
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;
@@ -123,6 +117,7 @@ export class ContactComponent implements OnInit {
   }
 
   sendEmail() {
+    this.sendEmailLoading = true;
     this.mailObject = {
       status: '',
       firstName: this.formGroup.get('firstNameCtrl').value,
@@ -134,8 +129,7 @@ export class ContactComponent implements OnInit {
       postCode: this.formGroup.get('postCodeCtrl').value,
       phone: this.formGroup.get('phoneCtrl').value,
       message: this.formGroup.get('messageCtrl').value,
-      showroomCatalog: '',
-      paymentOption: ''
+      showroomCatalog: ''
     };
     if (this.pannel1Option1) {
       this.mailObject.status = 'client';
@@ -143,14 +137,12 @@ export class ContactComponent implements OnInit {
     if (this.pannel1Option2) {
       this.mailObject.status = 'partenaire distributeur';
     }
-    if (this.pannel3Option1 && this.showroomControl.value !== null) {
+    if (this.pannel3Option1 && this.showroomControl.value) {
       this.mailObject.showroomCatalog = this.showroomControl.value;
-      this.mailObject.paymentOption = 'non';
     }
-    if (this.pannel3Option2) {
-      this.mailObject.paymentOption = 'oui';
-    }
-    this.mailService.sendMail(this.mailObject);
+    this.mailService.sendMail(this.mailObject).then(() => {
+      this.goToPannel(6);
+    });
   }
 
 }
